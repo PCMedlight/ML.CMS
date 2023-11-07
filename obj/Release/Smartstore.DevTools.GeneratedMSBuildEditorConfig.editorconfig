@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Smartstore.DevTools
+build_property.RootNamespace = Smartstore.DevTools
+build_property.ProjectDir = C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\Smartstore.DevTools\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\Smartstore.DevTools
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/DevTools/Configure.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2VG9vbHNcQ29uZmlndXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/DevTools/ProductEditTab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2VG9vbHNcUHJvZHVjdEVkaXRUYWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/MyCheckout/MyBillingAddress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDaGVja291dFxNeUJpbGxpbmdBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/Shared/BlockTemplates/Sample/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJsb2NrVGVtcGxhdGVzXFNhbXBsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/Shared/BlockTemplates/Sample/Public.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJsb2NrVGVtcGxhdGVzXFNhbXBsZVxQdWJsaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/Shared/Components/CustomFacet/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ3VzdG9tRmFjZXRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/Shared/Components/WidgetZone/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2lkZ2V0Wm9uZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/Smartstore.DevTools/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

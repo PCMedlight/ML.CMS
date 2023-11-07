@@ -1,0 +1,187 @@
+﻿@model ConfigurationModel
+
+@{
+    Layout = "_ConfigureModule";
+}
+
+@await Component.InvokeAsync("StoreScope")
+
+<script type="importmap">
+    {
+         "imports": {
+         "vue": "/Themes/MEDlight-Theme/lib/unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
+         "@@vue/devtools-api": "https://unpkg.com/@@vue/devtools-api@6/lib/esm/index.js"
+         }
+    }
+</script>
+
+
+<div id="app-editor" class="row">
+
+    <div ref="iframeContainer"  class="border col p-0 m-0" id="iframeContainer" style="min-height: 35rem;">
+    </div>
+
+    <div  class="bg-white border-left flex-column d-flex p-2" style="width:300px">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">ID</span>
+            </div>
+            <input type="text" v-model="entryid" class="form-control" placeholder="Entry" aria-label="Entry" aria-describedby="basic-addon1">
+
+        </div>
+
+        <div class="form-group">
+            <label for="InputTag">Tag</label>
+            <input v-model="entrytag" list="Tag" class="custom-select custom-select-sm">
+            <datalist id="Tag">
+                <option value="text">text</option>
+                <option value="p">p</option>
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="h3">h3</option>
+                <option value="h4">h4</option>
+                <option value="h5">h5</option>
+            </datalist>
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="InputClasses">Classes</label>
+            <input :disabled="!plaintext" v-model="entryclasses" type="text" class="form-control" id="InputClasses" aria-describedby="emailHelp" placeholder="Enter classes">
+            <small id="emailHelp" class="form-text text-muted">Enter custom classes.</small>
+        </div>
+
+        <label>EN<img class="ml-2" src="/images/flags/us.png" alt="us.png"></label>
+        <textarea v-model="entryen" rows="6" class="m-2" placeholder=""></textarea>
+        <label>DE<img class="ml-2" src="/images/flags/de.png" alt="de.png"></label>
+        <textarea v-model="entryde" rows="6" class="m-2" placeholder=""></textarea>
+
+        <!-- Button trigger modal -->
+        <button @@click="updateresource" type="button" class="btn btn-primary" data-toggle="modal" data-target="#editorModal">
+            Save
+        </button>
+
+        <hr />
+
+        <button v-for="item in cmselements" class="btn btn-white justify-content-start my-1" :class="incomplete(item.Value)" @@click="loadform(item.Value)">
+            <i class="fa-solid fa-font pr-2"></i>
+            {{item.Value.ID}}
+        </button>
+    </div>
+</div>
+
+<script type="module" src="/Themes/MEDlight-Theme/vue/app-editor.js"></script>
+
+
+<a class="update-string-resources btn btn-secondary" href='@Url.Action("UpdateResource", "CMS")'>Abc
+</a>
+
+
+<form asp-controller="CMS" asp-action="UpdateResource" method="post">
+    <button id="SaveConfigButton" type="submit" name="saveer" class="btn btn-warning" value="save">
+        <i class="fa fa-check"></i>
+        <span>Update</span>
+    </button>
+</form>
+
+
+<form asp-action="Configure">
+    <widget target-zone="admin_button_toolbar_before">
+        <button id="SaveConfigButton" type="submit" name="save" class="btn btn-warning" value="save">
+            <i class="fa fa-check"></i>
+            <span>@T("Admin.Common.Save")</span>
+        </button>
+    </widget>
+
+    <div asp-validation-summary="All"></div>
+
+
+
+
+    <div class="adminContent">
+        <div class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="EnableMiniProfilerInPublicStore" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="EnableMiniProfilerInPublicStore" data-toggler-for="#pnlIgnorePaths"></setting-editor>
+                <span asp-validation-for="EnableMiniProfilerInPublicStore"></span>
+            </div>
+        </div>
+        <div id="pnlIgnorePaths" class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="MiniProfilerIgnorePaths" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="MiniProfilerIgnorePaths"></setting-editor>
+                <span asp-validation-for="MiniProfilerIgnorePaths"></span>
+            </div>
+        </div>
+        <div class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="DisplayWidgetZones" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="DisplayWidgetZones"></setting-editor>
+                <span asp-validation-for="DisplayWidgetZones"></span>
+            </div>
+        </div>
+        <div class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="DisplayMachineName" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="DisplayMachineName"></setting-editor>
+                <span asp-validation-for="DisplayMachineName"></span>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<style>
+    [data-cms] {
+        /* Your CSS styles here */
+        transition: background-color .2s;
+        position: relative;
+        border: 1px solid var(--blue);
+    }
+
+        [data-cms]:hover {
+            /* Your CSS styles here */
+            background-color: rgba(100,255,0,0.3);
+        }
+
+            [data-cms]:hover .cms-edit {
+                opacity: 1;
+                color: white;
+                background: var(--blue);
+            }
+
+        [data-cms]::after {
+            content: "Edit";
+            color: white !important;
+            text-align: center;
+            width: 50px;
+            height: 20px;
+            transition: all .2s;
+            line-height: 1;
+            position: absolute;
+            background-color: var(--blue);
+            border: 0;
+            padding: 5px;
+            border-radius: 5px 5px 0 0;
+            right: 0;
+            top: 0;
+            font-size: .75rem;
+            color: rgba(100,100,100,1);
+            transform: translateY(-100%) translateX(1px);
+            opacity: 0.1;
+        }
+
+        [data-cms]:hover::after {
+            opacity: 1;
+        }
+</style>

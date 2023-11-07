@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\admin.scss",
+      "PackagePath": "staticwebassets\\admin.scss"
+    },
+    {
+      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\public.scss",
+      "PackagePath": "staticwebassets\\public.scss"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.ML.CMS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.build.ML.CMS.props",
+      "PackagePath": "build\\ML.CMS.props"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.buildMultiTargeting.ML.CMS.props",
+      "PackagePath": "buildMultiTargeting\\ML.CMS.props"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.buildTransitive.ML.CMS.props",
+      "PackagePath": "buildTransitive\\ML.CMS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

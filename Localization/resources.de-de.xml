@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language Name="Deutsch" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="DisplayMachineName" AppendRootKey="false">
+    <Value>Rechnernamen anzeigen</Value>
+  </LocaleResource>
+  <LocaleResource Name="DisplayMachineName.Hint" AppendRootKey="false">
+    <Value>Stellt den Rechnernamen unterhalb des Footers dar. Mit dieser Funktion können Sie in einer verteilten Anwendung den gerade genutzten Rechner ermitteln.</Value>
+  </LocaleResource>
+  <LocaleResource Name="DisplayWidgetZones" AppendRootKey="false">
+    <Value>Widget-Zonen darstellen</Value>
+  </LocaleResource>
+  <LocaleResource Name="DisplayWidgetZones.Hint" AppendRootKey="false">
+    <Value>Injiziert Tooltips in jede Widget-Zone, die den Namen der jeweiligen Widget-Zone enthalten. Die Anzeige ist auf angemeldete Administratoren beschränkt.</Value>
+  </LocaleResource>
+  <LocaleResource Name="EnableMiniProfilerInPublicStore" AppendRootKey="false">
+    <Value>MiniProfiler aktivieren</Value>
+  </LocaleResource>
+  <LocaleResource Name="EnableMiniProfilerInPublicStore.Hint" AppendRootKey="false">
+    <Value>Aktiviert den MiniProfiler. Mit dem Profiler können Sie die Request-Geschwindigkeit, inklusive Datenbankzugriffen, analysieren. Nur Administratoren können das Profiler-Widget sehen.</Value>
+  </LocaleResource>
+  <LocaleResource Name="MiniProfilerIgnorePaths" AppendRootKey="false">
+    <Value>MiniProfiler Pfad-Ausnahmen</Value>
+  </LocaleResource>
+  <LocaleResource Name="MiniProfilerIgnorePaths.Hint" AppendRootKey="false">
+    <Value>Eine Komma-getrennte Liste von Pfaden, die der MiniProfiler ignorieren soll.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
+    <Value>Zertifizierte Medizintechnik6</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Mail" AppendRootKey="false">
+    <Value>info@medlight.euwn8</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Description.SmartStore.DevTools" AppendRootKey="false">
+    <Value>Smartstore Developer Tools (MiniProfiler und andere Extras).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.FriendlyName.SmartStore.DevTools" AppendRootKey="false">
+    <Value>Developer Tools</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.FriendlyName.Widgets.DevToolsDemo" AppendRootKey="false">
+    <Value>Developer Tools Demo Widget</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Permissions.DisplayName.DevTools" AppendRootKey="false">
+    <Value>Developer Tools</Value>
+  </LocaleResource>
+</Language>

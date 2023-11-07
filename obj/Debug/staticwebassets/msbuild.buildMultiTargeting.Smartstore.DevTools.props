@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Smartstore.DevTools.props" />
+</Project>

@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language Name="English" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="ML.Brand.Legalname" AppendRootKey="false">
+    <Value>MEDlight GmbH</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Brand.Name" AppendRootKey="false">
+    <Value>MEDlight</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Aria.Call" AppendRootKey="false">
+    <Value>Call MEDlight specialists</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Aria.Mail" AppendRootKey="false">
+    <Value>Mail MEDlight specialists</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.CallButton" AppendRootKey="false">
+    <Value>Call us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Description" AppendRootKey="false">
+    <Value>Do you have questions? Our MEDlight specialists are here to help, and it's absolutely free. Start the conversation today.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.MessageButton" AppendRootKey="false">
+    <Value>Message us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Title" AppendRootKey="false">
+    <Value>Let's Talk</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Description1" AppendRootKey="false">
+    <Value>MEDLight GmbH is a renowned medical device manufacturer from Germany with a history spanning over six decades in the development and production of UV phototherapy and phtodynamic therapy devices. Our headquarters in Herford serves as the central hub for all processes, from product design and manufacturing to global distribution. We cater to both B2C and B2B customer groups, serving them directly and through an established network of distribution partners.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Description2" AppendRootKey="false">
+    <Value>Our business operations are characterized by a deep commitment to quality and responsibility. We undergo continuous certifications and maintain a professional quality management system that adheres to the highest European and German standards.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
+    <Value>Certified Medical Devices6</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Description" AppendRootKey="false">
+    <Value>Get a non-binding quote and tell us a bit about yourself so we can begin setting up an order. A MEDlight representative will contact you shortly to take the next steps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Email" AppendRootKey="false">
+    <Value>Email (Required)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Email.Placeholder" AppendRootKey="false">
+    <Value>Your email</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Email.Validate" AppendRootKey="false">
+    <Value>Your email is not a valid email address.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Message" AppendRootKey="false">
+    <Value>Message</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Message.Placeholder" AppendRootKey="false">
+    <Value>Enter your message</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Name" AppendRootKey="false">
+    <Value>Name</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Name.Placeholder" AppendRootKey="false">
+    <Value>Your name</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Phone" AppendRootKey="false">
+    <Value>Phone</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Phone.Placeholder" AppendRootKey="false">
+    <Value>Your phone number</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Privacy" AppendRootKey="false">
+    <Value>Privacy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Privacy.Text" AppendRootKey="false">
+    <Value>MEDlight GmbH will store and process your personal data according to the Information Notice. By submitting this request you consent to the processing.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Submit" AppendRootKey="false">
+    <Value>Get into Contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Submit.Config" AppendRootKey="false">
+    <Value>Get a free Quote</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.BusinessReseller" AppendRootKey="false">
+    <Value>Business / Reseller</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.HealthcareProfessional" AppendRootKey="false">
+    <Value>Healthcare professional</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.IAm" AppendRootKey="false">
+    <Value>I am a:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.IndividualPatient" AppendRootKey="false">
+    <Value>Individual / Patient</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.List.Product" AppendRootKey="false">
+    <Value>Products</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Title" AppendRootKey="false">
+    <Value>Contact us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Mail" AppendRootKey="false">
+    <Value>info@medlight.euwn8</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Mail" AppendRootKey="false">
+    <Value>info@medlight.eu</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Phone" AppendRootKey="false">
+    <Value>+49-5221-994-29-0</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Category" AppendRootKey="false">
+    <Value>UV Phototherapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Description" AppendRootKey="false">
+    <Value>2M EcoFlex amplifies your lamps</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Figure1.Caption1" AppendRootKey="false">
+    <Value>Initial Price</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Figure1.Caption2" AppendRootKey="false">
+    <Value>Running Costs</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Figure1.Sub" AppendRootKey="false">
+    <Value>Save on initial and replacement cost while also reducing energy cosumption.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Figure2.Sub" AppendRootKey="false">
+    <Value>Optimized lamp arrangement.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Sub" AppendRootKey="false">
+    <Value>Use the full potential of standard-length lamps for patients up to 200cm. Sustainable technology that cares for patients and the planet.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Ecoflex.Title" AppendRootKey="false">
+    <Value>2M EcoFlex</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.ButtonLabel" AppendRootKey="false">
+    <Value>Minimize Features</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Description" AppendRootKey="false">
+    <Value>The N-LINE System is designed to meet your specific requirements. All models share a common foundation, boasting our unique core design along with all essential safety features.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature1.Description" AppendRootKey="false">
+    <Value>All lamps are arranged on a curve to concentrate the light where it is needed. The ARC-Concept provides excellent exposure to the lower extremities while allowing the treatment of even taller patients (2 meters).</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature1.Title" AppendRootKey="false">
+    <Value>ARC-Concept</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature10.Description" AppendRootKey="false">
+    <Value>Premium cooling fans with advanced fluid-dynamic bearings keep the cabin at an unobtrusive volume level and make communication easier.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature10.Title" AppendRootKey="false">
+    <Value>Low Noise</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature11.Description" AppendRootKey="false">
+    <Value>The overhead air intake keeps dust and dirt particles out of the system to maintain the maximum performance of the UV lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature11.Title" AppendRootKey="false">
+    <Value>Dust Reduction System (DRS)</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature12.Description" AppendRootKey="false">
+    <Value>The open top prevents patients from feeling confined, while the UV reflectors (RSEP) act as mirrors inside the cabin. Patients enjoy the perception of a more spacious and well-ventilated environment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature12.Title" AppendRootKey="false">
+    <Value>Open Cabin Design</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature13.Description" AppendRootKey="false">
+    <Value>Well-placed handle grips keep patients stable and in the optimal treatment position.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature13.Title" AppendRootKey="false">
+    <Value>Ergonomic</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature2.Description" AppendRootKey="false">
+    <Value>Intelligent placement allows 1.8m lamps to effectively perform as 2m lamps without wasting energy. This enables treatment for taller patients while embracing eco-friendliness and offering long-term cost savings with standard length lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature2.Title" AppendRootKey="false">
+    <Value>2M EcoFlex</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature3.Description" AppendRootKey="false">
+    <Value>The design is based on the human body. The result is a uniform distance to the skin which prevents under- and over-exposure. Additionally, the effective lamp setup reduces treatment times.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature3.Title" AppendRootKey="false">
+    <Value>2M EcoFlex</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature4.Description" AppendRootKey="false">
+    <Value>The N-LINE series is for professionals where reliability and durability matter. The galvanized steel body and door with powder coating are constructed for long-term use.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature4.Title" AppendRootKey="false">
+    <Value>Heavy Duty Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature5.Description" AppendRootKey="false">
+    <Value>The bottom platform and lamp shielding are made of medical-grade materials that can be removed for easy cleaning and disinfection.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature5.Title" AppendRootKey="false">
+    <Value>Convenient</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature6.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. UV light passes through the shield unhindered. Cleaning or surface disinfection is quick and easy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature6.Title" AppendRootKey="false">
+    <Value>Acrylic Shielding</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature7.Description" AppendRootKey="false">
+    <Value>Reflective back panels direct the UV light at the user, maximizing lamp efficiency and allows for shorter treatments. Simultaneously, the panels visually increase the cabin space.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature7.Title" AppendRootKey="false">
+    <Value>Reflective Space Extension Panels (ReflexPro)</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature8.Description" AppendRootKey="false">
+    <Value>Despite its compact size, every lamp uses electronic starters. Users benefit from reduced energy consumption and increased service life of the lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature8.Title" AppendRootKey="false">
+    <Value>Electronic Starters</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature9.Description" AppendRootKey="false">
+    <Value>Smooth Air Technology (SAT) - Cooling is important because it helps to maintain the optimal temperature for the lamp to operate efficiently and effectively. If the lamp is too hot, it can result in shortened lamp life and reduced UV output. The temperature management system maximizes service life and performance.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Feature9.Title" AppendRootKey="false">
+    <Value>Smooth Air Technology</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Featurelist.Title" AppendRootKey="false">
+    <Value>Discover the difference</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Description" AppendRootKey="false">
+    <Value>Discover our state of the art technologies that make the N-LINE the best uv phototherapy cabin</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature1.Description" AppendRootKey="false">
+    <Value>Advanced sensors continuously monitor the UV output and provide real-time dosage calculations.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature1.Title" AppendRootKey="false">
+    <Value>Dose Sense</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature2.Description" AppendRootKey="false">
+    <Value>By channeling air through carefully engineered pathways, we reduce dust particles inside the equipment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature2.Title" AppendRootKey="false">
+    <Value>Clean Flow</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature3.Description" AppendRootKey="false">
+    <Value>The high-efficiency fan array maximizes the lamp's life and performance without interfering with your work.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature3.Title" AppendRootKey="false">
+    <Value>Whisper Cool</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature4.Description" AppendRootKey="false">
+    <Value>The curved lamp arrangement is based on the human body and ensures a uniform distance to the skin.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature4.Title" AppendRootKey="false">
+    <Value>ARC-Concept</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature5.Description" AppendRootKey="false">
+    <Value>The advanced polymer protects the lamps from dirt and damage while transmitting the UV light unhindered.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature5.Title" AppendRootKey="false">
+    <Value>Crystal Clear Shield</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature6.Description" AppendRootKey="false">
+    <Value>The advanced polymer protects the lamps from dirt and damage while transmitting the UV light unhindered.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Feature6.Title" AppendRootKey="false">
+    <Value>Reflex Pro</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Features.Title" AppendRootKey="false">
+    <Value>Technologies</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Header.Alt" AppendRootKey="false">
+    <Value>"N-LINE PRO UV phototherapy cabin."</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Intro" AppendRootKey="false">
+    <Value>Our most powerful and capable phototherapy system ever.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Intro.Description1" AppendRootKey="false">
+    <Value>The N-LINE series is the ultimate solution for professional UV phototherapy. Featuring two exceptional models, each designed to meet your specific requirements. Both models share a common foundation, boasting our unique core design along with all essential safety features.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Intro.Description2" AppendRootKey="false">
+    <Value>Unlock the full potential of the N-LINE PRO paired with our SKINDEX software. Create patient records, streamline treatment planning, and operate the cabin with unparalleled ease. This all-in-one comprehensive workflow revolutionizes the way you manage your phototherapy treatments empowering you to focus on what matters most – your patients.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Description" AppendRootKey="false">
+    <Value>SKINdex is MEDlights propriety treatment management software. Combine data collection, therapy planning, and cabin operation into a single system.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Intercom.Sub" AppendRootKey="false">
+    <Value>Communicate via your control station</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Intercom.Title" AppendRootKey="false">
+    <Value>Intercom/Video</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Planning.Sub" AppendRootKey="false">
+    <Value>Create automated treatment plans</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Planning.Title" AppendRootKey="false">
+    <Value>Therapy Planning</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Remote.Sub" AppendRootKey="false">
+    <Value>Control up to seperate systems remotely</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Remote.Title" AppendRootKey="false">
+    <Value>Remote Control</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Required" AppendRootKey="false">
+    <Value> (SKINdex requires a N-LINE PRO or N-LINE PRO MAX)</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Skindex.Title" AppendRootKey="false">
+    <Value>Connect with SKINdex</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Brand" AppendRootKey="false">
+    <Value>Brand</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.BrandInfo" AppendRootKey="false">
+    <Value>Philips Lighting</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Depth" AppendRootKey="false">
+    <Value>Depth</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Dimensions" AppendRootKey="false">
+    <Value>Dimensions</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.DoorSensor" AppendRootKey="false">
+    <Value>Door Sensor</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.DoorSensorInfo" AppendRootKey="false">
+    <Value>The system will immediately pause the treatment when the door is opened.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Dosimetry" AppendRootKey="false">
+    <Value>Dosimetry</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.DosimetryInfo" AppendRootKey="false">
+    <Value>4 x Dose Sense real-time sensors</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.EmergencyCall" AppendRootKey="false">
+    <Value>Emergency call</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.EmergencySwitch" AppendRootKey="false">
+    <Value>Emergency Switch</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.EmergencySwitchInfo" AppendRootKey="false">
+    <Value>Emergency off-switch on the outside</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Height" AppendRootKey="false">
+    <Value>Height</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Interface" AppendRootKey="false">
+    <Value>Interface</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.KeyLock" AppendRootKey="false">
+    <Value>Key lock</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.KeyLockInfo" AppendRootKey="false">
+    <Value>Key lock to lock the cabin's door and electronics</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Lamps" AppendRootKey="false">
+    <Value>Lamps</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.LanguageSupport" AppendRootKey="false">
+    <Value>Language Support</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.MixedSpectrum" AppendRootKey="false">
+    <Value>Mixed Spectrum</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.MixedSpectrumInfo" AppendRootKey="false">
+    <Value>It's possible to install two different lamp types and choose between the best treatment spectrum. The following combinations are possible: UVA-1 and UVA (PUVA), UVB-311nm (Narrowband) and UVB (Broadband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Network" AppendRootKey="false">
+    <Value>Network</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE" AppendRootKey="false">
+    <Value>N-LINE</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.DepthInfo" AppendRootKey="false">
+    <Value>114cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.EmergencyCallInfo" AppendRootKey="false">
+    <Value>X</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.HeightInfo" AppendRootKey="false">
+    <Value>214cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.InterfaceInfo" AppendRootKey="false">
+    <Value>Industrial Grade Controller</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.LampsInfo" AppendRootKey="false">
+    <Value>28 x 180 cm 100 W</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.LanguageSupportInfo" AppendRootKey="false">
+    <Value>German, English, French, Italian, Spanish, Arabic, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Indonesian, Norwegian, Polish, Portuguese, Romanian, Russian, Slovak, Swedish, Thai, Turkish, Ukrainian, Vietnamese. Language support can be extended.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.NetworkInfo" AppendRootKey="false">
+    <Value>X</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.PowerConsumptionInfo" AppendRootKey="false">
+    <Value>3200VA</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.PowerFrequencyInfo" AppendRootKey="false">
+    <Value>50Hz</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.PowerVoltageInfo" AppendRootKey="false">
+    <Value>230V</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.SoftwareInfo" AppendRootKey="false">
+    <Value>X</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.WeightInfo" AppendRootKey="false">
+    <Value>280kg</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINE.WidthInfo" AppendRootKey="false">
+    <Value>121cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO" AppendRootKey="false">
+    <Value>N-LINE PRO</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.DepthInfo" AppendRootKey="false">
+    <Value>114cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.EmergencyCallInfo" AppendRootKey="false">
+    <Value>Patient emergency-call handle</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.HeightInfo" AppendRootKey="false">
+    <Value>214cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.InterfaceInfo" AppendRootKey="false">
+    <Value>6.5" Touchscreen</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.LampsInfo" AppendRootKey="false">
+    <Value>40 x 180 cm 100 W</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.LanguageSupportInfo" AppendRootKey="false">
+    <Value>German, English, French, Italian, Spanish, Arabic, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Indonesian, Norwegian, Polish, Portuguese, Romanian, Russian, Slovak, Swedish, Thai, Turkish, Ukrainian, Vietnamese. Language support can be extended.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.NetworkInfo" AppendRootKey="false">
+    <Value>1G Ethernet Optional</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.PowerConsumptionInfo" AppendRootKey="false">
+    <Value>4900VA</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.PowerFrequencyInfo" AppendRootKey="false">
+    <Value>50Hz</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.PowerVoltageInfo" AppendRootKey="false">
+    <Value>400V</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.SoftwareInfo" AppendRootKey="false">
+    <Value>SKINdex Optional</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.WeightInfo" AppendRootKey="false">
+    <Value>330kg</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPRO.WidthInfo" AppendRootKey="false">
+    <Value>121cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS" AppendRootKey="false">
+    <Value>N-LINE PRO PLUS</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.DepthInfo" AppendRootKey="false">
+    <Value>114cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.EmergencyCallInfo" AppendRootKey="false">
+    <Value>Patient emergency-call handle</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.HeightInfo" AppendRootKey="false">
+    <Value>214cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.InterfaceInfo" AppendRootKey="false">
+    <Value> 10" Touchscreen</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.LampsInfo" AppendRootKey="false">
+    <Value>40 x 180 cm 100 W</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.LanguageSupportInfo" AppendRootKey="false">
+    <Value>German, English, French, Italian, Spanish, Arabic, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Indonesian, Norwegian, Polish, Portuguese, Romanian, Russian, Slovak, Swedish, Thai, Turkish, Ukrainian, Vietnamese. Language support can be extended.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.NetworkInfo" AppendRootKey="false">
+    <Value>1G Ethernet Optional</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.PowerConsumptionInfo" AppendRootKey="false">
+    <Value>4900VA</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.PowerFrequencyInfo" AppendRootKey="false">
+    <Value>50Hz</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.PowerVoltageInfo" AppendRootKey="false">
+    <Value>400V</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.SoftwareInfo" AppendRootKey="false">
+    <Value>SKINdex Optional</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.WeightInfo" AppendRootKey="false">
+    <Value>330kg</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.NLINEPROPLUS.WidthInfo" AppendRootKey="false">
+    <Value>121cm</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Operation" AppendRootKey="false">
+    <Value>Operation</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Power" AppendRootKey="false">
+    <Value>Power</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.PowerConsumption" AppendRootKey="false">
+    <Value>Consumption</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Safety" AppendRootKey="false">
+    <Value>Safety</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Software" AppendRootKey="false">
+    <Value>Software</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Spectrum" AppendRootKey="false">
+    <Value>Spectrum</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.SpectrumInfo" AppendRootKey="false">
+    <Value>UVA (PUVA), UVA-1, UVB-311nm (Narrowband), UVB (Broadband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.StabilityBars" AppendRootKey="false">
+    <Value>Stability Bars</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.StabilityBarsInfo" AppendRootKey="false">
+    <Value>Two stability bars offer patients stability and support while keeping them in the correct treatment position.</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Standard" AppendRootKey="false">
+    <Value>Standard</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.StandardInfo" AppendRootKey="false">
+    <Value>CE, IEC 60601-1</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Title" AppendRootKey="false">
+    <Value>Technical Specifications</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.VoltageSupply" AppendRootKey="false">
+    <Value>Voltage Supply</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Weight" AppendRootKey="false">
+    <Value>Weight</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Width" AppendRootKey="false">
+    <Value>Width</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.Window" AppendRootKey="false">
+    <Value>Window</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.TechSpecs.WindowInfo" AppendRootKey="false">
+    <Value>A UV-shielded privacy window allows performing a visual check on the patient</Value>
+  </LocaleResource>
+  <LocaleResource Name="NLINE.Title" AppendRootKey="false">
+    <Value>N-LINE</Value>
+  </LocaleResource>
+</Language>
