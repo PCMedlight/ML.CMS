@@ -9,33 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ML.CMS
 build_property.RootNamespace = ML.CMS
-build_property.ProjectDir = C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\
+build_property.ProjectDir = C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS
+build_property.MSBuildProjectDirectory = C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/p.chaoui/Creative Cloud Files/Github/smartstore-medlight/src/Smartstore.Modules/ML.CMS/Views/CMS/Configure.cshtml]
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/ML.CMS/Views/CMS/Configure.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TXENvbmZpZ3VyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/p.chaoui/Creative Cloud Files/Github/smartstore-medlight/src/Smartstore.Modules/ML.CMS/Views/CMS/ProductEditTab.cshtml]
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/ML.CMS/Views/CMS/ProductEditTab.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TXFByb2R1Y3RFZGl0VGFiLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/p.chaoui/Creative Cloud Files/Github/smartstore-medlight/src/Smartstore.Modules/ML.CMS/Views/Shared/Components/CustomFacet/Default.cshtml]
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/ML.CMS/Views/Shared/Components/CustomFacet/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ3VzdG9tRmFjZXRcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/p.chaoui/Creative Cloud Files/Github/smartstore-medlight/src/Smartstore.Modules/ML.CMS/Views/Shared/Components/WidgetZone/Default.cshtml]
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/ML.CMS/Views/Shared/Components/WidgetZone/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2lkZ2V0Wm9uZVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/p.chaoui/Creative Cloud Files/Github/smartstore-medlight/src/Smartstore.Modules/ML.CMS/Views/_ViewImports.cshtml]
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/ML.CMS/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/p.chaoui/Creative Cloud Files/Github/smartstore-medlight/src/Smartstore.Modules/ML.CMS/Views/_ViewStart.cshtml]
+[C:/Users/Philip/Github/Smartstore-MEDlight2-main/src/Smartstore.Modules/ML.CMS/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

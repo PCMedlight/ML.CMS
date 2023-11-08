@@ -1,0 +1,6 @@
+
+*.cache
+obj/Debug/ML.CMS.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/ML.CMS.csproj.AssemblyReference.cache
+obj/Debug/ML.CMS.assets.cache
+*.cache
