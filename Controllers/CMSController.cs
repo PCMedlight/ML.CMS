@@ -25,6 +25,19 @@ using Microsoft.IdentityModel.Tokens;
 using Smartstore.Core.Logging;
 using Smartstore.Core.DataExchange;
 using Smartstore.Core.Localization;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore;
+using static Smartstore.Core.Security.Permissions.Configuration;
+using Language = Smartstore.Core.Localization.Language;
+using System.Collections.Concurrent;
+using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.Extensions.Logging;
 
 namespace ML.CMS.Controllers
 {
@@ -35,13 +48,19 @@ namespace ML.CMS.Controllers
         private readonly SmartDbContext _db;
         private readonly ILanguageService _languageService;
         private readonly CMSXMLFileService _CMSXMLFileService;
+        private readonly List<Language> _languages;
+
+        //public ILogger Logger { get; set; } = NullLogger.Instance;
 
         public CMSController(SmartDbContext db, ILanguageService languageService, CMSXMLFileService CMSXMLFileService)
         {
             _db = db;
             _languageService = languageService;
             _CMSXMLFileService = CMSXMLFileService;
+            _languages = _languageService.GetAllLanguages();
         }
+
+
 
         [AuthorizeAdmin, Permission(CMSPermissions.Read)]
         [LoadSetting]
@@ -67,7 +86,7 @@ namespace ML.CMS.Controllers
             dynamic message = string.Empty;
             dynamic data;
             dynamic jsonData;
-            string[] idValues = new string[0];
+            string[] idValues = Array.Empty<string>();
 
             try
             {
@@ -109,7 +128,6 @@ namespace ML.CMS.Controllers
                 message = collectMessage;
             }
 
-
             return Json(new
             {
                 Success = success,
@@ -117,17 +135,16 @@ namespace ML.CMS.Controllers
             });
         }
 
-        [AuthorizeAdmin, Permission(CMSPermissions.Update)]
         private async Task<int> ImportResourcesFromXmlAsync(
         Language language,
         XDocument xmlDocument,
-        string rootKey = null,
-        bool sourceIsPlugin = true,
-        ImportModeFlags mode = ImportModeFlags.Insert | ImportModeFlags.Update,
-        bool updateTouchedResources = false)
+        bool sourceIsPlugin = true)
         {
             Guard.NotNull(language);
             Guard.NotNull(xmlDocument);
+
+            List<object> activityLog = new List<object>();
+            
 
             await _db.LoadCollectionAsync(language, x => x.LocaleStringResources);
             var resources = language.LocaleStringResources.ToDictionarySafe(x => x.ResourceName, StringComparer.OrdinalIgnoreCase);
@@ -147,55 +164,41 @@ namespace ML.CMS.Controllers
                 if (string.IsNullOrEmpty(name))
                     continue;
 
-                if (rootKey.HasValue())
-                {
-                    var appendRootKeyAttribute = xel.Attribute("AppendRootKey");
-                    if (appendRootKeyAttribute == null || !appendRootKeyAttribute.Value.EqualsNoCase("false"))
-                    {
-                        name = string.Format("{0}.{1}", rootKey, name);
-                    }
-                }
-
                 if (resources.TryGetValue(name, out var resource))
                 {
-                    if (mode.HasFlag(ImportModeFlags.Update))
+                    if (value != resource.ResourceValue)
                     {
-                        if (updateTouchedResources || !resource.IsTouched.GetValueOrDefault())
-                        {
-                            if (value != resource.ResourceValue)
-                            {
-                                resource.ResourceValue = value;
-                                resource.IsTouched = null;
-                                isDirty = true;
-                            }
-                        }
+                        resource.ResourceValue = value;
+                        resource.IsTouched = null;
+                        resource.IsFromPlugin = sourceIsPlugin;
+                        isDirty = true;
+                        _db.Entry(resource).State = EntityState.Modified;
+                        activityLog.Add(resource);
                     }
                 }
                 else
                 {
-                    if (mode.HasFlag(ImportModeFlags.Insert))
+                    var newResource = new LocaleStringResource
                     {
-                        var newResource = new LocaleStringResource
-                        {
-                            LanguageId = language.Id,
-                            ResourceName = name,
-                            ResourceValue = value,
-                            IsFromPlugin = sourceIsPlugin
-                        };
+                        LanguageId = language.Id,
+                        ResourceName = name,
+                        ResourceValue = value,
+                        IsFromPlugin = sourceIsPlugin
+                    };
 
-                        _db.LocaleStringResources.Add(newResource);
-                        resources[name] = newResource;
-                        isDirty = true;
-                    }
+                    _db.LocaleStringResources.Add(newResource);
+                    resources[name] = newResource;
+                    activityLog.Add(resources[name]);
+                    isDirty = true;
                 }
             }
 
             if (isDirty)
             {
-                //_db.Entry(language).Collection(x => x.LocaleStringResources).Load();
+                string activityLogJson = JsonConvert.SerializeObject(activityLog);
+                Logger.Info("ImportResourcesFromXmlAsync updated: " + activityLogJson);
                 return await _db.SaveChangesAsync();
             }
-
             return 0;
         }
 
@@ -206,73 +209,68 @@ namespace ML.CMS.Controllers
             var success = false;
             var message = string.Empty;
             dynamic data;
-            dynamic jsonData;
-            string? ID = null;
-            string? EN = null;
-            string? DE = null;
 
             data = await DeserializeJsonFromRequest(Request);
-            jsonData = JObject.Parse(data);
-            if (jsonData.ContainsKey("ID"))
-            {
-                ID = jsonData.ID.ToString();
+            JObject jsonData = JsonConvert.DeserializeObject(data);
+            Logger.Info("UpdateResource called with request: "+ jsonData + " from " + Services.WorkContext.CurrentCustomer.Username + ". " + Request.Body);
 
-                if (jsonData.ContainsKey("EN"))
-                {
-                    EN = jsonData.EN.ToString();
-                }
-                if (jsonData.ContainsKey("DE"))
-                {
-                    DE = jsonData.DE.ToString();
-                }
-            }
-            else
+            Dictionary<Language, string> updatedLanguageValues = new Dictionary<Language, string>();
+
+            if (!jsonData.ContainsKey("ID") || string.IsNullOrEmpty(jsonData["ID"].ToString()))
             {
-                message = "Missing ID";
-                return Json(new
+                  return Json(new
                 {
                     Success = success,
-                    Message = message
+                    Message = "Invalid ID"
                 });
             }
 
-            if (!string.IsNullOrEmpty(ID))
+            string ID = jsonData["ID"].ToString();
+            foreach (var language in _languages)
             {
-                if (!string.IsNullOrEmpty(EN))
+                if (jsonData.ContainsKey(language.LanguageCulture))
                 {
-                    XDocument enResource = await _CMSXMLFileService.LoadsXmlAsync("resources.en-us.xml");
-                    XMLDocHelper enHelper = new XMLDocHelper(enResource);
-                    enHelper.FlattenResourceFile();
-                    enHelper.SetAppendRoot();
-                    enHelper.ChangeValue(ID, EN);
-                    enHelper.sortElements();
-                    await _CMSXMLFileService.SaveXmlAsync(enHelper.Content, "resources.en-us.xml");
-                    success = true;
-                    message += "Successful update EN;";
+                    string value = jsonData[language.LanguageCulture].ToString();
+                    updatedLanguageValues.Add(language, value);
                 }
-
-                if (!string.IsNullOrEmpty(DE))
-                {
-                    XDocument deResource = await _CMSXMLFileService.LoadsXmlAsync("resources.de-de.xml");
-                    XMLDocHelper deHelper = new XMLDocHelper(deResource);
-                    deHelper.ChangeValue(ID, DE);
-                    deHelper.SetAppendRoot();
-                    deHelper.sortElements();
-                    await _CMSXMLFileService.SaveXmlAsync(deHelper.Content, "resources.de-de.xml");
-                    success = true;
-                    message += "Successful update DE;";
-                }
-
-                //await _CMSXMLFileService.UpdateStringResources();
-                var languages = _languageService.GetAllLanguages();
-                
-                foreach (var item in languages)
-                {
-                    XDocument xDoc = await _CMSXMLFileService.LoadsXmlAsync($"resources.{item.LanguageCulture}.xml");
-                    ImportModeFlags mode = ImportModeFlags.Update | ImportModeFlags.Insert;
-                    await ImportResourcesFromXmlAsync(item, xDoc, null, true, mode, true);
-                };
             }
+
+            foreach (var updatedValue in updatedLanguageValues)
+            {
+                Language language = updatedValue.Key;
+                string languageCulture = language.LanguageCulture;
+                string value = updatedValue.Value;
+                try
+                {
+                    XDocument xResource = await _CMSXMLFileService.LoadsXmlAsync($"resources.{languageCulture}.xml");
+                    if (xResource == null || xResource.Root == null)
+                    {
+                        message += $"Error updating {languageCulture}: Invalid XML; ";
+                        continue;
+                    }
+                    XMLDocHelper xHelper = new XMLDocHelper(xResource);
+                    xHelper.FlattenResourceFile();
+                    xHelper.SetAppendRoot();
+                    xHelper.ChangeValue(ID, value);
+                    xHelper.sortElements();
+                    var duplicates = xHelper.GetDuplicates();
+                    await _CMSXMLFileService.SaveXmlAsync(xHelper.Content, $"resources.{languageCulture}.xml");
+                    await ImportResourcesFromXmlAsync(language, xHelper.Content);
+                    message += $"Successful updated {languageCulture}; ";
+                    if (duplicates.Count > 0)
+                    {
+                        message += $"Duplicates found: {string.Join(",", duplicates)}; ";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    message += $"Error updating {languageCulture}: {ex.Message}; ";
+                    Logger.Error($"UpdateResource failed: {ex.Message} " + ex);
+                }
+
+            }
+
+            success = true;
 
             return Json(new
             {

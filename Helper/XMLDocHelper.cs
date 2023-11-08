@@ -113,7 +113,7 @@ namespace ML.CMS.Helpers
         {
             Guard.NotNull(Content);
 
-            int childrenCount = Content.Descendants("Children").Count();   
+            int childrenCount = Content.Descendants("Children").Count();
 
             if (childrenCount == 0)
             {
@@ -135,6 +135,19 @@ namespace ML.CMS.Helpers
             }
 
             Content = flatSource;
+        }
+
+        public List<XElement> GetDuplicates()
+        {
+            Guard.NotNull(Content);
+
+            var duplicates = Content.Descendants()
+                .Where(x => x.Attribute("Name") != null)
+                .GroupBy(x => x.Attribute("Name").Value)
+                .Where(g => g.Count() > 1)
+                .Select(g => g.First());
+
+            return duplicates.ToList();
         }
 
     }
