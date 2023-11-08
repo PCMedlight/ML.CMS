@@ -144,7 +144,7 @@ namespace ML.CMS.Controllers
             Guard.NotNull(xmlDocument);
 
             List<object> activityLog = new List<object>();
-            
+
 
             await _db.LoadCollectionAsync(language, x => x.LocaleStringResources);
             var resources = language.LocaleStringResources.ToDictionarySafe(x => x.ResourceName, StringComparer.OrdinalIgnoreCase);
@@ -196,7 +196,7 @@ namespace ML.CMS.Controllers
             if (isDirty)
             {
                 string activityLogJson = JsonConvert.SerializeObject(activityLog);
-                Logger.Info("ImportResourcesFromXmlAsync updated: " + activityLogJson);
+                Logger.Info("ImportResourcesFromXmlAsync updated: {Json}.", activityLogJson);
                 return await _db.SaveChangesAsync();
             }
             return 0;
@@ -204,79 +204,75 @@ namespace ML.CMS.Controllers
 
         [AuthorizeAdmin, Permission(CMSPermissions.Update)]
         [HttpPost]
-        public async Task<IActionResult> UpdateResource(ConfigurationModel model, CMSSettings settings)
+        public async Task<IActionResult> UpdateResource()
         {
             var success = false;
             var message = string.Empty;
-            dynamic data;
 
-            data = await DeserializeJsonFromRequest(Request);
-            JObject jsonData = JsonConvert.DeserializeObject(data);
-            Logger.Info("UpdateResource called with request: "+ jsonData + " from " + Services.WorkContext.CurrentCustomer.Username + ". " + Request.Body);
+            JObject jsonData = await getRequestJSON();
 
-            Dictionary<Language, string> updatedLanguageValues = new Dictionary<Language, string>();
+            Logger.Info("UpdateResource called with request: {RequestBody}", JsonConvert.SerializeObject(jsonData));
 
             if (!jsonData.ContainsKey("ID") || string.IsNullOrEmpty(jsonData["ID"].ToString()))
             {
-                  return Json(new
-                {
-                    Success = success,
-                    Message = "Invalid ID"
-                });
+                return Json(new{Success = false,Message = "Invalid ID"});
             }
 
             string ID = jsonData["ID"].ToString();
-            foreach (var language in _languages)
-            {
-                if (jsonData.ContainsKey(language.LanguageCulture))
-                {
-                    string value = jsonData[language.LanguageCulture].ToString();
-                    updatedLanguageValues.Add(language, value);
-                }
-            }
+            Dictionary<Language, string> updatedLanguageValues = _languages
+                .Where(language => jsonData.ContainsKey(language.LanguageCulture))
+                .ToDictionary(
+                    language => language,
+                    language => jsonData[language.LanguageCulture].ToString()
+                );
 
             foreach (var updatedValue in updatedLanguageValues)
             {
-                Language language = updatedValue.Key;
-                string languageCulture = language.LanguageCulture;
-                string value = updatedValue.Value;
+                string languageCulture = updatedValue.Key.LanguageCulture;
                 try
                 {
                     XDocument xResource = await _CMSXMLFileService.LoadsXmlAsync($"resources.{languageCulture}.xml");
-                    if (xResource == null || xResource.Root == null)
-                    {
-                        message += $"Error updating {languageCulture}: Invalid XML; ";
-                        continue;
-                    }
-                    XMLDocHelper xHelper = new XMLDocHelper(xResource);
-                    xHelper.FlattenResourceFile();
-                    xHelper.SetAppendRoot();
-                    xHelper.ChangeValue(ID, value);
-                    xHelper.sortElements();
-                    var duplicates = xHelper.GetDuplicates();
+                    XMLDocHelper xHelper = cleanXDoc(ID, updatedValue.Value, xResource);
                     await _CMSXMLFileService.SaveXmlAsync(xHelper.Content, $"resources.{languageCulture}.xml");
-                    await ImportResourcesFromXmlAsync(language, xHelper.Content);
+                    await ImportResourcesFromXmlAsync(updatedValue.Key, xHelper.Content);
                     message += $"Successful updated {languageCulture}; ";
-                    if (duplicates.Count > 0)
-                    {
-                        message += $"Duplicates found: {string.Join(",", duplicates)}; ";
-                    }
+                    success = true;
                 }
                 catch (Exception ex)
                 {
                     message += $"Error updating {languageCulture}: {ex.Message}; ";
-                    Logger.Error($"UpdateResource failed: {ex.Message} " + ex);
+                    Logger.Error("UpdateResource failed: {ex.Message}.", ex.Message, ex);
                 }
 
             }
-
-            success = true;
 
             return Json(new
             {
                 Success = success,
                 Message = message
             });
+        }
+
+        private async Task<JObject> getRequestJSON()
+        {
+            dynamic data = await DeserializeJsonFromRequest(Request);
+            JObject jsonData = JsonConvert.DeserializeObject(data);
+            return jsonData;
+        }
+
+        private XMLDocHelper cleanXDoc(string ID, string value, XDocument xResource)
+        {
+            XMLDocHelper xHelper = new XMLDocHelper(xResource);
+            xHelper.FlattenResourceFile();
+            xHelper.SetAppendRoot();
+            xHelper.ChangeValue(ID, value);
+            xHelper.sortElements();
+            //var duplicates = xHelper.GetDuplicates();
+            //if (duplicates.Count > 0)
+            //{
+            //    message += $"Duplicates found: {string.Join(",", duplicates)}; ";
+            //}
+            return xHelper;
         }
 
         [AuthorizeAdmin, Permission(CMSPermissions.Update)]
