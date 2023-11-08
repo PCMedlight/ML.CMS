@@ -23,20 +23,23 @@ using ML.CMS.Services;
 using Smartstore.Core.Data;
 using Microsoft.IdentityModel.Tokens;
 using Smartstore.Core.Logging;
+using Smartstore.Core.DataExchange;
+using Smartstore.Core.Localization;
 
 namespace ML.CMS.Controllers
 {
 
     [Area("Admin")]
-    //[Route("module/[area]/[action]/{id?}", Name = "Smartstore.CMS")]
     public class CMSController : ModuleController
     {
         private readonly SmartDbContext _db;
+        private readonly ILanguageService _languageService;
         private readonly CMSXMLFileService _CMSXMLFileService;
 
-        public CMSController (SmartDbContext db, CMSXMLFileService CMSXMLFileService)
+        public CMSController(SmartDbContext db, ILanguageService languageService, CMSXMLFileService CMSXMLFileService)
         {
             _db = db;
+            _languageService = languageService;
             _CMSXMLFileService = CMSXMLFileService;
         }
 
@@ -100,7 +103,7 @@ namespace ML.CMS.Controllers
                     collectMessage.Add(Json(new { ID = idValue, EN = enValue, DE = deValue }));
                     success = true;
                 }
-            }   
+            }
             if (collectMessage.Count > 0)
             {
                 message = collectMessage;
@@ -115,6 +118,88 @@ namespace ML.CMS.Controllers
         }
 
         [AuthorizeAdmin, Permission(CMSPermissions.Update)]
+        private async Task<int> ImportResourcesFromXmlAsync(
+        Language language,
+        XDocument xmlDocument,
+        string rootKey = null,
+        bool sourceIsPlugin = true,
+        ImportModeFlags mode = ImportModeFlags.Insert | ImportModeFlags.Update,
+        bool updateTouchedResources = false)
+        {
+            Guard.NotNull(language);
+            Guard.NotNull(xmlDocument);
+
+            await _db.LoadCollectionAsync(language, x => x.LocaleStringResources);
+            var resources = language.LocaleStringResources.ToDictionarySafe(x => x.ResourceName, StringComparer.OrdinalIgnoreCase);
+
+            if (xmlDocument.Root == null || (xmlDocument.Descendants("Children").Count() > 0))
+                return -1;
+
+            var nodes = xmlDocument.Descendants("LocaleResource");
+            var isDirty = false;
+
+            foreach (var xel in nodes)
+            {
+                string name = (string)xel.Attribute("Name");
+                name = name?.TrimSafe() ?? string.Empty;
+                string value = (string)xel.Element("Value");
+
+                if (string.IsNullOrEmpty(name))
+                    continue;
+
+                if (rootKey.HasValue())
+                {
+                    var appendRootKeyAttribute = xel.Attribute("AppendRootKey");
+                    if (appendRootKeyAttribute == null || !appendRootKeyAttribute.Value.EqualsNoCase("false"))
+                    {
+                        name = string.Format("{0}.{1}", rootKey, name);
+                    }
+                }
+
+                if (resources.TryGetValue(name, out var resource))
+                {
+                    if (mode.HasFlag(ImportModeFlags.Update))
+                    {
+                        if (updateTouchedResources || !resource.IsTouched.GetValueOrDefault())
+                        {
+                            if (value != resource.ResourceValue)
+                            {
+                                resource.ResourceValue = value;
+                                resource.IsTouched = null;
+                                isDirty = true;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    if (mode.HasFlag(ImportModeFlags.Insert))
+                    {
+                        var newResource = new LocaleStringResource
+                        {
+                            LanguageId = language.Id,
+                            ResourceName = name,
+                            ResourceValue = value,
+                            IsFromPlugin = sourceIsPlugin
+                        };
+
+                        _db.LocaleStringResources.Add(newResource);
+                        resources[name] = newResource;
+                        isDirty = true;
+                    }
+                }
+            }
+
+            if (isDirty)
+            {
+                //_db.Entry(language).Collection(x => x.LocaleStringResources).Load();
+                return await _db.SaveChangesAsync();
+            }
+
+            return 0;
+        }
+
+        [AuthorizeAdmin, Permission(CMSPermissions.Update)]
         [HttpPost]
         public async Task<IActionResult> UpdateResource(ConfigurationModel model, CMSSettings settings)
         {
@@ -126,8 +211,7 @@ namespace ML.CMS.Controllers
             string? EN = null;
             string? DE = null;
 
-
-        data = await DeserializeJsonFromRequest(Request);
+            data = await DeserializeJsonFromRequest(Request);
             jsonData = JObject.Parse(data);
             if (jsonData.ContainsKey("ID"))
             {
@@ -142,7 +226,8 @@ namespace ML.CMS.Controllers
                     DE = jsonData.DE.ToString();
                 }
             }
-            else { 
+            else
+            {
                 message = "Missing ID";
                 return Json(new
                 {
@@ -151,10 +236,10 @@ namespace ML.CMS.Controllers
                 });
             }
 
-            if ( !string.IsNullOrEmpty(ID) )
+            if (!string.IsNullOrEmpty(ID))
             {
                 if (!string.IsNullOrEmpty(EN))
-                { 
+                {
                     XDocument enResource = await _CMSXMLFileService.LoadsXmlAsync("resources.en-us.xml");
                     XMLDocHelper enHelper = new XMLDocHelper(enResource);
                     enHelper.FlattenResourceFile();
@@ -177,7 +262,16 @@ namespace ML.CMS.Controllers
                     success = true;
                     message += "Successful update DE;";
                 }
-                await _CMSXMLFileService.UpdateStringResources();
+
+                //await _CMSXMLFileService.UpdateStringResources();
+                var languages = _languageService.GetAllLanguages();
+                
+                foreach (var item in languages)
+                {
+                    XDocument xDoc = await _CMSXMLFileService.LoadsXmlAsync($"resources.{item.LanguageCulture}.xml");
+                    ImportModeFlags mode = ImportModeFlags.Update | ImportModeFlags.Insert;
+                    await ImportResourcesFromXmlAsync(item, xDoc, null, true, mode, true);
+                };
             }
 
             return Json(new

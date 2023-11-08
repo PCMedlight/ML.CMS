@@ -193,6 +193,7 @@ namespace ML.CMS.Helper
             Guard.NotNull(xmlDocument);
 
             await _db.LoadCollectionAsync(language, x => x.LocaleStringResources);
+            //await _db.ReloadEntity
 
             var resources = language.LocaleStringResources.ToDictionarySafe(x => x.ResourceName, StringComparer.OrdinalIgnoreCase);
             //check if we have any children and return if yes
@@ -256,6 +257,8 @@ namespace ML.CMS.Helper
 
             if (isDirty)
             {
+                await _db.SaveChangesAsync();
+                _db.Entry(language).Collection(x => x.LocaleStringResources).Load();
                 return await _db.SaveChangesAsync();
             }
 
