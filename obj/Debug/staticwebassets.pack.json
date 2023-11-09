@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\admin.scss",
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\admin.scss",
       "PackagePath": "staticwebassets\\admin.scss"
     },
     {
-      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
       "PackagePath": "staticwebassets\\lib\\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js"
     },
     {
-      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\vue.runtime.esm-browser.min.js",
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\vue.runtime.esm-browser.min.js",
       "PackagePath": "staticwebassets\\lib\\vue.runtime.esm-browser.min.js"
     },
     {
-      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\vue.runtime.esm-browser.prod.min.js",
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\vue.runtime.esm-browser.prod.min.js",
       "PackagePath": "staticwebassets\\lib\\vue.runtime.esm-browser.prod.min.js"
     },
     {
-      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\public.scss",
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\public.scss",
       "PackagePath": "staticwebassets\\public.scss"
     },
     {
-      "Id": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\vue\\app-editor.js",
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\vue\\app-editor.js",
       "PackagePath": "staticwebassets\\vue\\app-editor.js"
     },
     {

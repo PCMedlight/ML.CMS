@@ -332,8 +332,23 @@ C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS\o
 C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS\obj\Debug\refint\ML.CMS.dll
 C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.pdb
 C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS\obj\Debug\ref\ML.CMS.dll
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.min.js
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.prod.min.js
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\app-editor.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.csproj.AssemblyReference.cache
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.AssemblyInfoInputs.cache
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.AssemblyInfo.cs
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.csproj.CoreCompileInputs.cache
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.RazorAssemblyInfo.cache
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.RazorAssemblyInfo.cs
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\admin.scss
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.min.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.prod.min.js
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\public.scss
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\app-editor.js
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\module.json
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\Localization\resources.de-de.xml
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\Localization\resources.en-us.xml
@@ -647,13 +662,6 @@ C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\refs\System.Xml.XPath.dll
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\refs\System.Xml.XPath.XDocument.dll
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\refs\WindowsBase.dll
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.csproj.AssemblyReference.cache
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.AssemblyInfoInputs.cache
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.AssemblyInfo.cs
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.csproj.CoreCompileInputs.cache
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.RazorAssemblyInfo.cache
-C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.RazorAssemblyInfo.cs
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.ML.CMS.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.build.ML.CMS.props
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.buildMultiTargeting.ML.CMS.props
@@ -666,7 +674,3 @@ C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\refint\ML.CMS.dll
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.pdb
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ref\ML.CMS.dll
-C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js
-C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.min.js
-C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.prod.min.js
-C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\app-editor.js

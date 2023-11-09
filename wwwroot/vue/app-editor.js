@@ -56,6 +56,10 @@ createApp({
             }
         },
 
+        refreshiframe(){
+            this.iframe.contentWindow.location.reload();
+        },
+
         deconstruct(htmlString){
             const parser = new DOMParser();
             const doc = parser.parseFromString(htmlString, 'text/html');
@@ -158,6 +162,13 @@ createApp({
                 "en-US": contentEN,
                 "de-DE": contentDE,
               };
+
+            if (data['de-DE'] == "Not found") {
+                delete data['de-DE'];
+            }
+            if (data['en-US'] == "Not found") {
+                    delete data['en-US'];
+            }
         
             return data;
         },
@@ -195,7 +206,7 @@ createApp({
                  throw new Error(responseData.Message);
                 }
                 window.displayNotification("POST request successful. Response data: " +responseData.Message, "success", false, 3000);
-                vr.iframe.contentWindow.location.reload();
+                this.refreshiframe();
               })
               .catch(error => {
                 console.error('Error:', error);

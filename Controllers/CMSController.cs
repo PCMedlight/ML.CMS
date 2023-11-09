@@ -50,8 +50,6 @@ namespace ML.CMS.Controllers
         private readonly CMSXMLFileService _CMSXMLFileService;
         private readonly List<Language> _languages;
 
-        //public ILogger Logger { get; set; } = NullLogger.Instance;
-
         public CMSController(SmartDbContext db, ILanguageService languageService, CMSXMLFileService CMSXMLFileService)
         {
             _db = db;
@@ -59,7 +57,6 @@ namespace ML.CMS.Controllers
             _CMSXMLFileService = CMSXMLFileService;
             _languages = _languageService.GetAllLanguages();
         }
-
 
 
         [AuthorizeAdmin, Permission(CMSPermissions.Read)]

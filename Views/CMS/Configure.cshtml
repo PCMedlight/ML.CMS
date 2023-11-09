@@ -25,13 +25,19 @@
 
     <div  class="bg-white border-left flex-column d-flex p-2" style="width:300px">
 
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">ID</span>
-            </div>
-            <input type="text" v-model="entryid" class="form-control" placeholder="Entry" aria-label="Entry" aria-describedby="basic-addon1">
+		<div class="d-flex flex-row flex-nowrap mb-3">
 
-        </div>
+			<button class="btn btn-primary mr-2" style="width:2.5rem;" @@click="refreshiframe"><i class="fa-solid fa-arrows-rotate"></i></button>
+
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">ID</span>
+				</div>
+				<input type="text" v-model="entryid" class="form-control" placeholder="Entry" aria-label="Entry" aria-describedby="basic-addon1">
+
+			</div>
+
+		</div>
 
         <div class="form-group">
             <label for="InputTag">Tag</label>
