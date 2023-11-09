@@ -14,7 +14,9 @@ using Smartstore.Core.Widgets;
 using Smartstore.Engine;
 using Smartstore.Events;
 using Smartstore.Web.Razor;
+using System.Text.Encodings.Web;
 using static Smartstore.Core.Security.Permissions.Customer;
+using System.Text.RegularExpressions;
 
 namespace ML.CMS.Models
 {
@@ -97,15 +99,45 @@ namespace ML.CMS.Models
             return Context.RequestServices.GetService<T>();
         }
 
+
+        private string ContainsHtmlTag(string input, string key)
+        {
+            // Regular expression to find HTML tags
+            string pattern = "<[^>]*>";
+            bool firstTagModified = false;
+            // Replace the first HTML tag with a modified version
+            string result = Regex.Replace(input, pattern, match =>
+            {
+                string tag = match.Value;
+                if (!firstTagModified)
+                {
+                     firstTagModified = true;
+                    string modifiedTag = tag.Insert(tag.Length - 1, $" data-cms=\"{key}\"");
+                    return modifiedTag;
+                }
+                else
+                {
+                    return tag; // Leave other tags unchanged
+                }
+            });
+
+            if (!firstTagModified)
+            {
+                string startTag = $"<span data-cms=\"{key}\">";
+                string endTag = "</span>";
+                return ($"{startTag}{input}{endTag}");
+            }
+
+            return result;
+        }
+
         protected HtmlString L(string key) 
         {
             string output = T(key);
             bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators");
             if (IsAdmin)
             {
-                string startTag = $"<span data-cms=\"{key}\">";
-                string endTag = "</span>";
-                output = ($"{startTag}{output}{endTag}");
+                output = ContainsHtmlTag(output,key);
             }
             return new HtmlString(output);
         }

@@ -666,3 +666,7 @@ C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\refint\ML.CMS.dll
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.pdb
 C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\ref\ML.CMS.dll
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.min.js
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.prod.min.js
+C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\app-editor.js

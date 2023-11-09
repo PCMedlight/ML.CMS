@@ -9,11 +9,13 @@
 <script type="importmap">
     {
          "imports": {
-         "vue": "/Themes/MEDlight-Theme/lib/unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
+         "vue": "/Modules/ML.CMS/lib/unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
          "@@vue/devtools-api": "https://unpkg.com/@@vue/devtools-api@6/lib/esm/index.js"
          }
     }
 </script>
+<script type="module" src="/Modules/ML.CMS/vue/app-editor.js"></script>
+
 
 
 <div id="app-editor" class="row">
@@ -45,8 +47,6 @@
             </datalist>
         </div>
 
-
-
         <div class="form-group">
             <label for="InputClasses">Classes</label>
             <input :disabled="!plaintext" v-model="entryclasses" type="text" class="form-control" id="InputClasses" aria-describedby="emailHelp" placeholder="Enter classes">
@@ -65,26 +65,23 @@
 
         <hr />
 
+        <div class="form-check form-switch">
+            <input class="form-check-input" @@click="togglehighlightmissing($event)" type="checkbox" role="switch" id="switchshowmissing">
+            <label class="form-check-label" for="switchshowmissing">Show missing translations</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" @@change="togglehighlightselected($event)" v-model="highlightselected" type="checkbox" role="switch" id="switchselectedvis">
+            <label class="form-check-label" for="switchselectedvis">Show selected</label>
+        </div>
+
+        <hr />
+
         <button v-for="item in cmselements" class="btn btn-white justify-content-start my-1" :class="incomplete(item.Value)" @@click="loadform(item.Value)">
             <i class="fa-solid fa-font pr-2"></i>
             {{item.Value.ID}}
         </button>
     </div>
 </div>
-
-<script type="module" src="/Themes/MEDlight-Theme/vue/app-editor.js"></script>
-
-
-<a class="update-string-resources btn btn-secondary" href='@Url.Action("UpdateResource", "CMS")'>Abc
-</a>
-
-
-<form asp-controller="CMS" asp-action="UpdateResource" method="post">
-    <button id="SaveConfigButton" type="submit" name="saveer" class="btn btn-warning" value="save">
-        <i class="fa fa-check"></i>
-        <span>Update</span>
-    </button>
-</form>
 
 
 <form asp-action="Configure">
@@ -96,8 +93,6 @@
     </widget>
 
     <div asp-validation-summary="All"></div>
-
-
 
 
     <div class="adminContent">
@@ -140,48 +135,3 @@
     </div>
 </form>
 
-
-<style>
-    [data-cms] {
-        /* Your CSS styles here */
-        transition: background-color .2s;
-        position: relative;
-        border: 1px solid var(--blue);
-    }
-
-        [data-cms]:hover {
-            /* Your CSS styles here */
-            background-color: rgba(100,255,0,0.3);
-        }
-
-            [data-cms]:hover .cms-edit {
-                opacity: 1;
-                color: white;
-                background: var(--blue);
-            }
-
-        [data-cms]::after {
-            content: "Edit";
-            color: white !important;
-            text-align: center;
-            width: 50px;
-            height: 20px;
-            transition: all .2s;
-            line-height: 1;
-            position: absolute;
-            background-color: var(--blue);
-            border: 0;
-            padding: 5px;
-            border-radius: 5px 5px 0 0;
-            right: 0;
-            top: 0;
-            font-size: .75rem;
-            color: rgba(100,100,100,1);
-            transform: translateY(-100%) translateX(1px);
-            opacity: 0.1;
-        }
-
-        [data-cms]:hover::after {
-            opacity: 1;
-        }
-</style>

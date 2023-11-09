@@ -13797,20 +13797,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\p.chaoui\\.nuget\\packages\\": {}
+    "C:\\Users\\Philip\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "5.0.5",
     "restore": {
-      "projectUniqueName": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
+      "projectUniqueName": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
       "projectName": "ML.CMS",
-      "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
-      "packagesPath": "C:\\Users\\p.chaoui\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\obj\\",
+      "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
+      "packagesPath": "C:\\Users\\Philip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\NuGet.Config",
-        "C:\\Users\\p.chaoui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\NuGet.Config",
+        "C:\\Users\\Philip\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13824,17 +13824,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Core\\Smartstore.Core.csproj": {
-              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Core\\Smartstore.Core.csproj"
+            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Core\\Smartstore.Core.csproj": {
+              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Core\\Smartstore.Core.csproj"
             },
-            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj": {
-              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj"
+            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj": {
+              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj"
             },
-            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web\\Smartstore.Web.csproj": {
-              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web\\Smartstore.Web.csproj"
+            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web\\Smartstore.Web.csproj": {
+              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web\\Smartstore.Web.csproj"
             },
-            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore\\Smartstore.csproj": {
-              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore\\Smartstore.csproj"
+            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore\\Smartstore.csproj": {
+              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore\\Smartstore.csproj"
             }
           }
         }

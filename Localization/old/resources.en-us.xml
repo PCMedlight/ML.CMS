@@ -31,7 +31,7 @@
     <Value>Our business operations are characterized by a deep commitment to quality and responsibility. We undergo continuous certifications and maintain a professional quality management system that adheres to the highest European and German standards.</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
-    <Value>&lt;p&gt;Certified Medical Devices&lt;/p&gt;</Value>
+    <Value>Certified Medical Devices9</Value>
   </LocaleResource>
   <LocaleResource Name="ML.ContactUs.Description" AppendRootKey="false">
     <Value>Get a non-binding quote and tell us a bit about yourself so we can begin setting up an order. A MEDlight representative will contact you shortly to take the next steps.</Value>
@@ -94,7 +94,7 @@
     <Value>Contact us</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Mail" AppendRootKey="false">
-    <Value>info@medlight.eu</Value>
+    <Value>info@medlight.euwn14</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Phone" AppendRootKey="false">
     <Value>+49-5221-994-29-0</Value>

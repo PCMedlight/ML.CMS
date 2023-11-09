@@ -215,7 +215,7 @@ namespace ML.CMS.Controllers
 
             if (!jsonData.ContainsKey("ID") || string.IsNullOrEmpty(jsonData["ID"].ToString()))
             {
-                return Json(new{Success = false,Message = "Invalid ID"});
+                return Json(new { Success = false, Message = "Invalid ID" });
             }
 
             string ID = jsonData["ID"].ToString();
@@ -226,11 +226,12 @@ namespace ML.CMS.Controllers
                     language => jsonData[language.LanguageCulture].ToString()
                 );
 
-            foreach (var updatedValue in updatedLanguageValues)
+            string languageCulture = string.Empty;
+            try
             {
-                string languageCulture = updatedValue.Key.LanguageCulture;
-                try
+                foreach (var updatedValue in updatedLanguageValues)
                 {
+                    languageCulture = updatedValue.Key.LanguageCulture;
                     XDocument xResource = await _CMSXMLFileService.LoadsXmlAsync($"resources.{languageCulture}.xml");
                     XMLDocHelper xHelper = cleanXDoc(ID, updatedValue.Value, xResource);
                     await _CMSXMLFileService.SaveXmlAsync(xHelper.Content, $"resources.{languageCulture}.xml");
@@ -238,12 +239,12 @@ namespace ML.CMS.Controllers
                     message += $"Successful updated {languageCulture}; ";
                     success = true;
                 }
-                catch (Exception ex)
-                {
-                    message += $"Error updating {languageCulture}: {ex.Message}; ";
-                    Logger.Error("UpdateResource failed: {ex.Message}.", ex.Message, ex);
-                }
-
+            }
+            catch (Exception ex)
+            {
+                success = false;
+                message += $"Error updating {languageCulture}: {ex.Message}; ";
+                Logger.Error("UpdateResource failed: {ex.Message}.", ex.Message, ex);
             }
 
             return Json(new
@@ -267,11 +268,11 @@ namespace ML.CMS.Controllers
             xHelper.SetAppendRoot();
             xHelper.ChangeValue(ID, value);
             xHelper.sortElements();
-            //var duplicates = xHelper.GetDuplicates();
-            //if (duplicates.Count > 0)
-            //{
-            //    message += $"Duplicates found: {string.Join(",", duplicates)}; ";
-            //}
+            var duplicates = xHelper.GetDuplicates();
+            if (duplicates.Count > 0)
+            {
+                throw new Exception($"Duplicates found: {string.Join(",", duplicates)}");
+            }
             return xHelper;
         }
 
