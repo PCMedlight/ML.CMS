@@ -111,7 +111,7 @@ namespace ML.CMS.Models
                 string tag = match.Value;
                 if (!firstTagModified)
                 {
-                     firstTagModified = true;
+                    firstTagModified = true;
                     string modifiedTag = tag.Insert(tag.Length - 1, $" data-cms=\"{key}\"");
                     return modifiedTag;
                 }
@@ -131,13 +131,43 @@ namespace ML.CMS.Models
             return result;
         }
 
-        protected HtmlString L(string key) 
+        static List<string> PageLocalizerTracker = new List<string>();
+
+        protected async Task<List<string>> GetLocalizerTrackerAsync()
+        {
+            return PageLocalizerTracker;
+        }
+
+        protected void InitLocalizerTracker()
+        {
+            PageLocalizerTracker = new List<string>();
+        }
+
+        protected string L(string key, bool track)
+        {
+            string output = T(key);
+            bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators");
+            if (IsAdmin && track)
+            {
+                string startTag = $"<span data-cms=\"{key}\">";
+                string endTag = "</span>";
+                output = ($"{startTag}{output}{endTag}");
+                //only add if unique
+                if (!PageLocalizerTracker.Contains(output))
+                {
+                    PageLocalizerTracker.Add(output);
+                }
+            }
+            return new string(key);
+        }
+
+        protected HtmlString L(string key)
         {
             string output = T(key);
             bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators");
             if (IsAdmin)
             {
-                output = ContainsHtmlTag(output,key);
+                output = ContainsHtmlTag(output, key);
             }
             return new HtmlString(output);
         }
