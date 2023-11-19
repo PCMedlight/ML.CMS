@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language Name="Deutsch" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
+    <Value>&lt;p&gt;Certified Medical Devices&lt;/p&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Mail" AppendRootKey="false">
+    <Value>info@medlight.eu</Value>
+  </LocaleResource>
+</Language>

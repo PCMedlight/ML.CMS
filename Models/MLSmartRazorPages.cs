@@ -151,14 +151,14 @@ namespace ML.CMS.Models
             {
                 string startTag = $"<span data-cms=\"{key}\">";
                 string endTag = "</span>";
-                output = ($"{startTag}{output}{endTag}");
+                string outputTracker = ($"{startTag}{output}{endTag}");
                 //only add if unique
-                if (!PageLocalizerTracker.Contains(output))
+                if (!PageLocalizerTracker.Contains(outputTracker))
                 {
-                    PageLocalizerTracker.Add(output);
+                    PageLocalizerTracker.Add(outputTracker);
                 }
             }
-            return new string(key);
+            return output;
         }
 
         protected HtmlString Image(string key)
