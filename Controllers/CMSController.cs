@@ -38,6 +38,18 @@ using Language = Smartstore.Core.Localization.Language;
 using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Formats;
+using SixLabors.ImageSharp.Formats.Webp;
+using SixLabors.ImageSharp.Formats.Bmp;
+using SixLabors.ImageSharp.Formats.Gif;
+using SixLabors.ImageSharp.Formats.Jpeg;
+using SixLabors.ImageSharp.Formats.Png;
+using SixLabors.ImageSharp.Formats.Tga;
+using DotLiquid.Tags;
+using Microsoft.CodeAnalysis;
+using TinifyAPI;
 
 namespace ML.CMS.Controllers
 {
@@ -58,7 +70,6 @@ namespace ML.CMS.Controllers
             _languages = _languageService.GetAllLanguages();
         }
 
-
         [AuthorizeAdmin, Permission(CMSPermissions.Read)]
         [LoadSetting]
         public IActionResult Configure(CMSSettings settings)
@@ -67,6 +78,133 @@ namespace ML.CMS.Controllers
             return View(model);
         }
 
+
+        public void ConvertToWebp(string inputFilePath, string outputFilePath, bool overwrite = false)
+        {
+            //webp encoder with 80% quality
+            var encoder = new WebpEncoder
+            {
+                Quality = 80
+            };
+            using (var image = Image.Load(inputFilePath))
+            {
+                //convert to webp
+                image.Save(outputFilePath, new WebpEncoder());
+            }
+        }
+
+
+        [AuthorizeAdmin, Permission(CMSPermissions.Update)]
+        [HttpPost]
+        public async Task<IActionResult> DeleteFile(string fileUrl)
+        {
+            //reconstruct path
+            fileUrl = fileUrl.Replace("/", "\\");
+
+            string themesRoot = this.Services.ApplicationContext.ThemesRoot.Root;
+            string imagesRoot = Path.Combine(themesRoot, "MEDlight-Theme", "wwwroot", "images");
+            string deleteableFile = Path.Combine(imagesRoot, fileUrl);
+            if (System.IO.File.Exists(deleteableFile))
+            {
+                System.IO.File.Delete(deleteableFile);
+                return Ok(new { message = "File deleted successfully." });
+            }
+            return BadRequest(new { message = "File not found." });
+        }
+
+        [AuthorizeAdmin, Permission(CMSPermissions.Update)]
+        [HttpPost]
+        public async Task<IActionResult> Upload(IFormFile file, string directory, bool overwrite = false)
+        {
+            if (directory == null)
+            {
+                directory = string.Empty;
+            }
+
+            string themesRoot = this.Services.ApplicationContext.ThemesRoot.Root;
+            string imagesRoot = Path.Combine(themesRoot, "MEDlight-Theme", "wwwroot", "images", directory);
+            string outputFilePath = Path.Combine(imagesRoot, file.FileName);
+            if (Path.GetExtension(file.FileName) == ".webp")
+            {
+                outputFilePath = Path.Combine(imagesRoot, Path.GetFileNameWithoutExtension(file.FileName) + ".png");
+            }
+            // Check if the file is not null and has content
+            if (file != null && file.Length > 0)
+            {
+
+                using (var stream = file.OpenReadStream())
+                {
+                    string outputFilePathWebp = Path.Combine(imagesRoot, Path.GetFileNameWithoutExtension(file.FileName) + ".webp");
+                    using (var img = Image.Load(stream))
+                    {
+                        var encoder = new WebpEncoder { Quality = 80 };
+                        _ = img.SaveAsWebpAsync(outputFilePathWebp, encoder);
+                    }
+
+                }
+  
+                if (Path.GetExtension(file.FileName) == ".jpg")
+                {
+                    using (var stream = file.OpenReadStream())
+                    {
+                        using (var img = Image.Load(stream))
+                        {
+                            var encoder = new JpegEncoder { Quality = 80 };
+                            _ = img.SaveAsync(outputFilePath, encoder);
+                        }
+                    }
+                }
+
+
+                //tinypng api key MY2P3RlkjB6VgbK8g1ybkjvCWTDqBlcY
+                Tinify.Key = "MY2P3RlkjB6VgbK8g1ybkjvCWTDqBlcY";
+                if (Path.GetExtension(file.FileName) == ".png")
+                {
+                    using (var stream = file.OpenReadStream())
+                    {
+
+
+                        var sourceData = new byte[stream.Length];
+                        await stream.ReadAsync(sourceData, 0, (int)stream.Length);
+                        var resultData = await Tinify.FromBuffer(sourceData).ToBuffer();
+                        using (var compressedStream = new MemoryStream(resultData))
+                        using (var outputFileStream = new FileStream(outputFilePath, FileMode.Create))
+                        {
+                            await compressedStream.CopyToAsync(outputFileStream);
+                        }
+                        stream.Close();
+                    }
+                }
+
+                return Ok(new { message = "File uploaded successfully." });
+            }
+
+            return BadRequest(new { message = "No file or empty file." });
+        }
+
+
+        [AuthorizeAdmin, Permission(CMSPermissions.Read)]
+        [HttpGet]
+        public async Task<IActionResult> GetImages(CMSSettings settings)
+        {
+            string themesRoot = this.Services.ApplicationContext.ThemesRoot.Root;
+            string imagesRoot = Path.Combine(themesRoot, "MEDlight-Theme", "wwwroot", "images");
+            //Collect Images from dir  and all subdirectories
+            var jpgsfiles = Directory.GetFiles(imagesRoot, "*.jpg", SearchOption.AllDirectories);
+            var pngsfiles = Directory.GetFiles(imagesRoot, "*.png", SearchOption.AllDirectories);
+            var webPfiles = Directory.GetFiles(imagesRoot, "*.webp", SearchOption.AllDirectories);
+            // Create jsron response
+            var imagefiles = Json(new
+            {
+                jpgs = jpgsfiles,
+                pngs = pngsfiles,
+                webp = webPfiles
+            });
+
+
+            // You can return the image paths or process them further as needed
+            return Ok(imagefiles);
+        }
 
         [AuthorizeAdmin, Permission(CMSPermissions.Update)]
         [HttpPost]

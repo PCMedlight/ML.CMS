@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ML.CMS.Filters;
 using ML.CMS.Helper;
 using ML.CMS.Services;
 using Smartstore;
@@ -39,28 +38,7 @@ namespace ML.CMS
 
         }
 
-        public override void BuildPipeline(RequestPipelineBuilder builder)
-        {
-            builder.Configure(StarterOrdering.AfterWorkContextMiddleware, app =>
-            {
-                //app.UseMiniProfiler();
-            });
-
-            // OutputCache invalidation configuration
-           // var observer = builder.ApplicationBuilder.ApplicationServices.GetRequiredService<IOutputCacheInvalidationObserver>();
-            //observer.ObserveSettingProperty<ProfilerSettings>(x => x.DisplayMachineName);
-        }
-
-        public override void MapRoutes(EndpointRoutingBuilder builder)
-        {
-            //builder.MapRoutes(0, routes =>
-            //{
-            //    //routes.MapControllerRoute("Smartstore.DevTools",
-            //    //     "devtools/{action=Configure}/{id?}"
-            //    //);
-            //});
-        }
-
+ 
         internal static bool ResultsAuthorize(HttpRequest request)
         {
             var ua = request.HttpContext.RequestServices.GetRequiredService<IUserAgent>();

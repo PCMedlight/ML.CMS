@@ -146,7 +146,7 @@ namespace ML.CMS.Models
         protected string L(string key, bool track)
         {
             string output = T(key);
-            bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators");
+            bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators" || c.Value == "Administratoren");
             if (IsAdmin && track)
             {
                 string startTag = $"<span data-cms=\"{key}\">";
@@ -161,10 +161,23 @@ namespace ML.CMS.Models
             return new string(key);
         }
 
+        protected HtmlString Image(string key)
+        {
+            string output = T(key);
+            bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators" || c.Value == "Administratoren");
+            if (IsAdmin)
+            {
+                string startTag = $"<span data-cms-img=\"{key}\">";
+                string endTag = "</span>";
+                output = ($"{startTag}{output}{endTag}");
+            }
+            return new HtmlString(output);
+        }
+
         protected HtmlString L(string key)
         {
             string output = T(key);
-            bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators");
+            bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators" || c.Value == "Administratoren");
             if (IsAdmin)
             {
                 output = ContainsHtmlTag(output, key);
