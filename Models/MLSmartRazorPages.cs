@@ -131,6 +131,37 @@ namespace ML.CMS.Models
             return result;
         }
 
+        private string AddCmsAttributePictureTag(string input, string key)
+        {
+            // Regular expression to find HTML tags
+            string pattern = "<picture[^>]*>";
+            bool firstTagModified = false;
+            // Replace the first HTML tag with a modified version
+            string result = Regex.Replace(input, pattern, match =>
+            {
+                string tag = match.Value;
+                if (!firstTagModified)
+                {
+                    firstTagModified = true;
+                    string modifiedTag = tag.Insert(tag.Length - 1, $" data-cms-img=\"{key}\"");
+                    return modifiedTag;
+                }
+                else
+                {
+                    return tag; // Leave other tags unchanged
+                }
+            });
+
+            if (!firstTagModified)
+            {
+                string startTag = $"<picture data-cms-img=\"{input}\">";
+                string endTag = "</picture>";
+                return ($"{startTag}{input}{endTag}");
+            }
+
+            return result;
+        }
+
         static List<string> PageLocalizerTracker = new List<string>();
 
         protected async Task<List<string>> GetLocalizerTrackerAsync()
@@ -167,9 +198,8 @@ namespace ML.CMS.Models
             bool IsAdmin = this.User.Claims.Any(c => c.Value == "Administrators" || c.Value == "Administratoren");
             if (IsAdmin)
             {
-                string startTag = $"<span data-cms-img=\"{key}\">";
-                string endTag = "</span>";
-                output = ($"{startTag}{output}{endTag}");
+               
+                output = AddCmsAttributePictureTag(output,key);
             }
             return new HtmlString(output);
         }

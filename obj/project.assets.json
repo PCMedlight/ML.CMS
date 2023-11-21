@@ -5077,18 +5077,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Tinify/1.6.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Json": "6.0.5"
-        },
-        "compile": {
-          "lib/netstandard2.0/Tinify.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Tinify.dll": {}
-        }
-      },
       "Smartstore/5.0.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -5184,8 +5172,7 @@
           "Smartstore": "5.0.5",
           "Smartstore.Core": "5.0.5",
           "Smartstore.Web.Common": "5.0.5",
-          "System.Runtime.Caching": "7.0.0",
-          "Tinify": "1.6.0"
+          "System.Runtime.Caching": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Smartstore.Web.dll": {}
@@ -13780,20 +13767,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Tinify/1.6.0": {
-      "sha512": "WvpwJdjhO6XBNBlwcCvxAnQNeYUYWoNa2xOXz34rBsDy96lmUz/mUd+7/4Iqx7WDh+oEFBdZH+zS/FIxb6Ki5w==",
-      "type": "package",
-      "path": "tinify/1.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "lib/netstandard2.0/Tinify.dll",
-        "tinify.1.6.0.nupkg.sha512",
-        "tinify.nuspec",
-        "tinifyicon.png"
-      ]
-    },
     "Smartstore/5.0.5": {
       "type": "project",
       "path": "../../Smartstore/Smartstore.csproj",
@@ -13825,20 +13798,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Philip\\.nuget\\packages\\": {}
+    "C:\\Users\\p.chaoui\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "5.0.5",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
+      "projectUniqueName": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
       "projectName": "ML.CMS",
-      "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
-      "packagesPath": "C:\\Users\\Philip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Modules\\ML.CMS\\obj\\",
+      "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\ML.CMS.csproj",
+      "packagesPath": "C:\\Users\\p.chaoui\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\NuGet.Config",
-        "C:\\Users\\Philip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\NuGet.Config",
+        "C:\\Users\\p.chaoui\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13852,17 +13825,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Core\\Smartstore.Core.csproj": {
-              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Core\\Smartstore.Core.csproj"
+            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Core\\Smartstore.Core.csproj": {
+              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Core\\Smartstore.Core.csproj"
             },
-            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj": {
-              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj"
+            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj": {
+              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web.Common\\Smartstore.Web.Common.csproj"
             },
-            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web\\Smartstore.Web.csproj": {
-              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore.Web\\Smartstore.Web.csproj"
+            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web\\Smartstore.Web.csproj": {
+              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Web\\Smartstore.Web.csproj"
             },
-            "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore\\Smartstore.csproj": {
-              "projectPath": "C:\\Users\\Philip\\Github\\Smartstore-MEDlight2-main\\src\\Smartstore\\Smartstore.csproj"
+            "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore\\Smartstore.csproj": {
+              "projectPath": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore\\Smartstore.csproj"
             }
           }
         }
@@ -13901,7 +13874,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

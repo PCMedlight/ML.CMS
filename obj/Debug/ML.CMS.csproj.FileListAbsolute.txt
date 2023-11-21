@@ -681,3 +681,9 @@ C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.C
 C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\FilePreview.js
 C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\imagebrowser.js
 C:\Users\Philip\Github\Smartstore-MEDlight2-main\src\Smartstore.Modules\ML.CMS\obj\Debug\ML.CMS.sourcelink.json
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\compositions\file-list.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\compositions\file-uploader.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\DropZone.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\fileicon.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\FilePreview.js
+C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\wwwroot\vue\imagebrowser.js

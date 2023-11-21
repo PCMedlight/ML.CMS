@@ -22,7 +22,7 @@ export default defineComponent({
   <div class="modal-body d-flex" >
     <div class="h-100 w-100 d-flex flex-row">
       <div class="col-2 mr-3 d-flex flex-column">
-        <button class="btn btn-primary rounded-0" @click.prevent="uploadFiles(files)">Upload</button>
+        <button class="btn btn-primary rounded-0" @click.prevent="uploadFiles(files,currentDir)">Upload</button>
         <DropZone class="drop-area mt-3 h-100" @files-dropped="addFiles" #default="{ dropZoneActive }">
           <label class="d-flex m-0 py-3 button" for="file-input">
             <span v-if="dropZoneActive">
@@ -39,7 +39,7 @@ export default defineComponent({
           </ul>
         </DropZone>      
       </div>    
-      <fileicon ref="fileicon" :files="fileList" @change:currentdir="refresh(dir)" @update:refresh="this.$emit('update:refresh')"></fileicon>
+      <fileicon ref="fileicon" :files="fileList" @change:currentdir="refresh($event)" @update:refresh="this.$emit('update:refresh')"></fileicon>
     </div>
   </div>
   `,
@@ -56,8 +56,8 @@ export default defineComponent({
   },
   methods: {
 
-    refresh(dir){
-      this.currentDir=dir;
+    refresh(event){
+      this.currentDir=event;
       this.updateImages();
     },
 
@@ -68,11 +68,13 @@ export default defineComponent({
 
     uploadFiles(files){
       const vr = this;
-      uploadFiles(files,'general')
-      .then(() => {
-        vr.refresh();
-        vr.files=[];
-      });
+      if (this.currentDir!="" && this.currentDir!=null) {
+        uploadFiles(files, this.currentDir)
+        .then(() => {
+          vr.refresh();
+          vr.files=[];
+        });
+      };
     },
 
     addFiles(files){

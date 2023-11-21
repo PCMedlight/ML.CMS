@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Language Name="Deutsch" IsDefault="true" IsRightToLeft="false">
+﻿<Language Name="Deutsch" IsDefault="false" IsRightToLeft="false">
   <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
     <Value>Zertifizierte Medizintechnik</Value>
   </LocaleResource>
@@ -9,142 +8,31 @@
   <LocaleResource Name="ML.ContactUs.Form.Submit" AppendRootKey="false">
     <Value>Get into Contact</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.FAQ" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.FAQ.Collapsable.Title1" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.FAQ.Collapsable.Title2" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.FAQ.Collapsable.Title3" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Featurelist.ButtonLabel" AppendRootKey="false">
-    <Value>Not found</Value>
+  <LocaleResource Name="ML.Index.Additionals" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/ACCESSORIES.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/general/ACCESSORIES.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Carousel.Slide2.Title" AppendRootKey="false">
     <Value>N-LINE System</Value>
   </LocaleResource>
+  <LocaleResource Name="ML.Index.Map" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/MAP.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain w-100 h-100" src="/Themes/MEDlight-Theme/images/general/MAP.jpg" alt="Karte von MEDlight Handelspartnern" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Image" AppendRootKey="false">
+    <Value>&lt;picture id="support-img" class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/smiling-woman.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover position-absolute w-100 h-100" src="/Themes/MEDlight-Theme/images/general/smiling-woman.jpg" alt="" loading="lazy" style="object-position: 25% 50%;"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile1.Image" AppendRootKey="false">
+    <Value>&lt;picture class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE-Pro-max.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain position-absolute w-100 h-100 p-4" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE-Pro-max.png" alt="N-LINE pro UV-Phototherapie-Kabine" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile2.Image" AppendRootKey="false">
+    <Value>&lt;picture class="position-relative flex-grow-1"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/Treviolux.webp" type="image/webp"&gt;&lt;img class="fit-contain w-100 h-100 position-absolute p-4" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/Treviolux.png" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
   <LocaleResource Name="ML.Mail" AppendRootKey="false">
     <Value>info@medlight.eu</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.Technologies.Title" AppendRootKey="false">
-    <Value>Not found</Value>
+  <LocaleResource Name="ML.Test" AppendRootKey="false">
+    <Value>Dies ist der deutsche Text24.</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Treviolux.Config.ModelDescription" AppendRootKey="false">
     <Value>&lt;p class="text-muted text-center"&gt;Not found&lt;/p&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Description1" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature1.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature1.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature2.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature2.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature3.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature3.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature4.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature4.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature5.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature5.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature6.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature6.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature7.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature7.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature8.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature8.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature9.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Feature9.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Featurelist.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature1.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature1.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature2.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature2.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature3.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature3.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature4.Description" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Features.Feature4.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure1.Sub" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure2.Sub" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure3.Sub" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Herfofeature.Sub" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Herfofeature.Title" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Intro" AppendRootKey="false">
-    <Value>Not found</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Technologies.Description" AppendRootKey="false">
-    <Value>Not found</Value>
   </LocaleResource>
 </Language>

@@ -207,6 +207,8 @@ createApp({
         },
 
         launchimagebrowser(event){
+            //preven default behaviour
+            event.preventDefault();
             const id = [event.target.getAttribute('data-cms-img')];
             this.$refs.imgbrowserref.$refs.fileicon.init(id);
         },

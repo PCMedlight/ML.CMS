@@ -1,11 +1,5 @@
 import {defineComponent} from 'vue'
 
-
-//insert file icon
-//insert file name
-
-
-
 export default defineComponent({
   name:'fileicon',
     template: `
@@ -54,7 +48,11 @@ export default defineComponent({
             <div class="d-flex flex-row my-2"> 
               <label class="small lh-1 mt-2 mb-1" style="white-space:nowrap; width:75px;">img class</label>            
               <input v-model="loadedtag.imgclass" type="text" class="form-control rounded-0" placeholder="Entry" style="height:25px">            
-            </div>            
+            </div>
+            <div class="d-flex flex-row my-2"> 
+              <label class="small lh-1 mt-2 mb-1" style="white-space:nowrap; width:75px;">img atts</label>            
+              <input v-model="loadedtag.imgatts" type="text" class="form-control rounded-0" placeholder="Entry" style="height:25px">            
+            </div>                        
             <div class="d-flex flex-row my-2"> 
               <label class="small lh-1 mt-2 mb-1" style="white-space:nowrap; width:75px;">Alt EN</label>            
               <input v-model="loadedtag.EN" type="text" class="form-control rounded-0" placeholder="Entry" style="height:25px">            
@@ -86,7 +84,6 @@ export default defineComponent({
       
       return {
         currentdir: "Themes/MEDlight-Theme/images/general",
-        selectedFile: null,
         selectedFile: {
           name: "Select an image",
           fullpath: "https://placehold.co/600x400?text=Image"
@@ -94,9 +91,9 @@ export default defineComponent({
         cmsid: "",
         lazyload: true,
         loadedtag:{
-          text: "",
           picatts: "",
           imgclass: "",
+          imgatts: "",
           src: "",
           EN: "",
           DE: "",
@@ -160,6 +157,15 @@ export default defineComponent({
         if (this.loadedtag.EN == null) this.loadedtag.EN = "";
         this.loadedtag.src = imgelement ? imgelement.getAttribute('src') : "";
         this.loadedtag.imgclass = imgelement ? imgelement.getAttribute('class') : "";
+        if (imgelement){
+          const imgatts = imgelement.getAttributeNames();
+          imgatts.forEach((att) => {
+            if (att == "src" || att == "class" || att == "alt" || att == "loading") return;
+            const attvalue=imgelement.getAttribute(att);
+            if (attvalue == null || attvalue == '') this.loadedtag.imgatts += att;
+            else this.loadedtag.imgatts += att + '="' + attvalue + '" ';
+          });
+        };
         this.loadedtag.lazyload = imgelement ? imgelement.getAttribute('loading') == "lazy" : true;
         
         const DEHTML = htmlString.DE;
@@ -209,10 +215,12 @@ export default defineComponent({
           currentFile = currentFile.children.find((file) => {
             return file.name.toLowerCase() == srcpath[i].toLowerCase();
           });
+          if (currentFile == null) break;
         };
-          //reconstruct srcpath from array and add slashes
+        if (currentFile != null) {
           this.selectdirectory(null,currentFile);
           this.selectfile(null,currentFile);
+        }
       },
 
       async init(id = "") {
@@ -225,6 +233,21 @@ export default defineComponent({
           this.loadFileFromPath(src);
           this.deconstruct(resource);
         }
+        else {
+          this.loadedtag={
+            picatts: "",
+            imgclass: "",
+            imgatts: "",
+            src: "",
+            EN: "",
+            DE: "",
+            lazyload: true
+          };
+          this.selectedFile= {
+            name: "Select an image",
+            fullpath: "https://placehold.co/600x400?text=Image"
+          };
+        };
         $('#imageBrowserModal').modal('show');
         const backdrop = document.getElementsByClassName('modal-backdrop');
         if (backdrop[0]) backdrop[0].remove(); 
@@ -319,7 +342,18 @@ export default defineComponent({
           img.setAttribute("class", this.loadedtag.imgclass);
           img.setAttribute("src", this.selectedFile.fullpath + "." + this.selectedFile.fileType);
           img.setAttribute("alt", this.loadedtag.EN);
-          img.setAttribute("loading", this.lazyload ? "lazy" : "eager");      
+          img.setAttribute("loading", this.lazyload ? "lazy" : "eager");
+          //add atributes to img
+          const imgatts = this.extractAttributes(this.loadedtag.imgatts);
+          imgatts.forEach((att) => {
+            const attsplit = att.split("=");
+            if (attsplit.length > 1) {
+              img.setAttribute(attsplit[0], attsplit[1].replace(/"/g, ''));
+            }
+            if (attsplit.length == 1) {
+              img.setAttribute(attsplit[0], "");
+            }
+          });  
           picture.appendChild(source);
           picture.appendChild(img);
           const EN = picture;

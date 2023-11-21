@@ -49,7 +49,8 @@ using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.Formats.Tga;
 using DotLiquid.Tags;
 using Microsoft.CodeAnalysis;
-using TinifyAPI;
+using System.Threading.Tasks;
+//using TinifyAPI;
 
 namespace ML.CMS.Controllers
 {
@@ -98,8 +99,12 @@ namespace ML.CMS.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteFile(string fileUrl)
         {
-            //reconstruct path
-            fileUrl = fileUrl.Replace("/", "\\");
+            //reconstruct path if file fileUrl exists
+            fileUrl = fileUrl?.Replace("/", "\\");
+            if (fileUrl == null)
+            {
+                return BadRequest(new { message = "Invalid option." });
+            }
 
             string themesRoot = this.Services.ApplicationContext.ThemesRoot.Root;
             string imagesRoot = Path.Combine(themesRoot, "MEDlight-Theme", "wwwroot", "images");
@@ -116,10 +121,29 @@ namespace ML.CMS.Controllers
         [HttpPost]
         public async Task<IActionResult> Upload(IFormFile file, string directory, bool overwrite = false)
         {
-            if (directory == null)
+            if (directory == null || String.IsNullOrEmpty(directory))
             {
-                directory = string.Empty;
+                return BadRequest(new { message = "Invalid option." });
             }
+
+            var directoryRebuild = directory.Split("/");
+            //remove empty entries
+            directoryRebuild = Array.FindAll(directoryRebuild, s => !string.IsNullOrEmpty(s));
+            //remove the first occurancce of "Themes" case insensitive
+            List<string> directoryRebuildList = directoryRebuild.ToList();
+            string[] directoriesToRemove = { "Themes", "MEDlight-Theme", "images" };
+
+            foreach (string dirToRemove in directoriesToRemove)
+            {
+                directoryRebuildList.Remove(dirToRemove);
+            }
+
+            directoryRebuild = directoryRebuildList.ToArray();
+
+
+            //reconstruct path using path.combine
+            directory = Path.Combine(directoryRebuild);
+
 
             string themesRoot = this.Services.ApplicationContext.ThemesRoot.Root;
             string imagesRoot = Path.Combine(themesRoot, "MEDlight-Theme", "wwwroot", "images", directory);
@@ -140,9 +164,8 @@ namespace ML.CMS.Controllers
                         var encoder = new WebpEncoder { Quality = 80 };
                         _ = img.SaveAsWebpAsync(outputFilePathWebp, encoder);
                     }
-
                 }
-  
+
                 if (Path.GetExtension(file.FileName) == ".jpg")
                 {
                     using (var stream = file.OpenReadStream())
@@ -155,26 +178,35 @@ namespace ML.CMS.Controllers
                     }
                 }
 
-
-                //tinypng api key MY2P3RlkjB6VgbK8g1ybkjvCWTDqBlcY
-                Tinify.Key = "MY2P3RlkjB6VgbK8g1ybkjvCWTDqBlcY";
                 if (Path.GetExtension(file.FileName) == ".png")
                 {
                     using (var stream = file.OpenReadStream())
                     {
-
-
-                        var sourceData = new byte[stream.Length];
-                        await stream.ReadAsync(sourceData, 0, (int)stream.Length);
-                        var resultData = await Tinify.FromBuffer(sourceData).ToBuffer();
-                        using (var compressedStream = new MemoryStream(resultData))
-                        using (var outputFileStream = new FileStream(outputFilePath, FileMode.Create))
+                        using (var img = Image.Load(stream))
                         {
-                            await compressedStream.CopyToAsync(outputFileStream);
+                            var encoder = new PngEncoder { CompressionLevel = (PngCompressionLevel)9 };
+                            _ = img.SaveAsync(outputFilePath, encoder);
                         }
-                        stream.Close();
                     }
                 }
+
+                //tinypng api key MY2P3RlkjB6VgbK8g1ybkjvCWTDqBlcY
+                //Tinify.Key = "MY2P3RlkjB6VgbK8g1ybkjvCWTDqBlcY";
+                //if (Path.GetExtension(file.FileName) == ".png")
+                //{
+                //    using (var stream = file.OpenReadStream())
+                //    {
+                //        var sourceData = new byte[stream.Length];
+                //        await stream.ReadAsync(sourceData, 0, (int)stream.Length);
+                //        var resultData = await Tinify.FromBuffer(sourceData).ToBuffer();
+                //        using (var compressedStream = new MemoryStream(resultData))
+                //        using (var outputFileStream = new FileStream(outputFilePath, FileMode.Create))
+                //        {
+                //            await compressedStream.CopyToAsync(outputFileStream);
+                //        }
+                //        stream.Close();
+                //    }
+                //}
 
                 return Ok(new { message = "File uploaded successfully." });
             }
@@ -211,6 +243,54 @@ namespace ML.CMS.Controllers
         public async Task<IActionResult> CreateBak()
         {
             return null;
+        }
+
+        [AuthorizeAdmin, Permission(CMSPermissions.Update)]
+        [HttpGet]
+        public async Task<IActionResult> ExportLanguageResource()
+        {
+            var success = false;
+            dynamic message = string.Empty;
+
+
+            List <XMLDocHelper> outputXML = new List<XMLDocHelper>();
+            foreach (Language language in _languages)
+            {
+                XMLDocHelper xMLDoc = await ExtractResourceFromDB(language);
+                outputXML.Add(xMLDoc);
+            }
+
+
+            message = outputXML;
+            success = true;
+
+            return Json(new
+            {
+                Success = success,
+                Message = message
+            });
+        }
+
+        private async Task<XMLDocHelper> ExtractResourceFromDB(Language selectedLanguage)
+        {
+            await _db.LoadCollectionAsync(selectedLanguage, x => x.LocaleStringResources);
+            var resources = selectedLanguage.LocaleStringResources.ToDictionarySafe(x => x.ResourceName, StringComparer.OrdinalIgnoreCase);
+            //Filter out all resource that dont start with "ML."
+            var filteredResources = resources.Where(x => x.Key.StartsWith("ML.")).ToDictionary(x => x.Key, x => x.Value);
+            XDocument xMLDoc = new XDocument();
+            XElement root = new XElement("Language",
+                            new XAttribute("Name", selectedLanguage.Name),
+                            new XAttribute("IsDefault", "true"),
+                            new XAttribute("IsRightToLeft", "false"));
+            xMLDoc.Add(root);
+            XMLDocHelper xMLDocHelper = new XMLDocHelper(xMLDoc);
+            foreach (var item in filteredResources)
+            {
+                string ResourceValue = item.Value.ResourceValue;
+                xMLDocHelper.ChangeValue(item.Key, ResourceValue);
+            }
+            xMLDocHelper.sortElements();
+            return xMLDocHelper;
         }
 
         [AuthorizeAdmin, Permission(CMSPermissions.Update)]

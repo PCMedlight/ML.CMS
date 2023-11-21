@@ -4,6 +4,7 @@
 	    <Product>ML CMS</Product>
 	    <OutputPath>..\..\Smartstore.Web\Modules\ML.CMS</OutputPath>
 	    <OutDir>$(OutputPath)</OutDir>
+	    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>

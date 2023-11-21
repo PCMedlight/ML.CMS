@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © Smartstore AG")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("5.0.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.5.0+5d91f75c755a27a180531794fc53855e2497dcff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.5.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ML CMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ML.CMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("5.0.5.0")]

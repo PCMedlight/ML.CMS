@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ML.CMS</id>
+    <version>5.0.5</version>
+    <authors>Smartstore AG</authors>
+    <projectUrl>https://smartstore.com/</projectUrl>
+    <description>Package Description</description>
+    <copyright>Copyright © Smartstore AG</copyright>
+    <repository type="Git" url="https://github.com/smartstore/Smartstore" />
+    <dependencies>
+      <group targetFramework="net7.0">
+        <dependency id="Smartstore.Core" version="5.0.5" exclude="Build,Analyzers" />
+        <dependency id="Smartstore.Web.Common" version="5.0.5" exclude="Build,Analyzers" />
+        <dependency id="Smartstore.Web" version="5.0.5" exclude="Build,Analyzers" />
+        <dependency id="Smartstore" version="5.0.5" exclude="Build,Analyzers" />
+        <dependency id="SixLabors.ImageSharp" version="3.0.2" exclude="Build,Analyzers" />
+        <dependency id="Tinify" version="1.6.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net7.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net7.0/module.json" buildAction="Content" />
+      <files include="any/net7.0/Localization/resources.de-de.xml" buildAction="Content" />
+      <files include="any/net7.0/Localization/resources.en-us.xml" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS\ML.CMS.dll" target="lib\net7.0\ML.CMS.dll" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\module.json" target="content\module.json" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\module.json" target="contentFiles\any\net7.0\module.json" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\Localization\resources.de-de.xml" target="content\Localization\resources.de-de.xml" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\Localization\resources.de-de.xml" target="contentFiles\any\net7.0\Localization\resources.de-de.xml" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\Localization\resources.en-us.xml" target="content\Localization\resources.en-us.xml" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\Localization\resources.en-us.xml" target="contentFiles\any\net7.0\Localization\resources.en-us.xml" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\admin.scss" target="staticwebassets\admin.scss" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\lib\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js" target="staticwebassets\lib\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.min.js" target="staticwebassets\lib\vue.runtime.esm-browser.min.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\lib\vue.runtime.esm-browser.prod.min.js" target="staticwebassets\lib\vue.runtime.esm-browser.prod.min.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\public.scss" target="staticwebassets\public.scss" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\DropZone.js" target="staticwebassets\vue\DropZone.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\FilePreview.js" target="staticwebassets\vue\FilePreview.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\app-editor.js" target="staticwebassets\vue\app-editor.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\compositions\file-list.js" target="staticwebassets\vue\compositions\file-list.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\compositions\file-uploader.js" target="staticwebassets\vue\compositions\file-uploader.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\fileicon.js" target="staticwebassets\vue\fileicon.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\wwwroot\vue\imagebrowser.js" target="staticwebassets\vue\imagebrowser.js" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.ML.CMS.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.build.ML.CMS.props" target="build\ML.CMS.props" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.buildMultiTargeting.ML.CMS.props" target="buildMultiTargeting\ML.CMS.props" />
+    <file src="C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\obj\Debug\staticwebassets\msbuild.buildTransitive.ML.CMS.props" target="buildTransitive\ML.CMS.props" />
+  </files>
+</package>

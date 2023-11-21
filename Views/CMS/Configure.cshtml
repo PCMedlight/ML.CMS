@@ -1,22 +1,22 @@
 ﻿@model ConfigurationModel
 
 @{
-    Layout = "_ConfigureModule";
+	Layout = "_ConfigureModule";
 }
 
 @await Component.InvokeAsync("StoreScope")
 
 <script type="importmap">
-    {
-         "imports": {
-         "vue": "/Modules/ML.CMS/lib/unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
-         "@@vue/devtools-api": "https://unpkg.com/@@vue/devtools-api@6/lib/esm/index.js"
-         }
-    }
+	{
+		  "imports": {
+		  "vue": "/Modules/ML.CMS/lib/unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
+		  "@@vue/devtools-api": "https://unpkg.com/@@vue/devtools-api@6/lib/esm/index.js"
+		  }
+	}
 </script>
 <script type="module" src="/Modules/ML.CMS/vue/app-editor.js"></script>
 <script type="module">
-    import webpConverterBrowser from 'https://cdn.jsdelivr.net/npm/webp-converter-browser@1.0.4/+esm'
+	import webpConverterBrowser from 'https://cdn.jsdelivr.net/npm/webp-converter-browser@1.0.4/+esm'
 </script>
 
 
@@ -24,267 +24,267 @@
 
 <div id="app-editor" class="row" style="height:85vh; overflow:clip;">
 
-    <div ref="iframeContainer" class="border col p-0 m-0" id="iframeContainer">
-    </div>
+	<div ref="iframeContainer" class="border col p-0 m-0" id="iframeContainer">
+	</div>
 
-    <div class="bg-white border-left flex-column d-flex p-2 h-100" style="width:300px">
+	<div class="bg-white border-left flex-column d-flex p-2 h-100" style="width:300px">
 
-        <div class="d-flex flex-row flex-nowrap mb-3">
+		<div class="d-flex flex-row flex-nowrap mb-3">
 
-            <div class="modal fade" id="imageBrowserModal" tabindex="-1" role="dialog" aria-labelledby="imageBrowserModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <imagebrowser ref="imgbrowserref" @@update:refresh="refreshiframe">
-                        </imagebrowser>
-                    </div>
-                </div>
-            </div>
+			<div class="modal fade" id="imageBrowserModal" tabindex="-1" role="dialog" aria-labelledby="imageBrowserModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<imagebrowser ref="imgbrowserref" @@update:refresh="refreshiframe">
+						</imagebrowser>
+					</div>
+				</div>
+			</div>
 
-            <button class="btn btn-primary mr-2" style="width:2.5rem;" @@click="refreshiframe"><i class="fa-solid fa-arrows-rotate"></i></button>
+			<button class="btn btn-primary mr-2" style="width:2.5rem;" @@click="refreshiframe"><i class="fa-solid fa-arrows-rotate"></i></button>
 
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">ID</span>
-                </div>
-                <input type="text" v-model="entryid" class="form-control" placeholder="Entry" aria-label="Entry" aria-describedby="basic-addon1">
-            </div>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">ID</span>
+				</div>
+				<input type="text" v-model="entryid" class="form-control" placeholder="Entry" aria-label="Entry" aria-describedby="basic-addon1">
+			</div>
 
-        </div>
+		</div>
 
-        <div class="d-flex flex-column">
-            <label>EN<img class="ml-2" src="/images/flags/us.png" alt="us.png"></label>
-            <textarea v-model="entryen" rows="6" class="m-2" placeholder=""></textarea>
-            <label>DE<img class="ml-2" src="/images/flags/de.png" alt="de.png"></label>
-            <textarea v-model="entryde" rows="6" class="m-2" placeholder=""></textarea>
-        </div>
-
-
-        <!-- Button trigger modal -->
-        <button @@click="updateresource" type="button" class="btn btn-primary" data-toggle="modal" data-target="#editorModal">
-            Save
-        </button>
-
-        <hr />
-
-        <div class="form-check form-switch">
-            <input class="form-check-input" @@click="togglehighlightmissing($event)" type="checkbox" role="switch" id="switchshowmissing">
-            <label class="form-check-label" for="switchshowmissing">Show missing translations</label>
-        </div>
-        <div class="form-check form-switch">
-            <input class="form-check-input" @@change="togglehighlightselected($event)" v-model="highlightselected" type="checkbox" role="switch" id="switchselectedvis">
-            <label class="form-check-label" for="switchselectedvis">Show selected</label>
-        </div>
-
-        <hr />
-        <div class="d-flex flex-wrap" style="overflow:auto;">
-            <div class="accordion w-100" id="accordionExample">
-                <div class="card rounded-0 mx-0">
-                    <div class="card-header p-0" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Text Elements
-                            </button>
-                        </h2>
-                    </div>
-                    <div class="d-none">{{currenthoverelement}}</div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body p-1">
-                            <div v-for="item in cmsuntrackedelements" class="border d-flex flex-nowrap justify-content-start p-0 my-1 w-100" :class="incomplete(item.Value)">
-                                <div role="button" class="p-2 bg-transparent border-0 h-100 w-100" @@click="loadform(item.Value)" @@mouseover="hoverelement = item" @@mouseleave="hoverelement = null">
-                                    <i class="fa-solid fa-font pr-2"></i>
-                                    {{item.Value.ID}}
-                                </div>
-                                <button class="border-0 rounded-5 mr-2 h-50 my-auto" @@click="scrollto(item)">
-                                    <i class="ml-auto fa-solid fa-eye"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card rounded-0">
-                    <div class="card-header p-0" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Plain Text Elements
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body p-0">
-                            <button v-for="item in cmstrackerelements" class="btn btn-white justify-content-start px-1 my-1 w-100 " :class="incomplete(item.Value)" @@click="loadform(item.Value)">
-                                <i class="fa-solid fa-code"></i>
-                                {{item.Value.ID}}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<div class="d-flex flex-column">
+			<label>EN<img class="ml-2" src="/images/flags/us.png" alt="us.png"></label>
+			<textarea v-model="entryen" rows="6" class="m-2" placeholder=""></textarea>
+			<label>DE<img class="ml-2" src="/images/flags/de.png" alt="de.png"></label>
+			<textarea v-model="entryde" rows="6" class="m-2" placeholder=""></textarea>
+		</div>
 
 
-        </div>
+		<!-- Button trigger modal -->
+		<button @@click="updateresource" type="button" class="btn btn-primary" data-toggle="modal" data-target="#editorModal">
+			Save
+		</button>
 
-    </div>
+		<hr />
+
+		<div class="form-check form-switch">
+			<input class="form-check-input" @@click="togglehighlightmissing($event)" type="checkbox" role="switch" id="switchshowmissing">
+			<label class="form-check-label" for="switchshowmissing">Show missing translations</label>
+		</div>
+		<div class="form-check form-switch">
+			<input class="form-check-input" @@change="togglehighlightselected($event)" v-model="highlightselected" type="checkbox" role="switch" id="switchselectedvis">
+			<label class="form-check-label" for="switchselectedvis">Show selected</label>
+		</div>
+
+		<hr />
+		<div class="d-flex flex-wrap" style="overflow:auto;">
+			<div class="accordion w-100" id="accordionExample">
+				<div class="card rounded-0 mx-0">
+					<div class="card-header p-0" id="headingOne">
+						<h2 class="mb-0">
+							<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Text Elements
+							</button>
+						</h2>
+					</div>
+					<div class="d-none">{{currenthoverelement}}</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body p-1">
+							<div v-for="item in cmsuntrackedelements" class="border d-flex flex-nowrap justify-content-start p-0 my-1 w-100" :class="incomplete(item.Value)">
+								<div role="button" class="p-2 bg-transparent border-0 h-100 w-100" @@click="loadform(item.Value)" @@mouseover="hoverelement = item" @@mouseleave="hoverelement = null">
+									<i class="fa-solid fa-font pr-2"></i>
+									{{item.Value.ID}}
+								</div>
+								<button class="border-0 rounded-5 mr-2 h-50 my-auto" @@click="scrollto(item)">
+									<i class="ml-auto fa-solid fa-eye"></i>
+								</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card rounded-0">
+					<div class="card-header p-0" id="headingTwo">
+						<h2 class="mb-0">
+							<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Plain Text Elements
+							</button>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body p-0">
+							<button v-for="item in cmstrackerelements" class="btn btn-white justify-content-start px-1 my-1 w-100 " :class="incomplete(item.Value)" @@click="loadform(item.Value)">
+								<i class="fa-solid fa-code"></i>
+								{{item.Value.ID}}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
 </div>
 
 
 <div id="iframestyle">
-    <style>
-        [data-cms][data-cms-visible] {
-            transition: background-color .2s;
-            position: relative;
-            display: block;
-            outline: 1px solid rgb(0 123 255 / 50%);
-        }
+	<style>
+		[data-cms][data-cms-visible] {
+			transition: background-color .2s;
+			position: relative;
+			display: block;
+			outline: 1px solid rgb(0 123 255 / 50%);
+		}
 
-        [data-cms-complete] {
-            outline: 1px solid rgb(0 220 100 / 50%);
-        }
+		[data-cms-complete] {
+			outline: 1px solid rgb(0 220 100 / 50%);
+		}
 
-        [data-cms-incomplete] {
-            outline: 1px solid rgb(255 177 0 / 50%);
-        }
+		[data-cms-incomplete] {
+			outline: 1px solid rgb(255 177 0 / 50%);
+		}
 
-        [data-cms-missing] {
-            outline: 1px solid rgb(255 0 0 / 50%);
-        }
+		[data-cms-missing] {
+			outline: 1px solid rgb(255 0 0 / 50%);
+		}
 
-        [data-cms]:hover {
-            outline: 1px solid rgb(0 123 255 / 100%);
-        }
+		[data-cms]:hover {
+			outline: 1px solid rgb(0 123 255 / 100%);
+		}
 
-        [data-cms][data-cms-hover] {
-            background-color: rgb(0 123 255 / 10%);
-        }
+		[data-cms][data-cms-hover] {
+			background-color: rgb(0 123 255 / 10%);
+		}
 
-        [data-cms][data-cms-visible]::after {
-            content: "Edit";
-            color: white !important;
-            text-align: center;
-            width: 50px;
-            height: 20px;
-            transition: all .2s;
-            line-height: 1;
-            position: absolute;
-            background-color: rgb(0 123 255 / 50%);
-            border: 0;
-            padding: 5px;
-            border-radius: 5px 5px 0 0;
-            right: 0;
-            top: 0;
-            font-size: .75rem;
-            transform: translateY(-100%) translateX(1px);
-            opacity: 1;
-        }
+		[data-cms][data-cms-visible]::after {
+			content: "Edit";
+			color: white !important;
+			text-align: center;
+			width: 50px;
+			height: 20px;
+			transition: all .2s;
+			line-height: 1;
+			position: absolute;
+			background-color: rgb(0 123 255 / 50%);
+			border: 0;
+			padding: 5px;
+			border-radius: 5px 5px 0 0;
+			right: 0;
+			top: 0;
+			font-size: .75rem;
+			transform: translateY(-100%) translateX(1px);
+			opacity: 1;
+		}
 
-        [data-cms-img] {
-            transition: background-color .2s;
-            position: relative;
-            display: block;
-            outline-offset: -1px;
-            outline: 1px solid rgb(0 123 255 / 50%);
-        }
+		[data-cms-img] {
+			transition: background-color .2s;
+			position: relative;
+			display: block;
+			outline-offset: -1px;
+			outline: 1px solid rgb(0 123 255 / 50%);
+		}
 
-        [data-cms-img]:hover {
-            outline-offset: -1px;
-            outline: 1px solid rgb(0 123 255 / 100%);
-        }
+		  [data-cms-img]:hover {
+		  outline-offset: -1px;
+		  outline: 1px solid rgb(0 123 255 / 100%);
+		  }
 
-        [data-cms-img]::after {
-            cursor: pointer;
-            content: "Edit";
-            color: white !important;
-            text-align: center;
-            width: 50px;
-            height: 20px;
-            transition: all .2s;
-            line-height: 1;
-            position: absolute;
-            background-color: rgb(0 123 255 / 50%);
-            border: 0;
-            padding: 5px;
-            border-radius: 5px 5px 0 0;
-            right: 1px;
-            top: 0;
-            font-size: .75rem;
-            transform: translateY(-100%) translateX(1px);
-            opacity: 1;
-        }
+		  [data-cms-img]::after {
+		  cursor: pointer;
+		  content: "Edit";
+		  color: white !important;
+		  text-align: center;
+		  width: 50px;
+		  height: 20px;
+		  transition: all .2s;
+		  line-height: 1;
+		  position: absolute;
+		  background-color: rgb(0 123 255 / 50%);
+		  border: 0;
+		  padding: 5px;
+		  border-radius: 5px 5px 0 0;
+		  right: 1px;
+		  top: 0;
+		  font-size: .75rem;
+		  transform: translateY(0%) translateX(1px);
+		  opacity: 1;
+		  }
 
-    </style>
+	</style>
 </div>
 
 <style>
 
-    .imagefile.active {
-        border: 2px solid #73fd9d55;
-    }
+	.imagefile.active {
+		border: 2px solid #73fd9d55;
+	}
 
-    .overflow-y-scroll {
-        overflow-y: scroll;
-    }
+	.overflow-y-scroll {
+		overflow-y: scroll;
+	}
 
-    .drop-area label {
-        background: #FFF;
-        transition: .2s ease;
-        border: 2px dashed #c5c5c5;
-    }
+	.drop-area label {
+		background: #FFF;
+		transition: .2s ease;
+		border: 2px dashed #c5c5c5;
+	}
 
-        .drop-area label[data-active=true] {
-            background: #73fd9d55;
-        }
+		.drop-area label[data-active=true] {
+			background: #73fd9d55;
+		}
 
 
-    input[type=file]:not(:focus-visible) {
-        width: 1px !important;
-        height: 1px !important;
-        padding: 0 !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        clip: rect(0, 0, 0, 0) !important;
-        white-space: nowrap !important;
-        border: 0 !important;
-    }
+	input[type=file]:not(:focus-visible) {
+		width: 1px !important;
+		height: 1px !important;
+		padding: 0 !important;
+		margin: -1px !important;
+		overflow: hidden !important;
+		clip: rect(0, 0, 0, 0) !important;
+		white-space: nowrap !important;
+		border: 0 !important;
+	}
 
-    .image-list {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        flex-wrap: wrap;
-        padding: 0;
-    }
+	.image-list {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		flex-wrap: wrap;
+		padding: 0;
+	}
 
-    .file-preview img {
-        border: 1px solid #e3e3e3;
-        padding: 0.25rem;
-        margin-top: 0.25rem;
-        width: 100%;
-        height: 100px;
-        display: block;
-        object-fit: contain;
-    }
+	.file-preview img {
+		border: 1px solid #e3e3e3;
+		padding: 0.25rem;
+		margin-top: 0.25rem;
+		width: 100%;
+		height: 100px;
+		display: block;
+		object-fit: contain;
+	}
 
-    .file-preview .close-icon {
-        font-size: 1rem;
-        background-color: transparent;
-        height: 2rem;
-        width: 2rem;
-        position: absolute;
-        line-height: 1rem;
-        right: 0;
-        border: 0;
-        padding: 0.25rem;
-        top: 0rem;
-        cursor: pointer;
-    }
+	.file-preview .close-icon {
+		font-size: 1rem;
+		background-color: transparent;
+		height: 2rem;
+		width: 2rem;
+		position: absolute;
+		line-height: 1rem;
+		right: 0;
+		border: 0;
+		padding: 0.25rem;
+		top: 0rem;
+		cursor: pointer;
+	}
 
-    button {
-        cursor: pointer;
-    }
+	button {
+		cursor: pointer;
+	}
 </style>

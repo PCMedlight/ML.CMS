@@ -4,7 +4,6 @@ export async function uploadFile(file, directory) {
 	formData.append('file', file.file)
 	formData.append('directory', directory)
 	const url = '/admin/cms/upload';
-	console.log(directory);
 	// track status and upload file
 	file.status = 'loading'
 	let response = await fetch(url, { method: 'POST', body: formData })
@@ -29,3 +28,4 @@ export default function createUploader() {
 	  },
 	};
   }
+
