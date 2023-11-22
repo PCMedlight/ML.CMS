@@ -25,5 +25,5 @@ jobs:
         server: '328698.de.hosting.internet1.de'
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PW }}
-        local-dir: D:\a\ML.CMS\Dist\
+        local-dir: D:\a\ML.CMS\Dist/
         server-dir: /328698.de/web/Modules/ML.CMS/
