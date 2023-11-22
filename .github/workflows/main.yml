@@ -1,0 +1,29 @@
+name: Deploy to FTP
+
+on:
+  workflow_dispatch:
+    inputs:
+      manual_trigger:
+        description: 'Manually trigger the deployment'
+        default: 'true'
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Use Node.js 16
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'     
+
+    - name: Upload to FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: '328698.de.hosting.internet1.de'
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PW }}
+        local-dir: D:\a\ML.CMS\Dist
+        server-dir: /328698.de/web/Modules/ML.CMS/
