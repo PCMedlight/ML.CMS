@@ -1,0 +1,14 @@
+{
+  "$schema": "../module.schema.json",
+  "Group": "CMS",
+  "SystemName": "MEDlight.CMS",
+  "FriendlyName": "MEDlight CMS Tools",
+  "Description": "",
+  "Version": "5.0.5",
+  "MinAppVersion": "5.0.5",
+  "Author": "MEDlight AG",
+  "Order": 1,
+  "ResourceRootKey": "Plugins.ML.CMS",
+  "PrivateReferences": [
+  ]
+}

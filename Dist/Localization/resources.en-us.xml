@@ -1,0 +1,1506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language Name="Englisch" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="ML.About.Intro1" AppendRootKey="false">
+    <Value>For over six decades, MEDlight GmbH has been a leading medical device manufacturer in Germany, thanks to our continuous advancements of modern technologies. Over the years, we've established ourselves as a leading specialist.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Intro2" AppendRootKey="false">
+    <Value>Our commitment to innovation, exceptional German craftsmanship, and patient-centered solutions are the pillars upon which MEDlight stands. With over 60 international partners around the world, MEDlight’s products are used worldwide in clinics and medical practices.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Sub1" AppendRootKey="false">
+    <Value>In 1957, Gerhard Saalmann laid the foundation for the company that has always played a leading role in modern phototherapy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline1" AppendRootKey="false">
+    <Value>Foundation of Saalmann GmbH</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline2" AppendRootKey="false">
+    <Value>Specially designed selective UV-range for the treatment of Psoriasis</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline3" AppendRootKey="false">
+    <Value>Introduction of the first therapy device for the treatment of Neurodermatitis</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline4" AppendRootKey="false">
+    <Value>Innovation of the UV-Cabin for supporting vitamin D3 synthesis and treating Osteoporosis</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline5" AppendRootKey="false">
+    <Value>Development of the first photodynamic therapy device for skin cancer treatment</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline6" AppendRootKey="false">
+    <Value>Saalmann GmbH is rebranded as MEDlight GmbH</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline7" AppendRootKey="false">
+    <Value>Launch of the Red Beam pro-PDT-System utilizing the latest LED technology</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.About.Timeline8" AppendRootKey="false">
+    <Value>Introduction of the TREVIOLUX 3-in-1 PDT device.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Brand.City" AppendRootKey="false">
+    <Value>32051 HERFORD</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Brand.Legalname" AppendRootKey="false">
+    <Value>MEDlight GmbH</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Brand.Mail" AppendRootKey="false">
+    <Value>info@medlight.eu</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Brand.Name" AppendRootKey="false">
+    <Value>MEDlight</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Brand.Street" AppendRootKey="false">
+    <Value>Füllenbruchstraße 201</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Aria.Call" AppendRootKey="false">
+    <Value>Call MEDlight specialists</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Aria.Mail" AppendRootKey="false">
+    <Value>Mail MEDlight specialists</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Brand.LegalInfo" AppendRootKey="false">
+    <Value>							&lt;p class="small"&gt;
+								VAT Identification Number according to § 27 a Value Added Tax Act:&lt;br /&gt;
+								DE 271550197
+							&lt;/p&gt;
+							&lt;p class="small"&gt;
+								Managing Directors&lt;br /&gt;
+								Udo Wiemers, Tim Traeder&lt;br /&gt;
+							&lt;/p&gt;
+							&lt;p class="small"&gt;
+								Registration Court:&lt;br /&gt;
+								Amtsgericht Bad Oeynhausen&lt;br /&gt;
+							&lt;/p&gt;
+							&lt;p class="small"&gt;
+								Registration Number:&lt;br /&gt;
+								HRB 11981&lt;br /&gt;
+							&lt;/p&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.BusinessHours.Line1" AppendRootKey="false">
+    <Value>Monday - Thursday 8:00 AM – 4:00 PM</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.BusinessHours.Line2" AppendRootKey="false">
+    <Value> Friday 8:00 AM – 12:00 PM</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.BusinessHours.Title" AppendRootKey="false">
+    <Value>Business Hours</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.CallButton" AppendRootKey="false">
+    <Value>Call us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Description" AppendRootKey="false">
+    <Value>Do you have questions? Our MEDlight specialists are here to help, and it's absolutely free. Start the conversation today.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.MessageButton" AppendRootKey="false">
+    <Value>Message us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Page.Details.Title" AppendRootKey="false">
+    <Value>Don't hesitate to contact us and we will get back to you as soon as we can.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Callus.Title" AppendRootKey="false">
+    <Value>Let's Talk</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Description1" AppendRootKey="false">
+    <Value>MEDLight GmbH is a renowned medical device manufacturer from Germany with a history spanning over six decades in the development and production of UV phototherapy and photodynamic therapy devices.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Description2" AppendRootKey="false">
+    <Value>Our business operations are characterized by a deep commitment to quality and responsibility. We undergo continuous certifications and maintain a professional quality management system that adheres to the highest European and German standards.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Image1" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/cnc.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 max-height-25" src="/Themes/MEDlight-Theme/images/general/cnc.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Image2" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/component.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 max-height-25" src="/Themes/MEDlight-Theme/images/general/component.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
+    <Value>Certified Medical Devices</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.GetDetails" AppendRootKey="false">
+    <Value>Get Details:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.GetDetails.List" AppendRootKey="false">
+    <Value>&lt;ul&gt;Cost estimateDelivery datesInstallation planRecycle your old devices&lt;/ul&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.GetDetails1" AppendRootKey="false">
+    <Value>Cost estimate</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.GetDetails2" AppendRootKey="false">
+    <Value>Delivery dates</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.GetDetails3" AppendRootKey="false">
+    <Value>Installation plan</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.GetDetails4" AppendRootKey="false">
+    <Value>Recycle your old devices</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Model.Select" AppendRootKey="false">
+    <Value>Select</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.NeedAssistance.Description" AppendRootKey="false">
+    <Value>Request a quote and we will get into contact and help you make the best decision.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.NeedAssistance.Title" AppendRootKey="false">
+    <Value>Need some assistance?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.RequestQuote" AppendRootKey="false">
+    <Value>You can send us your configuration to get a free quote below.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Description1" AppendRootKey="false">
+    <Value>Optimize your product package with MEDlight Service+. Benefit from an automatic warranty extension plan, coupled with access to top-tier technical support from the people with unmatched familiarity with your devices.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Description2" AppendRootKey="false">
+    <Value>Are you interested in enrolling in MEDlight Academy? Empower your staff through precisely tailored training courses, curated by MEDlight to maximize the potential of your devices.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Description3" AppendRootKey="false">
+    <Value>Tailor your product for global markets: customized language options, regulatory compliance, and power supply adaptation to meet diverse country requirements.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Intro" AppendRootKey="false">
+    <Value>Would you like to add additional services?
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Title1" AppendRootKey="false">
+    <Value>MEDlight Service+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Title2" AppendRootKey="false">
+    <Value>MEDlight Academy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Services.Title3" AppendRootKey="false">
+    <Value>Global Connect</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Skindex.Description" AppendRootKey="false">
+    <Value>Unlock the full potential of the N-LINE PRO paired with our SKINDEX software. Create patient records, streamline treatment planning, and operate the cabin with unparalleled ease. This all-in-one comprehensive workflow revolutionizes the way you manage your phototherapy treatments empowering you to focus on what matters most - your patients.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Skindex.Intro" AppendRootKey="false">
+    <Value>Would you like to use our treatment management software?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Skindex.Intro.Description" AppendRootKey="false">
+    <Value>SKINdex is MEDlights propriety treatment management software. Combine data collection, therapy planning, and cabin operation into a single system. (Requires N-LINE PRO)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Skindex.Name" AppendRootKey="false">
+    <Value>MEDlight SKINdex</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Description" AppendRootKey="false">
+    <Value>UV phototherapy, also known as light therapy, is a common form of treatment that uses, ultraviolet light on exposed skin to treat several types of skin conditions. The choice of spectrum and treatment parameters are based on individual needs and considerations.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Healthwarning" AppendRootKey="false">
+    <Value>Please note that the information provided on this website is not medical advice. For treatment recommendations and personalized care, always consult qualified healthcare professionals.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.Info.Option1" AppendRootKey="false">
+    <Value>UVA &amp; UVB</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.Info.Option2" AppendRootKey="false">
+    <Value> UVA &amp; UVB 311nm (Narrowband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.Info.Option3" AppendRootKey="false">
+    <Value>UVA-1 &amp; UVB</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.Info.Option4" AppendRootKey="false">
+    <Value>UVA-1 &amp; UVB 311nm (Narrowband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.Info.Title" AppendRootKey="false">
+    <Value>For maximum flexibility you can install a lamp combination and always select the best treatment for each patient.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.name" AppendRootKey="false">
+    <Value>Mixed Spectrum</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Mixed.Short" AppendRootKey="false">
+    <Value>Mixed</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.Title" AppendRootKey="false">
+    <Value>Choose your spectrum</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-1.Info.Description" AppendRootKey="false">
+    <Value>Psoriasis, Parapsoriasis, Vitiligo, Atopic Dermatitis, Mycosis fungoides</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-1.Info.Title" AppendRootKey="false">
+    <Value>UVA-1 is often considered for:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-1.Name" AppendRootKey="false">
+    <Value>UVA-1</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-1.Short" AppendRootKey="false">
+    <Value>UVA-1</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-PUVA.Info.Description" AppendRootKey="false">
+    <Value>Psoriasis, Parapsoriasis, Vitiligo, Atopic Dermatitis, Mycosis fungoides</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-PUVA.Info.Title" AppendRootKey="false">
+    <Value>UVA (including PUVA) is often considered for:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-PUVA.Name" AppendRootKey="false">
+    <Value>UVA (PUVA)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA-PUVA.Short" AppendRootKey="false">
+    <Value>UVA</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA.Info.Description" AppendRootKey="false">
+    <Value>Psoriasis, Parapsoriasis, Vitiligo, Atopic Dermatitis, Mycosis fungoides, other skin diseases</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA.Info.Title" AppendRootKey="false">
+    <Value>UVB Broadband is often considered for:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA.Name" AppendRootKey="false">
+    <Value>UVB (Broadband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVA.Short" AppendRootKey="false">
+    <Value>UVB</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB-311nm.Info.Description" AppendRootKey="false">
+    <Value>Psoriasis, Parapsoriasis, Vitiligo, Atopic Dermatitis, Mycosis fungoides, other skin diseases</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB-311nm.Info.Title" AppendRootKey="false">
+    <Value>UVB Narrowband is often considered for:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB-311nm.Name" AppendRootKey="false">
+    <Value>UVB 311nm (Narrowband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB-311nm.Short" AppendRootKey="false">
+    <Value>UVB-311nm</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB311.Info.Description" AppendRootKey="false">
+    <Value>Psoriasis, Parapsoriasis, Vitiligo, Atopic Dermatitis, Mycosis fungoides, other skin diseases</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB311.Info.Title" AppendRootKey="false">
+    <Value>UVB Narrowband is often considered for:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB311.Name" AppendRootKey="false">
+    <Value>UVB 311nm (Narrowband)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Spectrum.UVB311.Short" AppendRootKey="false">
+    <Value>UVB 311nm</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Config.Summary" AppendRootKey="false">
+    <Value>Summary</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Description" AppendRootKey="false">
+    <Value>Get a non-binding quote and tell us a bit about yourself so we can begin setting up an order. A MEDlight representative will contact you shortly to take the next steps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Email" AppendRootKey="false">
+    <Value>Email (Required)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Email.Placeholder" AppendRootKey="false">
+    <Value>Your email</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Email.Validate" AppendRootKey="false">
+    <Value>Your email is not a valid email address.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Message" AppendRootKey="false">
+    <Value>Message</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Message.Placeholder" AppendRootKey="false">
+    <Value>Enter your message</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Name" AppendRootKey="false">
+    <Value>Name</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Name.Placeholder" AppendRootKey="false">
+    <Value>Your name</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Phone" AppendRootKey="false">
+    <Value>Phone</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Phone.Placeholder" AppendRootKey="false">
+    <Value>Your phone number</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Privacy" AppendRootKey="false">
+    <Value>Privacy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Privacy.Text" AppendRootKey="false">
+    <Value>MEDlight GmbH will store and process your personal data according to the Information Notice. By submitting this request you consent to the processing.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Submit" AppendRootKey="false">
+    <Value>Get into Contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Form.Submit.Config" AppendRootKey="false">
+    <Value>Get a free Quote</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.Email" AppendRootKey="false">
+    <Value>Email (Required)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.Message" AppendRootKey="false">
+    <Value>Message</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.Name" AppendRootKey="false">
+    <Value>Name</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.Phone" AppendRootKey="false">
+    <Value>Phone</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.Privacy" AppendRootKey="false">
+    <Value>Privacy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.PrivacyText" AppendRootKey="false">
+    <Value>MEDlight GmbH will store and process your personal data according to the Information Notice. By submitting this request you consent to the processing.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.FormLabel.Submit" AppendRootKey="false">
+    <Value>Get into Contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.BusinessReseller" AppendRootKey="false">
+    <Value>Business / Reseller</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.HealthcareProfessional" AppendRootKey="false">
+    <Value>Healthcare professional</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.IAm" AppendRootKey="false">
+    <Value>I am a:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Label.IndividualPatient" AppendRootKey="false">
+    <Value>Individual / Patient</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.List.Product" AppendRootKey="false">
+    <Value>Products</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Contactus.Page.BtnMsg" AppendRootKey="false">
+    <Value>Message us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Contactus.Page.SubTitle" AppendRootKey="false">
+    <Value>Do you have questions? Our MEDlight specialists are here to help, and it's absolutely free. Start the conversation today.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Contactus.Page.Title" AppendRootKey="false">
+    <Value>Get in touch</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.ContactUs.Title" AppendRootKey="false">
+    <Value>Contact us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.CTA-Call.Description" AppendRootKey="false">
+    <Value>Do you have questions? Our MEDlight specialists are here to help, and it's absolutely free. Start the conversation today.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.CTA-Call.Title" AppendRootKey="false">
+    <Value>Let's Talk</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.FAQ" AppendRootKey="false">
+    <Value>FAQ</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.FAQ.Collapsable.Title1" AppendRootKey="false">
+    <Value>Wie lange muss ich davor stehen.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.FAQ.Collapsable.Title2" AppendRootKey="false">
+    <Value>What are the benefits of PDT</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.FAQ.Collapsable.Title3" AppendRootKey="false">
+    <Value>Abrechnungsziffern GOÄ</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.FAQ.Collapsable.Title4" AppendRootKey="false">
+    <Value>How does the TREVIOLUX help with pain management</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Fax" AppendRootKey="false">
+    <Value>+49 (0) 5221 994 29 40</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Featurelist.ButtonLabel" AppendRootKey="false">
+    <Value>Hide Features</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Featurelist.Description" AppendRootKey="false">
+    <Value>The N-LINE T is designed to meet your specific requirements.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Featurelist.Title" AppendRootKey="false">
+    <Value>Discover all features</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Footer.Link" AppendRootKey="false">
+    <Value>Contact us</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Footer.Sub" AppendRootKey="false">
+    <Value>Stay informed with the latest updates and information from MEDlight. Receive news about events, products, collaborations with business partners, and more from the world of MEDlight. To get in touch with us, please provide your contact details, and we'll be in touch with you.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Footer.Title" AppendRootKey="false">
+    <Value>Stay connected to with MEDlight</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.General.Brand.Legalname" AppendRootKey="false">
+    <Value>MEDlight GmbH</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.General.Brand.Name" AppendRootKey="false">
+    <Value>MEDlight</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.General.Mail" AppendRootKey="false">
+    <Value>info@medlight.eu</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.General.Phone" AppendRootKey="false">
+    <Value>+49-5221-994-29-0</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.BusinessSub" AppendRootKey="false">
+    <Value>If you represent a business or organization, we are dedicated to meeting the needs of clients worldwide. Please schedule an appointment to explore the diverse options available for your enterprise.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.BusinessTitle" AppendRootKey="false">
+    <Value>Are You a Business Customer?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.Sub1" AppendRootKey="false">
+    <Value>Our team of experts is here to assist you in selecting the ideal solution to meet your specific requirements. We understand that each healthcare setting is unique, and we'll help you make the best choice.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.Sub3" AppendRootKey="false">
+    <Value>Our commitment to you doesn't end with the delivery. We provide continuous training, support and service to ensure that your experience with our devices remains exceptional throughout their usage.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.Title" AppendRootKey="false">
+    <Value>We provide guidance every step of the way.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.Title1" AppendRootKey="false">
+    <Value>Selecting Your Device</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.Title2" AppendRootKey="false">
+    <Value>Delivery and Installation</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Guidance.Title3" AppendRootKey="false">
+    <Value>Support</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index-Carousel.Slide1.Image" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/spectrum.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain" src="/Themes/MEDlight-Theme/images/general/spectrum.png" alt="Color spectrum" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index-Carousel.Slide2.Image" AppendRootKey="false">
+    <Value>&lt;picture class="w-100 h-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/n-line-pro-lamps.webp" type="image/webp"&gt;&lt;img class="w-100 h-100 max-height-30 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/n-line-pro-lamps.jpg" alt="Color spectrum" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Additionals" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/ACCESSORIES.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/general/ACCESSORIES.jpg" alt="Assortment of MEDlight Products" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Additionals.Link" AppendRootKey="false">
+    <Value>SHOP</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Additionals.Sub" AppendRootKey="false">
+    <Value>In the development of our medical devices, we pay meticulous attention to every detail. Our commitment to innovation is propelling us forward on our path towards a more intelligent and sustainable future in healthcare. This same commitment is also reflected in our 'Additionals,' a collection of products that compliments our lineup it perfectly. The MedLight Additionals range is constantly expanding.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Additionals.Title" AppendRootKey="false">
+    <Value>MEDlight Additionals</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide1.Link" AppendRootKey="false">
+    <Value>Discover</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide1.Sub" AppendRootKey="false">
+    <Value>Medical Lighting for a Healthier Future</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide1.Sub1" AppendRootKey="false">
+    <Value>The high performance UV phototherapy system</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide1.Sub2" AppendRootKey="false">
+    <Value>Certified medical Devices</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide1.Title" AppendRootKey="false">
+    <Value>A legacy dating back over 60 years, MEDlight remains the industry leader for innovative phototherapy devices.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide2.Link" AppendRootKey="false">
+    <Value>Discover N-LINE</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide2.Sub1" AppendRootKey="false">
+    <Value>The high-performance phototherapy system for professional UV treatments</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide2.Sub2" AppendRootKey="false">
+    <Value>Certified medical Devices from Germany</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Slide2.Title" AppendRootKey="false">
+    <Value>N-LINE System</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Sub" AppendRootKey="false">
+    <Value>Medical Lighting for a Healthier Future</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Sub2" AppendRootKey="false">
+    <Value>Discover our devices &amp; services</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Tile1.Sub1" AppendRootKey="false">
+    <Value>N-LINE System</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Tile1.Title" AppendRootKey="false">
+    <Value>UV Phototherapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Tile2.Sub" AppendRootKey="false">
+    <Value>Discover the TREVIOLUX</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Tile2.Title" AppendRootKey="false">
+    <Value>Photodynamic Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Tile3.Sub" AppendRootKey="false">
+    <Value>SHOP</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Tile3.Title" AppendRootKey="false">
+    <Value>SMALL DEVICES &amp;&lt;br/&gt;ACCESSORIES</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Carousel.Title" AppendRootKey="false">
+    <Value>A legacy dating back over 60 years, MEDlight remains the industry leader for innovative phototherapy devices.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Map" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/MAP.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain w-100 h-100" src="/Themes/MEDlight-Theme/images/general/MAP.jpg" alt="International map of MEDlight trading relations" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Description" AppendRootKey="false">
+    <Value>We’re here to help. MEDlight-certified repairs are performed by trusted experts who use genuine parts. Whichever option you choose, you’ll get your product back working exactly the way it should.
+
+Service and support from the people who know your devices best.
+Because MEDlight makes the hardware, our experts understand how everything works and resolve issues as fast as possible.
+
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Description1" AppendRootKey="false">
+    <Value>We’re here to help. MEDlight-certified repairs are performed by trusted experts who use genuine parts. Whichever option you choose, you’ll get your product back working exactly the way it should. </Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Description2" AppendRootKey="false">
+    <Value>Service and support from the people who know your devices best. Because MEDlight makes the hardware, our experts understand how everything works and resolve issues as fast as possible.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Image" AppendRootKey="false">
+    <Value>&lt;picture id="support-img" class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/smiling-woman.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover position-absolute w-100 h-100" src="/Themes/MEDlight-Theme/images/general/smiling-woman.jpg" alt="Woman standing in a corn field holding sunflowers" loading="lazy" style="object-position: 20% 100%;"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Link" AppendRootKey="false">
+    <Value>Get into contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.SupportBanner.Title" AppendRootKey="false">
+    <Value>Service &amp; Support</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile1.Image" AppendRootKey="false">
+    <Value>&lt;picture class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE-Pro-max.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain position-absolute w-100 h-100 p-4" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE-Pro-max.png" alt="N-LINE pro UV phototherapy cabin" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile1.Sub1" AppendRootKey="false">
+    <Value>Discover N-LINE System</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile1.Title" AppendRootKey="false">
+    <Value>UV Phototherapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile2.Image" AppendRootKey="false">
+    <Value>&lt;picture class="position-relative flex-grow-1"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/Treviolux.webp" type="image/webp"&gt;&lt;img class="fit-contain w-100 h-100 position-absolute p-4" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/Treviolux.png" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile2.Sub" AppendRootKey="false">
+    <Value>Discover TREVIOLUX</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile2.Title" AppendRootKey="false">
+    <Value>Photodynamic Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile3.Link" AppendRootKey="false">
+    <Value>Shop</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile3.Title" AppendRootKey="false">
+    <Value>SMALL DEVICES &amp;amp;
+ACCESSORIES</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile3.Title1" AppendRootKey="false">
+    <Value>ACCESSORIES &amp;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Index.Tile3.Title2" AppendRootKey="false">
+    <Value>SHOP</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Mail" AppendRootKey="false">
+    <Value>info@medlight.eu</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Image0" AppendRootKey="false">
+    <Value>&lt;picture class="d-flex w-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid m-auto fit-contain h-100 w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Patient.jpg" alt="Patient sitting at the N-LINE T" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Image1" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Touch.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Touch.jpg" alt="N-LINE T Touchscreen" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Image2" AppendRootKey="false">
+    <Value>&lt;picture class="w-100 w-100 d-flex"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Side.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain m-auto w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Side.jpg" alt="Side view of N-LINE T" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Item0" AppendRootKey="false">
+    <Value>The device is designed according to ergonomic principles and puts patients in a back-friendly and comfortable sitting position during treatment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Item1" AppendRootKey="false">
+    <Value>Appropriate dose limits are preset to help prevent operational errors. The N-LINE T is equipped with an industrial-grade controller. You simply enter the dose and the system automatically calculates the treatment duration.
+The optional touchscreen intuitively guides the operator through the treatment setup.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Item2" AppendRootKey="false">
+    <Value>The enclosure reduces UV light spill for increased patient and personnel safety. A physical key lock prevents unauthorized use. A clearly visible emergency stop button stops the treatment at any time. </Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Title0" AppendRootKey="false">
+    <Value>Ergonomic</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Title1" AppendRootKey="false">
+    <Value>Easy-to-Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Carousel.Title2" AppendRootKey="false">
+    <Value>Safety</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Description1" AppendRootKey="false">
+    <Value>The N-LINE T MODULE targets moderate or even severe lesions with high doses of UV while reducing exposure to the unaffected skin. You can always place the device, depending on the application: On the floor or a table. The module uses real-time dosimetry to improve safety and accuracy. 
+Its portability makes it easy to integrate into any clinical setting. It can also help patients self-treat at home. Self-treatment devices can provide an improved quality of life compared to outpatient phototherapy. They also free up a clinic‘s medical resources.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Description" AppendRootKey="false">
+    <Value>Discover what makes the N-LINE T the ideal device for the professional treatment of the extremeties.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature1.Description" AppendRootKey="false">
+    <Value>The system continuously monitors the UV output and turns off individual modules when the selected dose is achieved.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature1.Title" AppendRootKey="false">
+    <Value>Real-Time Dosimetry
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature10.Description" AppendRootKey="false">
+    <Value>Each of the four modules uses an active cooling system. The temperature management maximizes the lamps’ service life and performance.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature10.Title" AppendRootKey="false">
+    <Value>Active Air Flow</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature11.Description" AppendRootKey="false">
+    <Value>Every module is equipped with an electronic ballast. Users benefit from reduced energy consumption while increasing the service life of the lamps. Electronic ballasts can operate for over 50,000 hours (minimum expectancy) at the maximum rated case temperature and keep your maintenance costs low.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature11.Title" AppendRootKey="false">
+    <Value>Electronic Ballast</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature2.Description" AppendRootKey="false">
+    <Value>Deliver effective phototherapy to the extremities and target each area with precision. Choose synchronized dosing or enter a separate dose for each module.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature2.Title" AppendRootKey="false">
+    <Value>Targeted Therapy
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature3.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. UV light passes through the shield unhindered. Cleaning or surface disinfection is quick and easy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature3.Title" AppendRootKey="false">
+    <Value>Reflex-Pro</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature4.Description" AppendRootKey="false">
+    <Value>The compact design makes it an ideal fit for any clinic setting. The N-LINE T can be easily moved between treatment rooms thanks to the castors and safety brakes.
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature4.Title" AppendRootKey="false">
+    <Value>Mobility</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature5.Description" AppendRootKey="false">
+    <Value>The device is designed according to ergonomic principles and puts patients in a back-friendly and comfortable sitting position during treatment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature5.Title" AppendRootKey="false">
+    <Value>Ergonomic</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature6.Description" AppendRootKey="false">
+    <Value>Appropriate dose limits are preset to help prevent operational errors. The N-LINE T is equipped with an industrial-grade controller. You simply enter the dose and the system automatically calculates the treatment duration.
+The optional touchscreen intuitively guides the operator through the treatment setup.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature6.Title" AppendRootKey="false">
+    <Value>Easy-to-Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature7.Description" AppendRootKey="false">
+    <Value>The high intensity of +19 mW/cm² (at 0 cm distance) is more cost-effective as fewer phototherapy units are needed to treat more patients. Shortening the duration can improve the patient’s experience, reduce waiting times, increase satisfaction with the doctor’s visit, and provide more access to care.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature7.Title" AppendRootKey="false">
+    <Value>Powerful</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature8.Description" AppendRootKey="false">
+    <Value>The enclosure reduces UV light spill for increased patient and personnel safety. A physical key lock prevents unauthorized use. A clearly visible emergency stop button stops the treatment at any time. </Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature8.Title" AppendRootKey="false">
+    <Value>Safety</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature9.Description" AppendRootKey="false">
+    <Value>Water-resistant acrylic panels are designed with a drip edge to direct fluids away from the enclosure. This protects the device against sweat, water, and potentially topical medications.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Featurelist.Feature9.Title" AppendRootKey="false">
+    <Value>Splash-Proof</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature1.Description" AppendRootKey="false">
+    <Value>Deliver effective phototherapy to the extremities and target each area with precision. Choose synchronized dosing or enter a separate dose for each module.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature1.Title" AppendRootKey="false">
+    <Value>Targeted Treatment</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature2.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. UV light passes through the shield unhindered. Cleaning or surface disinfection is quick and easy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature2.Title" AppendRootKey="false">
+    <Value>Crystal Clear Shield</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature3.Description" AppendRootKey="false">
+    <Value>The system continuously monitors the UV output and turns off individual modules when the selected dose is achieved.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature3.Title" AppendRootKey="false">
+    <Value>Dose Sense</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature4.Description" AppendRootKey="false">
+    <Value>The compact design makes it an ideal fit for any clinic setting. The N-LINE T can be easily moved between treatment rooms thanks to the castors and safety brakes.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Features.Feature4.Title" AppendRootKey="false">
+    <Value>High Mobility</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Intro" AppendRootKey="false">
+    <Value>This portable yet powerful module treats localized lesions in a clinical setting or as a home therapy device.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINET.Technologies.Description" AppendRootKey="false">
+    <Value>Discover what makes the N-LINE T the perfect UV phototherapy device for the professional treatment of the extremities.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image0" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image1" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Feet.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Feet.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image2" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover h-100 w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Item0" AppendRootKey="false">
+    <Value>The design is perfect for home therapy because it is so easy to use. Patients simply adhere to their physicians treatment plan and enter the dose. The system will automatically calculate the treatment duration. You can give patients back their freedom by giving them the ability to perform treatments at home.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Item1" AppendRootKey="false">
+    <Value>Quickly position the unit in an upright or flat orientation, on the floor or a table - depending on your needs. You can effectively treat hands, legs, feet, or any medium-sized areas of the body.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Item2" AppendRootKey="false">
+    <Value>Weighing only 7.5 kg, the module is easy to move between treatment rooms. The compact design makes it easy to fit into any clinic or home environment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Title0" AppendRootKey="false">
+    <Value>Treatment at home</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Title1" AppendRootKey="false">
+    <Value>Targeted Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Title2" AppendRootKey="false">
+    <Value>Portable</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Help.Description" AppendRootKey="false">
+    <Value>Talk to our experts or explore the detailed differences in our technical specs.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Help.Link" AppendRootKey="false">
+    <Value>Learn more</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Help.Title" AppendRootKey="false">
+    <Value>Do you need more information?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Included1" AppendRootKey="false">
+    <Value>4 x 36 W phototherapy lamps</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Included2" AppendRootKey="false">
+    <Value>Dose-Sense real time dosimetry</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Included3" AppendRootKey="false">
+    <Value>Easy to use, portable and robust design</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Intro" AppendRootKey="false">
+    <Value>The compact treatment device for targeted therapy, providing professional UV phototherapy for in-home therapy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Config.Name" AppendRootKey="false">
+    <Value>N-LINE T MODULE</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.ContactButton" AppendRootKey="false">
+    <Value>Get into contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Description1" AppendRootKey="false">
+    <Value>The N-LINE T MODULE targets moderate or even severe lesions with high doses of UV while reducing exposure to the unaffected skin. You can always place the device, depending on the application: On the floor or a table. The module uses real-time dosimetry to improve safety and accuracy. 
+Its portability makes it easy to integrate into any clinical setting. It can also help patients self-treat at home. Self-treatment devices can provide an improved quality of life compared to outpatient phototherapy. They also free up a clinic‘s medical resources.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Description" AppendRootKey="false">
+    <Value>Discover what makes the N-LINE T MODULE such a great device for the targeted treatment of upper body, hands, feet and legs.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature1.Description" AppendRootKey="false">
+    <Value>Real-time dosimetry guarantees reliable results by constantly monitoring the energy output and adjusting the treatment, ensuring that you deliver the intended dose, regardless of variables, such as lamp condition or voltage.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature1.Title" AppendRootKey="false">
+    <Value>Real-Time Dosimetry
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature10.Description" AppendRootKey="false">
+    <Value>The high intensity of +19 mW/cm² (at 0 cm distance) can be more cost-effective. Shortening the duration can improve the patient’s experience, reduce waiting times, increase satisfaction with the doctor’s visit, and provide more access to care.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature10.Title" AppendRootKey="false">
+    <Value>Save Time</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature2.Description" AppendRootKey="false">
+    <Value>Quickly position the unit in an upright or flat orientation, on the floor or a table - depending on your needs. You can effectively treat hands, legs, feet, or any medium-sized areas of the body.
+Simply adjust the seating or placement to make the treatment more comfortable for your patients.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature2.Title" AppendRootKey="false">
+    <Value>Targeted Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature3.Description" AppendRootKey="false">
+    <Value>Weighing only 7.5 kg, the module is easy to move between treatment rooms. The compact design makes it easy to fit into any clinic or home environment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature3.Title" AppendRootKey="false">
+    <Value>Portable</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature4.Description" AppendRootKey="false">
+    <Value>The design is perfect for home therapy because it is so easy to use. Patients simply adhere to their physicians treatment plan and enter the dose. The system will automatically calculate the treatment duration. You can give patients back their freedom by giving them the ability to perform treatments at home.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature4.Title" AppendRootKey="false">
+    <Value>Treatment at home</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature5.Description" AppendRootKey="false">
+    <Value>The N-LINE T MODULE is equipped with an straightforward industrial-grade controller. Appropriate dose limits are preset to help prevent operational errors. </Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature5.Title" AppendRootKey="false">
+    <Value>Easy-to-Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature6.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. UV light passes through the shield unhindered. Cleaning or surface disinfection is quick and easy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature6.Title" AppendRootKey="false">
+    <Value>Acrylic Shielding</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature7.Description" AppendRootKey="false">
+    <Value>Water-resistant acrylic panels are designed with a drip edge to direct fluids away from the enclosure. This protects the device against sweat, water, and topical medications.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature7.Title" AppendRootKey="false">
+    <Value>Splash-Proof</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature8.Description" AppendRootKey="false">
+    <Value>The module uses an active cooling system. The temperature management maximizes the lamps’ service life and performance.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature8.Title" AppendRootKey="false">
+    <Value>Active Air Flow</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature9.Description" AppendRootKey="false">
+    <Value>Electronic ballasts provide higher lamp efficacy, lower power consumption, and longer lamp life. An Electronic ballast will generally operate for over 50,000 hours (minimum expectancy), so they do not need to be replaced very often.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Feature9.Title" AppendRootKey="false">
+    <Value>Electronic Ballast</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Featurelist.Title" AppendRootKey="false">
+    <Value>Discover the difference</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature1.Description" AppendRootKey="false">
+    <Value>The design is perfect for home therapy because it is so easy to use. You can give patients back their freedom by giving them the ability to perform treatments at home.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature1.Title" AppendRootKey="false">
+    <Value>Home Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature2.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. This protects the device against sweat, water, and topical medications.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature2.Title" AppendRootKey="false">
+    <Value>Crystal Clear Shield</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature3.Description" AppendRootKey="false">
+    <Value>Quickly position the unit in an different positions - depending on your needs. You can effectively treat hands, legs, feet, or any medium-sized areas of the body.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature3.Title" AppendRootKey="false">
+    <Value>Targeted Treatment</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature4.Description" AppendRootKey="false">
+    <Value>Weighing only 7.5 kg, the module is easy to move between treatment rooms. The compact design makes it easy to fit into any clinic or home environment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Features.Feature4.Title" AppendRootKey="false">
+    <Value>High Mobility</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Intro" AppendRootKey="false">
+    <Value>This portable yet powerful module treats localized lesions in a clinical setting or as a home therapy device.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.N-LINETMODULE.Technologies.Description" AppendRootKey="false">
+    <Value>Discover what makes the N-LINE T MODULE the perfect compact UV phototherapy device for home therapy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Image0" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/touchscreen.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/touchscreen.jpg" alt="Touchscreen of the N-LINE PRO MAX" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Image1" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE_cooling.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-contain my-auto" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE_cooling.png" alt="N-LINE active cooling of the lamps" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Image2" AppendRootKey="false">
+    <Value>&lt;picture class="w-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-Line-pro_notfall.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-cover w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-Line-pro_notfall.jpg" alt="The N-LINE pro emergency handle" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Item0" AppendRootKey="false">
+    <Value>The N-LINE pro features a modern touch screen that guides the operator through the treatment setup. Alternatively, you can create profiles to streamline the process. The intelligent interface assists you step by step and adds a layer of safety to prevent dosage errors.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Item1" AppendRootKey="false">
+    <Value>Cooling is important because it helps to maintain the optimal temperature for the lamp to operate efficiently and effectively. If the lamp is too hot, it can result in shortened lamp life and reduced UV output. The temperature management system maximizes service life and performance.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Item2" AppendRootKey="false">
+    <Value>&lt;ul&gt;
+&lt;li&gt;A physical lock secures and shuts off the cabin.&lt;/li&gt;
+&lt;li&gt;Opening the door pauses treatment immediately.&lt;/li&gt;
+&lt;li&gt;An emergency handle detects when a patient is in distress, suspends treatment, and alerts the staff.&lt;/li&gt;
+&lt;li&gt;A clearly visible emergency stop button is located on the exterior.&lt;/li&gt;
+&lt;/ul&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Title0" AppendRootKey="false">
+    <Value>Guided Interface</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Title1" AppendRootKey="false">
+    <Value>Smooth Air Technology (SAT)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Carousel.Title2" AppendRootKey="false">
+    <Value>Safety Concept</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.Description" AppendRootKey="false">
+    <Value>Each N-LINE System is designed to meet specific requirements. All models share a common foundation, boasting our unique core design along with all essential safety features.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.Help.Link" AppendRootKey="false">
+    <Value>More details</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.Help.Sub" AppendRootKey="false">
+    <Value>Talk to our experts or explore the detailed differences in our technical specs.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.Help.Title" AppendRootKey="false">
+    <Value>Need help choosing a model?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.Intro" AppendRootKey="false">
+    <Value>Which system is best for you?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.NLINE.Description" AppendRootKey="false">
+    <Value>&lt;span class="h5 card-title d-block"&gt;N-LINE&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;28x UV lamps (3200VA)&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;Industrial-Grade Control Panel&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;No Network Capabilities&lt;/span&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.NLINEPRO.Description" AppendRootKey="false">
+    <Value>&lt;span class="h5 card-title d-block"&gt;N-LINE PRO&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;40x UV lamps (4900VA)&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;Touchscreen 6"&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;PIN authorization&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;Emergency handle&lt;/span&gt;&lt;span class="list-item text-muted small"&gt;Network Capabilities&lt;/span&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Config.Model.NLINEPROMAX.Description" AppendRootKey="false">
+    <Value>&lt;span class="h5 card-title d-block"&gt;N-LINE PRO MAX&lt;/span&gt;
+&lt;span class="list-item text-muted small"&gt;All N-LINE PRO Features&lt;/span&gt;
+&lt;span class="list-item text-muted small"&gt;Extra Large Touchscreen 12"&lt;/span&gt;
+&lt;span class="list-item text-muted small"&gt;Patient Voice Guide&lt;/span&gt;
+&lt;span class="list-item text-muted small"&gt;Emergency handle&lt;/span&gt;
+&lt;span class="list-item text-muted small"&gt;Active Comfort Flow&lt;/span&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Ecoflex.Figure1.Caption1" AppendRootKey="false">
+    <Value>Initial Price</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Ecoflex.Figure1.Caption2" AppendRootKey="false">
+    <Value>Running Costs
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Ecoflex.Figure1.Sub" AppendRootKey="false">
+    <Value>Save on initial and replacement cost while also reducing energy consumption.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Ecoflex.Figure2.Sub" AppendRootKey="false">
+    <Value>Optimized lamp arrangement.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Ecoflex.Sub" AppendRootKey="false">
+    <Value>Use the full potential of standard-length lamps for patients up to 200cm. Sustainable technology that cares for patients and the planet.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Ecoflex.Title" AppendRootKey="false">
+    <Value>2M EcoFlex
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Description" AppendRootKey="false">
+    <Value>The N-LINE System is designed to meet your specific requirements. All models share a common foundation, boasting our unique core design along with all essential safety features.
+
+
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature1.Description" AppendRootKey="false">
+    <Value>All lamps are arranged on a curve to concentrate the light where it is needed. The ARC-Concept provides excellent exposure to the lower extremities while allowing the treatment of even taller patients (2 meters).</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature1.Title" AppendRootKey="false">
+    <Value>ARC-Concept
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature10.Description" AppendRootKey="false">
+    <Value>The overhead air intake keeps dust and dirt particles out of the system to maintain the maximum performance of the UV lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature10.Title" AppendRootKey="false">
+    <Value>Dust Reduction System (DRS)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature11.Description" AppendRootKey="false">
+    <Value>The open top prevents patients from feeling confined, while the UV reflectors (RSEP) act as mirrors inside the cabin. Patients enjoy the perception of a more spacious and well-ventilated environment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature11.Title" AppendRootKey="false">
+    <Value>Open Cabin Design</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature12.Description" AppendRootKey="false">
+    <Value>Well-placed handle grips keep patients stable and in the optimal treatment position.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature12.Title" AppendRootKey="false">
+    <Value>Ergonomic</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature2.Description" AppendRootKey="false">
+    <Value>Intelligent placement allows 1.8m lamps to effectively perform as 2m lamps without wasting energy. This enables treatment for taller patients while embracing eco-friendliness and offering long-term cost savings with standard length lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature2.Title" AppendRootKey="false">
+    <Value>2M EcoFlex</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature3.Description" AppendRootKey="false">
+    <Value>The N-LINE series is for professionals where reliability and durability matter. The galvanized steel body and door with powder coating are constructed for long-term use.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature3.Title" AppendRootKey="false">
+    <Value>Heavy Duty Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature4.Description" AppendRootKey="false">
+    <Value>The bottom platform and lamp shielding are made of medical-grade materials that can be removed for easy cleaning and disinfection.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature4.Title" AppendRootKey="false">
+    <Value>Convenient</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature5.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. UV light passes through the shield unhindered. Cleaning or surface disinfection is quick and easy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature5.Title" AppendRootKey="false">
+    <Value>Acrylic Shielding</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature6.Description" AppendRootKey="false">
+    <Value>Reflective back panels direct the UV light at the user, maximizing lamp efficiency and allows for shorter treatments. Simultaneously, the panels visually increase the cabin space.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature6.Title" AppendRootKey="false">
+    <Value>Reflective Space Extension Panels (ReflexPro)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature7.Description" AppendRootKey="false">
+    <Value>Despite its compact size, every lamp uses electronic starters. Users benefit from reduced energy consumption and increased service life of the lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature7.Title" AppendRootKey="false">
+    <Value>Electronic Starters</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature8.Description" AppendRootKey="false">
+    <Value>Smooth Air Technology (SAT) - Cooling is important because it helps to maintain the optimal temperature for the lamp to operate efficiently and effectively. If the lamp is too hot, it can result in shortened lamp life and reduced UV output. The temperature management system maximizes service life and performance.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature8.Title" AppendRootKey="false">
+    <Value>Smooth Air Technology</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature9.Description" AppendRootKey="false">
+    <Value>Premium cooling fans with advanced fluid-dynamic bearings keep the cabin at an unobtrusive volume level and make communication easier.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Featurelist.Feature9.Title" AppendRootKey="false">
+    <Value>Low Noise</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Description" AppendRootKey="false">
+    <Value>Discover our state of the art technologies that make the N-LINE the best uv phototherapy cabin</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature1.Description" AppendRootKey="false">
+    <Value>Advanced sensors continuously monitor the UV output and provide real-time dosage calculations.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature1.Title" AppendRootKey="false">
+    <Value>Dose Sense
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature2.Description" AppendRootKey="false">
+    <Value>The curved lamp arrangement is based on the human body and ensures a uniform distance to the skin.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature2.Title" AppendRootKey="false">
+    <Value>ARC-Concept</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature3.Description" AppendRootKey="false">
+    <Value>By channeling air through carefully engineered pathways, we reduce dust particles inside the equipment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature3.Title" AppendRootKey="false">
+    <Value>Clean Flow</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature4.Description" AppendRootKey="false">
+    <Value>The advanced polymer protects the lamps from dirt and damage while transmitting the UV light unhindered.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature4.Title" AppendRootKey="false">
+    <Value>Crystal Clear Shield</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature5.Description" AppendRootKey="false">
+    <Value>The high-efficiency fan array maximizes the lamp's life and performance without interfering with your work.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature5.Title" AppendRootKey="false">
+    <Value>Whisper Cool</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature6.Description" AppendRootKey="false">
+    <Value>The advanced polymer protects the lamps from dirt and damage while transmitting the UV light unhindered.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Features.Feature6.Title" AppendRootKey="false">
+    <Value>Reflex Pro</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Intro" AppendRootKey="false">
+    <Value>Our most powerful and capable phototherapy system ever.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Intro.Description1" AppendRootKey="false">
+    <Value>The N-LINE series is the ultimate solution for professional UV phototherapy. Featuring two exceptional models, each designed to meet your specific requirements. Both models share a common foundation, boasting our unique core design along with all essential safety features.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Description" AppendRootKey="false">
+    <Value>SKINdex is MEDlights propriety treatment management software. Combine data collection, therapy planning, and cabin operation into a single system.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Intercom.Sub" AppendRootKey="false">
+    <Value>Communicate via your control station
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Intercom.Title" AppendRootKey="false">
+    <Value>Intercom/Video</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Planning.Sub" AppendRootKey="false">
+    <Value>Create automated treatment plans</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Planning.Title" AppendRootKey="false">
+    <Value>Therapy Planning</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Remote.Sub" AppendRootKey="false">
+    <Value>Control up to seperate systems remotely
+
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Remote.Title" AppendRootKey="false">
+    <Value>Remote Control
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Required" AppendRootKey="false">
+    <Value>(SKINdex requires a N-LINE PRO or N-LINE PRO MAX)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.NLINE.Skindex.Title" AppendRootKey="false">
+    <Value>Connect with SKINdex</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Carousel.Body1" AppendRootKey="false">
+    <Value>The OCTADERM has been designed specifically with in-home users in mind.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTAderm.Carousel.Image0" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.webp" type="image/webp"&gt;&lt;img class="img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.png" alt="OCTADERM control elements and display" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTAderm.Carousel.Image1" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.webp" type="image/webp"&gt;&lt;img class="img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.jpg" alt="Patient using the OCTADERM" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTAderm.Carousel.Item0" AppendRootKey="false">
+    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTAderm.Carousel.Item1" AppendRootKey="false">
+    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTAderm.Carousel.Title0" AppendRootKey="false">
+    <Value>Easy-to-Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Carousel.Title1" AppendRootKey="false">
+    <Value>Ideal for in-home treatment</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Help.Description" AppendRootKey="false">
+    <Value>Talk to our experts or explore the detailed differences in our technical specs.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Help.Link" AppendRootKey="false">
+    <Value>Learn more</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Help.Title" AppendRootKey="false">
+    <Value>Do you need more information?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Included1" AppendRootKey="false">
+    <Value>8 x 100 W phototherapy lamps</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Included2" AppendRootKey="false">
+    <Value>Rubberized caster wheels</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Included3" AppendRootKey="false">
+    <Value>Dose-Sense real time dosimetry</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Intro" AppendRootKey="false">
+    <Value>The mobile full body treatment device, providing professional UV phototherapy for in-home therapy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Octaderm.Config.Name" AppendRootKey="false">
+    <Value>OCTADERM</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.ContactButton" AppendRootKey="false">
+    <Value>Get in contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Description1" AppendRootKey="false">
+    <Value>The OCTADERM is a full body phototherapy device that plugs into standard power outlets. It offers convenience and therapeutic effectiveness of UV phototherapy in a slim design with a variety of lamp configurations.
+This product is aimed at professional users with limited space and in-home treatment for patients requiring full body therapy. Every OCTADERM uses real-time dosimetry to provide an accurate, reliable and safe treatment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Description" AppendRootKey="false">
+    <Value>The OCTADERM is designed to meet your specific requirements.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature1.Description" AppendRootKey="false">
+    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature1.Title" AppendRootKey="false">
+    <Value>Easy-to-Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature10.Description" AppendRootKey="false">
+    <Value>Rubberized unit castors simplify handling and transport. After each treatment, it is easy to move the device to a convenient location for storage.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature10.Title" AppendRootKey="false">
+    <Value>Mobility</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature11.Description" AppendRootKey="false">
+    <Value>We’ve created a quick-connect system that makes assembling the OCTADERM a breeze - no tools required. It even connects to a standard power outlet.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature11.Title" AppendRootKey="false">
+    <Value>Assembly</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature2.Description" AppendRootKey="false">
+    <Value>Real-time dosimetry guarantees reliable results by constantly monitoring the energy output and adjusting the treatment, ensuring that you deliver the intended dose, regardless of variables, such as lamp condition or voltage.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature2.Title" AppendRootKey="false">
+    <Value>Real-Time Dosimetry</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature3.Description" AppendRootKey="false">
+    <Value>Low lamp placement provides excellent UV exposure to the lower extremities. Knees, calves, and shins are common areas where psoriasis can occur.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature3.Title" AppendRootKey="false">
+    <Value>Arrangement</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature4.Description" AppendRootKey="false">
+    <Value>Despite its compact size, every lamp uses electronic starters. Users benefit from reduced energy consumption and increased service life of the lamps.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature4.Title" AppendRootKey="false">
+    <Value>Electronic Starters</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature5.Description" AppendRootKey="false">
+    <Value>The compact design makes it an ideal fit where space is limited (e.g. smaller practices or private homes). Castors with safety brakes make it easy to move the unit between rooms.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature5.Title" AppendRootKey="false">
+    <Value>Compact Design</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature6.Description" AppendRootKey="false">
+    <Value>The lid of the unit has a convenient storage compartment for accessories.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature6.Title" AppendRootKey="false">
+    <Value>Comfort</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature7.Description" AppendRootKey="false">
+    <Value>Reflective panels direct the UV light at the user, maximizing lamp efficiency and decreasing the treatment duration.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature7.Title" AppendRootKey="false">
+    <Value>UV Reflectors (ReflexPro)</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature8.Description" AppendRootKey="false">
+    <Value>The crystal-clear acrylic shielding protects the lamps from dirt and damage. UV light passes through the shielding unhindered. Cleaning or surface disinfection is quick and easy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature8.Title" AppendRootKey="false">
+    <Value>Acrylic Shielding</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature9.Description" AppendRootKey="false">
+    <Value>Operation is simple and safe while effectively treating the whole body. The physician can preset a dose limit to prevent incorrect handling by the patient.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Feature9.Title" AppendRootKey="false">
+    <Value>Safe Operation</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Featurelist.Title" AppendRootKey="false">
+    <Value>Discover all features</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature1.Description" AppendRootKey="false">
+    <Value>Advanced sensors continuously monitor the UV output and provide real-time dosage calculations.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature1.Title" AppendRootKey="false">
+    <Value>Dose Sense</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature2.Description" AppendRootKey="false">
+    <Value>The advanced polymer protects the lamps from dirt and damage while transmitting the UV light unhindered.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature2.Title" AppendRootKey="false">
+    <Value>Reflex Pro</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature3.Description" AppendRootKey="false">
+    <Value>The advanced polymer protects the lamps from dirt and damage while transmitting the UV light unhindered.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature3.Title" AppendRootKey="false">
+    <Value>Crystal Clear Shield</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature4.Description" AppendRootKey="false">
+    <Value>Ease of use and and a compact design redefine in-home therapy. With smooth rubberized castors, seamlessly transition between treatments and simply store the device away after each use.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Features.Feature4.Title" AppendRootKey="false">
+    <Value>Home Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Image" AppendRootKey="false">
+    <Value>&lt;picture class="d-flex"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.webp" type="image/webp"&gt;&lt;img class="img-fluid w-100 mx-auto max-width-10 mx-auto" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.png" alt="OCTADERM buttons and display" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Sub" AppendRootKey="false">
+    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Title" AppendRootKey="false">
+    <Value>Easy-to-Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure2.Image" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain max-width-10 w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Herfofeature.Sub" AppendRootKey="false">
+    <Value>The OCTADERM has been designed specifically with in-home users in mind.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Herfofeature.Title" AppendRootKey="false">
+    <Value>Compact Full Body Treatment</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Intro" AppendRootKey="false">
+    <Value>A convenient and mobile full-body UV therapy device featuring real-time sensor-guided dosimetry.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.OCTADERM.Technologies.Description" AppendRootKey="false">
+    <Value>Discover what makes the OCTADERME the perfect compact full body UV phototherapy device</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Phone" AppendRootKey="false">
+    <Value>+49-5221-994-29-0</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Products.ContactButton" AppendRootKey="false">
+    <Value>Get in contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Skindex.Screen" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/skindex_display.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/skindex_display.png" alt="Computer screen representing MEDlight Skindex" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Technologies.Title" AppendRootKey="false">
+    <Value>Technologies</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Test" AppendRootKey="false">
+    <Value>This is the English Text24.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Body1" AppendRootKey="false">
+    <Value>The intuitive touchscreen assists in the treatment process. Use the standardized treatment presets or freely adjust the dose and light output. Save frequently used settings for quick access. Treatment records are saved and can be reviewed.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Body2" AppendRootKey="false">
+    <Value>The latest generation of high-performance LEDs reduce energy consumption while being safe and reliable. They are designed for over 65,000 hours of use. Special focus lenses ensure homogeneous an adjustable output of up to 90MW/CM2.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Body3" AppendRootKey="false">
+    <Value>Quickly set up the best treatment position using the flexible treatment arm. The trifold treatment segments can be angled and perfectly match the shape of the treatment area.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Image0" AppendRootKey="false">
+    <Value>&lt;picture class="my-auto"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/adjustable.webp" type="image/webp"&gt;&lt;img class="fit-contain- img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/adjustable.jpg" alt="TREVIOLUX adjustable height and device arm" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Image1" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/touchscreen.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/touchscreen.jpg" alt="Touchscreen of the N-LINE PRO MAX" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Image2" AppendRootKey="false">
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/led-skin.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-contain" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/led-skin.jpg" alt="Penetration depth of PDT 630nm" loading="lazy"&gt;&lt;/picture&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Item0" AppendRootKey="false">
+    <Value>Quickly set up the best treatment position using the flexible treatment arm. The trifold treatment segments can be angled and perfectly match the shape of the treatment area.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Item1" AppendRootKey="false">
+    <Value>The intuitive touchscreen assists in the treatment process. Use the standardized treatment presets or freely adjust the dose and light output. Save frequently used settings for quick access. Treatment records are saved and can be reviewed.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Item2" AppendRootKey="false">
+    <Value>The latest generation of high-performance LEDs reduce energy consumption while being safe and reliable. They are designed for over 65,000 hours of use. Special focus lenses ensure homogeneous an adjustable output of up to 90MW/CM2.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Title0" AppendRootKey="false">
+    <Value>Fully Adjustable
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Title1" AppendRootKey="false">
+    <Value>Ease of Use
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Title2" AppendRootKey="false">
+    <Value>High-Performance LEDs</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Carousel.Title3" AppendRootKey="false">
+    <Value>Fully Adjustable</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.GetDetails" AppendRootKey="false">
+    <Value>Get Details:</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.GetDetails1" AppendRootKey="false">
+    <Value>Cost estimate</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.GetDetails2" AppendRootKey="false">
+    <Value>Delivery dates</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.GetDetails3" AppendRootKey="false">
+    <Value>Installation plan</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.GetDetails4" AppendRootKey="false">
+    <Value>Recycle your old devices</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Help.Description" AppendRootKey="false">
+    <Value>Talk to our experts or explore the detailed differences in our technical specs.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Help.Link" AppendRootKey="false">
+    <Value>Learn more</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Help.Title" AppendRootKey="false">
+    <Value>Do you need more information?</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Included1" AppendRootKey="false">
+    <Value>PDT device with touchscreen and 3 treatment modes</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Included2" AppendRootKey="false">
+    <Value>Device certificate, medical measurement protocol, technical safety protocol</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Included3" AppendRootKey="false">
+    <Value>PDT user safety glasses, PDT patient safety glasses</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Intro" AppendRootKey="false">
+    <Value>The PDT device that offers the best of three worlds in one sleek device, providing top-tier PDT treatment.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.ModelDescription" AppendRootKey="false">
+    <Value>&lt;p class="text-muted text-center"&gt;Please choose your desired options below to personalize your device. Afterwards, you can send your request and we will get into contact with you as soon as possible.
+&lt;/p&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.ModelIntro" AppendRootKey="false">
+    <Value>Request a free quote</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Name" AppendRootKey="false">
+    <Value>TREVIOLUX</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.RequestQuote" AppendRootKey="false">
+    <Value>You can send us your configuration to get a free quote below.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Config.Summary" AppendRootKey="false">
+    <Value>Summary</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.ContactButton" AppendRootKey="false">
+    <Value>Get in contact</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Description1" AppendRootKey="false">
+    <Value>With the certified PDT lamp TREVIOLUX you can choose between conventional photodynamic therapy, low-pain Compact Daylight PDT, or skin rejuvenation. Three treatment modes in a single compact device. Designing the right treatment is now faster and easier than ever.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Description" AppendRootKey="false">
+    <Value>The TREVIOLUX is a versatile and innovative device designed to cater to a wide range of applications. With a unified core design a it delivers exceptional performance and reliability, making it a standout choice for PDT treatments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature1.Description" AppendRootKey="false">
+    <Value>The TREVIOLUX combines three applications in a single device. At a peak wavelength of 630 nm, the light penetrates deep and effectively into the tissue during irradiation.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature1.Title" AppendRootKey="false">
+    <Value>3-in-1</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature2.Description" AppendRootKey="false">
+    <Value>The intuitive touchscreen assists in the treatment process. Use the standardized treatment presets or freely adjust the dose and light output. Save frequently used settings for quick access. Treatment records are saved and can be reviewed.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature2.Title" AppendRootKey="false">
+    <Value>Ease of Use</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature3.Description" AppendRootKey="false">
+    <Value>Quickly set up the best treatment position using the flexible treatment arm. The trifold treatment segments can be angled and perfectly match the shape of the treatment area.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature3.Title" AppendRootKey="false">
+    <Value>Fully Adjustable</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature4.Description" AppendRootKey="false">
+    <Value>Integrated wheels and its compact footprint make the device mobile. You can easily store or move the device between sessions. The mobile and compact design offers several advantages for all types of healthcare facilities, such as improved access for patients with disabilities and simple integration into existing environments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature4.Title" AppendRootKey="false">
+    <Value>High Mobility</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature5.Description" AppendRootKey="false">
+    <Value>The latest generation of high-performance LEDs reduce energy consumption while being safe and reliable. They are designed for over 65,000 hours of use. Special focus lenses ensure homogeneous an adjustable output of up to 90MW/CM2.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature5.Title" AppendRootKey="false">
+    <Value>High-Performance LEDs</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature6.Description" AppendRootKey="false">
+    <Value>The large and homogeneous illumination area of 300CM2 allows the exposure of large lesions in a single session.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature6.Title" AppendRootKey="false">
+    <Value>Large Treatment Area</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature7.Description" AppendRootKey="false">
+    <Value>The housing is made from high-grade aluminum, durable, and easy to clean. Very little maintenance is needed to keep the hardware in excellent condition.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature7.Title" AppendRootKey="false">
+    <Value>Quality Materials</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature8.Description" AppendRootKey="false">
+    <Value>The Soft-Start function will gently increase the light output while maintaining the correct dosage. The patient has time to adjust, which makes the experience much more tolerable.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature8.Title" AppendRootKey="false">
+    <Value>Soft-Start</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature9.Description" AppendRootKey="false">
+    <Value>The optional Pulse-Mode can reduce discomfort for some patients by alternating the light intensity in an optimized pattern.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Feature9.Title" AppendRootKey="false">
+    <Value>Pulse-Mode</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Featurelist.Title" AppendRootKey="false">
+    <Value>Discover the difference</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Description" AppendRootKey="false">
+    <Value>Discover our state of the art technologies that make the N-LINE the best uv phototherapy cabin</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature1.Description" AppendRootKey="false">
+    <Value>The TREVIOLUX combines three applications in a single device. Classic PDT, Compact-Daylight-PDT and Rejuvenation.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature1.Title" AppendRootKey="false">
+    <Value>3-in-1</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature2.Description" AppendRootKey="false">
+    <Value>The mobile and compact design offers several advantages for all types of healthcare facilities, such as improved access for patients with disabilities and simple integration into existing environments.
+</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature2.Title" AppendRootKey="false">
+    <Value>High Mobility</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature3.Description" AppendRootKey="false">
+    <Value>We use the latest generation of high-performance LEDs to reduce energy consumption while being safe and reliable.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature3.Title" AppendRootKey="false">
+    <Value>High-Performance LEDs</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature4.Description" AppendRootKey="false">
+    <Value>From our virtually pain-free Compact-Daylight-PDT and Soft-Start feature to the Pulse-Mode, we are committed to  enhancing the patient experience.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Features.Feature4.Title" AppendRootKey="false">
+    <Value>Patient-Focused</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure1.Sub" AppendRootKey="false">
+    <Value>Conventional PDT (optional Soft-Start/Pulse-Mode) to treat actinic keratoses and basal cell carcinoma.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure1.Title" AppendRootKey="false">
+    <Value>Conventional PDT</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure2.Sub" AppendRootKey="false">
+    <Value>The Compact Daylight PDT is a unique, effective, and extremely beneficial approach to treatment. Inspired by the principles of the Daylight PDT. A controlled and virtually pain-free treatment - best suited for superficial actinic keratoses.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure2.Title" AppendRootKey="false">
+    <Value>Compact Daylight PDT</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure3.Sub" AppendRootKey="false">
+    <Value>Rejuvenation</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure3.Title" AppendRootKey="false">
+    <Value>Rejuvenation</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Figure4.Sub" AppendRootKey="false">
+    <Value>Skin rejuvenating effects of PDT for photoaged skin have been well-documented in several clinical trials. The rejuvenation mode simplifies the use of PDT for aesthetic applications.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Sub" AppendRootKey="false">
+    <Value>The TREVIOLUX combines three applications in a single device. At a peak wavelength of 630 nm, the light penetrates deep and effectively into the tissue during irradiation.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Herfofeature.Title" AppendRootKey="false">
+    <Value>3-in-1 Therapy</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Intro" AppendRootKey="false">
+    <Value>The effective 3-in-1 solution for modern photodynamic therapy.</Value>
+  </LocaleResource>
+  <LocaleResource Name="ML.Treviolux.Technologies.Description" AppendRootKey="false">
+    <Value>Our devices integrate cutting-edge technologies to  deliver exceptional care, precise treatments, and a superior patient experience. These technologies exemplify our commitment to innovation and excellence.</Value>
+  </LocaleResource>
+</Language>
