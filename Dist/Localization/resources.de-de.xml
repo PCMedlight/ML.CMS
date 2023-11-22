@@ -1,11 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Language Name="Deutsch" IsDefault="false" IsRightToLeft="false">
-  <LocaleResource Name="ML.Certified.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/cnc.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 max-height-25" src="/Themes/MEDlight-Theme/images/general/cnc.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Certified.Image2" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/component.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 max-height-25" src="/Themes/MEDlight-Theme/images/general/component.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
+﻿<Language Name="Deutsch" IsDefault="false" IsRightToLeft="false">
   <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
     <Value>Zertifizierte Medizintechnik</Value>
   </LocaleResource>
@@ -15,23 +8,17 @@
   <LocaleResource Name="ML.ContactUs.Form.Submit" AppendRootKey="false">
     <Value>Get into Contact</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.Index-Carousel.Slide1.Image" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/spectrum.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain" src="/Themes/MEDlight-Theme/images/general/spectrum.png" alt="Farbspektrum" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index-Carousel.Slide2.Image" AppendRootKey="false">
-    <Value>&lt;picture class="w-100 h-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/n-line-pro-lamps.webp" type="image/webp"&gt;&lt;img class="w-100 h-100 max-height-30 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/n-line-pro-lamps.jpg" alt="Farbspektrum" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.Index.Additionals" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/ACCESSORIES.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/general/ACCESSORIES.jpg" alt="Zusammenstellung von MEDlight Produkten" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/ACCESSORIES.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/general/ACCESSORIES.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Carousel.Slide2.Title" AppendRootKey="false">
     <Value>N-LINE System</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Map" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/MAP.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain w-100 h-100" src="/Themes/MEDlight-Theme/images/general/MAP.jpg" alt="Internationale Karte von MEDlight Handelspartnern" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/MAP.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain w-100 h-100" src="/Themes/MEDlight-Theme/images/general/MAP.jpg" alt="Karte von MEDlight Handelspartnern" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.SupportBanner.Image" AppendRootKey="false">
-    <Value>&lt;picture id="support-img" class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/smiling-woman.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover position-absolute w-100 h-100" src="/Themes/MEDlight-Theme/images/general/smiling-woman.jpg" alt="Eine Frau steht im Feld mit Sonnenblumen in der Hand" loading="lazy" style="object-position: 20% 100%;"&gt;&lt;/picture&gt;</Value>
+    <Value>&lt;picture id="support-img" class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/smiling-woman.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover position-absolute w-100 h-100" src="/Themes/MEDlight-Theme/images/general/smiling-woman.jpg" alt="" loading="lazy" style="object-position: 25% 50%;"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Tile1.Image" AppendRootKey="false">
     <Value>&lt;picture class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE-Pro-max.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain position-absolute w-100 h-100 p-4" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE-Pro-max.png" alt="N-LINE pro UV-Phototherapie-Kabine" loading="lazy"&gt;&lt;/picture&gt;</Value>
@@ -42,59 +29,8 @@
   <LocaleResource Name="ML.Mail" AppendRootKey="false">
     <Value>info@medlight.eu</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture class="d-flex w-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid m-auto fit-contain h-100 w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Patient.jpg" alt="Patient sitzt am N-LINE T" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Touch.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Touch.jpg" alt="N-LINE T Touchscreen" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture class="w-100 w-100 d-flex"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Side.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain m-auto w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Side.jpg" alt="Seitenansicht des N-LINE T" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Feet.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Feet.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover h-100 w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/touchscreen.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/touchscreen.jpg" alt="Touchscreen des N-LINE PRO MAX" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE_cooling.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-contain my-auto" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE_cooling.png" alt="N-LINE aktive Lüftung der Leuchtmittel" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture class="w-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-Line-pro_notfall.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-cover w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-Line-pro_notfall.jpg" alt="Der N-LINE pro Notfallgriff" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.webp" type="image/webp"&gt;&lt;img class="img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.png" alt="OCTADERM Bedienelemente und Bildschirm" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.webp" type="image/webp"&gt;&lt;img class="img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.jpg" alt="Patient bei der Benutzung des OCTADERM" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Image" AppendRootKey="false">
-    <Value>&lt;picture class="d-flex"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.webp" type="image/webp"&gt;&lt;img class="img-fluid w-100 mx-auto max-width-10 mx-auto" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.png" alt="OCTADERM Display und Bedienungselemente" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure2.Image" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain max-width-10 w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Skindex.Screen" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/skindex_display.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/skindex_display.png" alt="Computerbildschirm mit Symbolgrafik MEDlight Skindex" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.Test" AppendRootKey="false">
     <Value>Dies ist der deutsche Text24.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture class="my-auto"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/adjustable.webp" type="image/webp"&gt;&lt;img class="fit-contain- img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/adjustable.jpg" alt="TREVIOLUX  verstellbare Höhe und Gerätearm" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/touchscreen.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/touchscreen.jpg" alt="Touchscreen des N-LINE PRO MAX" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/led-skin.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-contain" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/led-skin.jpg" alt="Eindringtiefe of PDT 630nm" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Treviolux.Config.ModelDescription" AppendRootKey="false">
     <Value>&lt;p class="text-muted text-center"&gt;Not found&lt;/p&gt;</Value>

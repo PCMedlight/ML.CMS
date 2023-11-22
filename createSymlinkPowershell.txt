@@ -1,0 +1,14 @@
+# Define the source and target paths
+$sourcePath = "C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Web\Modules\ML.CMS"
+$targetPath = "C:\Users\p.chaoui\Creative Cloud Files\Github\smartstore-medlight\src\Smartstore.Modules\ML.CMS\Dist"
+
+# Check if the target path already exists
+if (Test-Path $targetPath) {
+    # If it exists, you may want to remove or rename it before creating the junction
+    # For example, you can add a timestamp to the existing folder and then create the junction
+    $timestamp = Get-Date -Format "yyyyMMddHHmmss"
+    Rename-Item $targetPath "$targetPath-$timestamp"
+}
+
+# Create the junction
+New-Item -ItemType Junction -Path $targetPath -Target $sourcePath

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Language Name="Englisch" IsDefault="true" IsRightToLeft="false">
   <LocaleResource Name="ML.About.Intro1" AppendRootKey="false">
     <Value>For over six decades, MEDlight GmbH has been a leading medical device manufacturer in Germany, thanks to our continuous advancements of modern technologies. Over the years, we've established ourselves as a leading specialist.</Value>
@@ -101,12 +100,6 @@
   </LocaleResource>
   <LocaleResource Name="ML.Certified.Description2" AppendRootKey="false">
     <Value>Our business operations are characterized by a deep commitment to quality and responsibility. We undergo continuous certifications and maintain a professional quality management system that adheres to the highest European and German standards.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Certified.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/cnc.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 max-height-25" src="/Themes/MEDlight-Theme/images/general/cnc.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Certified.Image2" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/component.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 max-height-25" src="/Themes/MEDlight-Theme/images/general/component.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Certified.Title" AppendRootKey="false">
     <Value>Certified Medical Devices</Value>
@@ -436,14 +429,8 @@
   <LocaleResource Name="ML.Guidance.Title3" AppendRootKey="false">
     <Value>Support</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.Index-Carousel.Slide1.Image" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/spectrum.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain" src="/Themes/MEDlight-Theme/images/general/spectrum.png" alt="Color spectrum" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index-Carousel.Slide2.Image" AppendRootKey="false">
-    <Value>&lt;picture class="w-100 h-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/n-line-pro-lamps.webp" type="image/webp"&gt;&lt;img class="w-100 h-100 max-height-30 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/n-line-pro-lamps.jpg" alt="Color spectrum" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.Index.Additionals" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/ACCESSORIES.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/general/ACCESSORIES.jpg" alt="Assortment of MEDlight Products" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/ACCESSORIES.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/general/ACCESSORIES.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Additionals.Link" AppendRootKey="false">
     <Value>SHOP</Value>
@@ -468,15 +455,6 @@
   </LocaleResource>
   <LocaleResource Name="ML.Index.Carousel.Slide1.Title" AppendRootKey="false">
     <Value>A legacy dating back over 60 years, MEDlight remains the industry leader for innovative phototherapy devices.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.Carousel.Slide2.Link" AppendRootKey="false">
-    <Value>Discover N-LINE</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.Carousel.Slide2.Sub1" AppendRootKey="false">
-    <Value>The high-performance phototherapy system for professional UV treatments</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.Carousel.Slide2.Sub2" AppendRootKey="false">
-    <Value>Certified medical Devices from Germany</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Carousel.Slide2.Title" AppendRootKey="false">
     <Value>N-LINE System</Value>
@@ -509,27 +487,10 @@
     <Value>A legacy dating back over 60 years, MEDlight remains the industry leader for innovative phototherapy devices.</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Map" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/MAP.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain w-100 h-100" src="/Themes/MEDlight-Theme/images/general/MAP.jpg" alt="International map of MEDlight trading relations" loading="lazy" style="object-position: 00% 100%;"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.SupportBanner.Description" AppendRootKey="false">
-    <Value>We’re here to help. MEDlight-certified repairs are performed by trusted experts who use genuine parts. Whichever option you choose, you’ll get your product back working exactly the way it should.
-
-Service and support from the people who know your devices best.
-Because MEDlight makes the hardware, our experts understand how everything works and resolve issues as fast as possible.
-
-</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.SupportBanner.Description1" AppendRootKey="false">
-    <Value>We’re here to help. MEDlight-certified repairs are performed by trusted experts who use genuine parts. Whichever option you choose, you’ll get your product back working exactly the way it should. </Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.SupportBanner.Description2" AppendRootKey="false">
-    <Value>Service and support from the people who know your devices best. Because MEDlight makes the hardware, our experts understand how everything works and resolve issues as fast as possible.</Value>
+    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/MAP.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain w-100 h-100" src="/Themes/MEDlight-Theme/images/general/MAP.jpg" alt="International map of MEDlight  trading relations" loading="lazy"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.SupportBanner.Image" AppendRootKey="false">
-    <Value>&lt;picture id="support-img" class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/smiling-woman.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover position-absolute w-100 h-100" src="/Themes/MEDlight-Theme/images/general/smiling-woman.jpg" alt="Woman standing in a corn field holding sunflowers" loading="lazy" style="object-position: 20% 100%;"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.SupportBanner.Link" AppendRootKey="false">
-    <Value>Get into contact</Value>
+    <Value>&lt;picture id="support-img" class="flex-grow-1 position-relative"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/general/smiling-woman.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover position-absolute w-100 h-100" src="/Themes/MEDlight-Theme/images/general/smiling-woman.jpg" alt="" loading="lazy" style="object-position: 25% 50%;"&gt;&lt;/picture&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.SupportBanner.Title" AppendRootKey="false">
     <Value>Service &amp; Support</Value>
@@ -556,45 +517,10 @@ Because MEDlight makes the hardware, our experts understand how everything works
     <Value>Shop</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Index.Tile3.Title" AppendRootKey="false">
-    <Value>SMALL DEVICES &amp;amp;
-ACCESSORIES</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.Tile3.Title1" AppendRootKey="false">
-    <Value>ACCESSORIES &amp;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Index.Tile3.Title2" AppendRootKey="false">
-    <Value>SHOP</Value>
+    <Value>SMALL DEVICES&lt;br&gt;ACCESSORIES</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Mail" AppendRootKey="false">
     <Value>info@medlight.eu</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture class="d-flex w-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid m-auto fit-contain h-100 w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Patient.jpg" alt="Patient sitting at the N-LINE T" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Touch.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Touch.jpg" alt="N-LINE T Touchscreen" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture class="w-100 w-100 d-flex"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Side.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain m-auto w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINET/N-LINE-T-Side.jpg" alt="Side view of N-LINE T" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Item0" AppendRootKey="false">
-    <Value>The device is designed according to ergonomic principles and puts patients in a back-friendly and comfortable sitting position during treatment.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Item1" AppendRootKey="false">
-    <Value>Appropriate dose limits are preset to help prevent operational errors. The N-LINE T is equipped with an industrial-grade controller. You simply enter the dose and the system automatically calculates the treatment duration.
-The optional touchscreen intuitively guides the operator through the treatment setup.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Item2" AppendRootKey="false">
-    <Value>The enclosure reduces UV light spill for increased patient and personnel safety. A physical key lock prevents unauthorized use. A clearly visible emergency stop button stops the treatment at any time. </Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Title0" AppendRootKey="false">
-    <Value>Ergonomic</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Title1" AppendRootKey="false">
-    <Value>Easy-to-Use</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINET.Carousel.Title2" AppendRootKey="false">
-    <Value>Safety</Value>
   </LocaleResource>
   <LocaleResource Name="ML.N-LINET.Description1" AppendRootKey="false">
     <Value>The N-LINE T MODULE targets moderate or even severe lesions with high doses of UV while reducing exposure to the unaffected skin. You can always place the device, depending on the application: On the floor or a table. The module uses real-time dosimetry to improve safety and accuracy. 
@@ -702,33 +628,6 @@ The optional touchscreen intuitively guides the operator through the treatment s
   </LocaleResource>
   <LocaleResource Name="ML.N-LINET.Technologies.Description" AppendRootKey="false">
     <Value>Discover what makes the N-LINE T the perfect UV phototherapy device for the professional treatment of the extremities.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Feet.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Feet.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-cover h-100 w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINETMODULE/N-LINE-T-MODULE-Patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Item0" AppendRootKey="false">
-    <Value>The design is perfect for home therapy because it is so easy to use. Patients simply adhere to their physicians treatment plan and enter the dose. The system will automatically calculate the treatment duration. You can give patients back their freedom by giving them the ability to perform treatments at home.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Item1" AppendRootKey="false">
-    <Value>Quickly position the unit in an upright or flat orientation, on the floor or a table - depending on your needs. You can effectively treat hands, legs, feet, or any medium-sized areas of the body.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Item2" AppendRootKey="false">
-    <Value>Weighing only 7.5 kg, the module is easy to move between treatment rooms. The compact design makes it easy to fit into any clinic or home environment.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Title0" AppendRootKey="false">
-    <Value>Treatment at home</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Title1" AppendRootKey="false">
-    <Value>Targeted Therapy</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.N-LINETMODULE.Carousel.Title2" AppendRootKey="false">
-    <Value>Portable</Value>
   </LocaleResource>
   <LocaleResource Name="ML.N-LINETMODULE.Config.Help.Description" AppendRootKey="false">
     <Value>Talk to our experts or explore the detailed differences in our technical specs.</Value>
@@ -858,38 +757,6 @@ Simply adjust the seating or placement to make the treatment more comfortable fo
   </LocaleResource>
   <LocaleResource Name="ML.N-LINETMODULE.Technologies.Description" AppendRootKey="false">
     <Value>Discover what makes the N-LINE T MODULE the perfect compact UV phototherapy device for home therapy.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/touchscreen.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/touchscreen.jpg" alt="Touchscreen of the N-LINE PRO MAX" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE_cooling.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-contain my-auto" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-LINE_cooling.png" alt="N-LINE active cooling of the lamps" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture class="w-100"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-Line-pro_notfall.webp" type="image/webp"&gt;&lt;img class="img-fluid h-100 fit-cover w-100" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/N-Line-pro_notfall.jpg" alt="The N-LINE pro emergency handle" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Item0" AppendRootKey="false">
-    <Value>The N-LINE pro features a modern touch screen that guides the operator through the treatment setup. Alternatively, you can create profiles to streamline the process. The intelligent interface assists you step by step and adds a layer of safety to prevent dosage errors.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Item1" AppendRootKey="false">
-    <Value>Cooling is important because it helps to maintain the optimal temperature for the lamp to operate efficiently and effectively. If the lamp is too hot, it can result in shortened lamp life and reduced UV output. The temperature management system maximizes service life and performance.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Item2" AppendRootKey="false">
-    <Value>&lt;ul&gt;
-&lt;li&gt;A physical lock secures and shuts off the cabin.&lt;/li&gt;
-&lt;li&gt;Opening the door pauses treatment immediately.&lt;/li&gt;
-&lt;li&gt;An emergency handle detects when a patient is in distress, suspends treatment, and alerts the staff.&lt;/li&gt;
-&lt;li&gt;A clearly visible emergency stop button is located on the exterior.&lt;/li&gt;
-&lt;/ul&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Title0" AppendRootKey="false">
-    <Value>Guided Interface</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Title1" AppendRootKey="false">
-    <Value>Smooth Air Technology (SAT)</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.NLINE.Carousel.Title2" AppendRootKey="false">
-    <Value>Safety Concept</Value>
   </LocaleResource>
   <LocaleResource Name="ML.NLINE.Config.Model.Description" AppendRootKey="false">
     <Value>Each N-LINE System is designed to meet specific requirements. All models share a common foundation, boasting our unique core design along with all essential safety features.</Value>
@@ -1099,21 +966,6 @@ Simply adjust the seating or placement to make the treatment more comfortable fo
   <LocaleResource Name="ML.OCTADERM.Carousel.Body1" AppendRootKey="false">
     <Value>The OCTADERM has been designed specifically with in-home users in mind.</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.webp" type="image/webp"&gt;&lt;img class="img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.png" alt="OCTADERM control elements and display" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.webp" type="image/webp"&gt;&lt;img class="img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.jpg" alt="Patient using the OCTADERM" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Item0" AppendRootKey="false">
-    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Item1" AppendRootKey="false">
-    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTAderm.Carousel.Title0" AppendRootKey="false">
-    <Value>Easy-to-Use</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.OCTADERM.Carousel.Title1" AppendRootKey="false">
     <Value>Ideal for in-home treatment</Value>
   </LocaleResource>
@@ -1244,18 +1096,6 @@ This product is aimed at professional users with limited space and in-home treat
   <LocaleResource Name="ML.OCTADERM.Features.Feature4.Title" AppendRootKey="false">
     <Value>Home Therapy</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Image" AppendRootKey="false">
-    <Value>&lt;picture class="d-flex"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.webp" type="image/webp"&gt;&lt;img class="img-fluid w-100 mx-auto max-width-10 mx-auto" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/Octaderm-Closeup.png" alt="OCTADERM buttons and display" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Sub" AppendRootKey="false">
-    <Value>The OCTADERM is equipped with a simple industrial-grade controller, physical soft-touch buttons, and a digital display. You enter the dosage and the device automatically calculates the treatment duration. Consecutive sequences can be preset for uninterrupted front and back treatments.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure1.Title" AppendRootKey="false">
-    <Value>Easy-to-Use</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.OCTADERM.Herfofeature.Figure2.Image" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain max-width-10 w-100 h-100" src="/Themes/MEDlight-Theme/images/Produkte/Octaderm/octaderm-patient.jpg" alt="" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.OCTADERM.Herfofeature.Sub" AppendRootKey="false">
     <Value>The OCTADERM has been designed specifically with in-home users in mind.</Value>
   </LocaleResource>
@@ -1274,9 +1114,6 @@ This product is aimed at professional users with limited space and in-home treat
   <LocaleResource Name="ML.Products.ContactButton" AppendRootKey="false">
     <Value>Get in contact</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.Skindex.Screen" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/N-LINE/skindex_display.webp" type="image/webp"&gt;&lt;img class="img-fluid fit-contain" src="/Themes/MEDlight-Theme/images/Produkte/N-LINE/skindex_display.png" alt="Computer screen representing MEDlight Skindex" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.Technologies.Title" AppendRootKey="false">
     <Value>Technologies</Value>
   </LocaleResource>
@@ -1292,31 +1129,8 @@ This product is aimed at professional users with limited space and in-home treat
   <LocaleResource Name="ML.Treviolux.Carousel.Body3" AppendRootKey="false">
     <Value>Quickly set up the best treatment position using the flexible treatment arm. The trifold treatment segments can be angled and perfectly match the shape of the treatment area.</Value>
   </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Image0" AppendRootKey="false">
-    <Value>&lt;picture class="my-auto"&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/adjustable.webp" type="image/webp"&gt;&lt;img class="fit-contain- img-fluid" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/adjustable.jpg" alt="TREVIOLUX adjustable height and device arm" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Image1" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/touchscreen.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-cover" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/touchscreen.jpg" alt="Touchscreen of the N-LINE PRO MAX" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Image2" AppendRootKey="false">
-    <Value>&lt;picture&gt;&lt;source srcset="/Themes/MEDlight-Theme/images/Produkte/Treviolux/led-skin.webp" type="image/webp"&gt;&lt;img class="h-100 w-100 fit-contain" src="/Themes/MEDlight-Theme/images/Produkte/Treviolux/led-skin.jpg" alt="Penetration depth of PDT 630nm" loading="lazy"&gt;&lt;/picture&gt;</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Item0" AppendRootKey="false">
-    <Value>Quickly set up the best treatment position using the flexible treatment arm. The trifold treatment segments can be angled and perfectly match the shape of the treatment area.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Item1" AppendRootKey="false">
-    <Value>The intuitive touchscreen assists in the treatment process. Use the standardized treatment presets or freely adjust the dose and light output. Save frequently used settings for quick access. Treatment records are saved and can be reviewed.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Item2" AppendRootKey="false">
-    <Value>The latest generation of high-performance LEDs reduce energy consumption while being safe and reliable. They are designed for over 65,000 hours of use. Special focus lenses ensure homogeneous an adjustable output of up to 90MW/CM2.</Value>
-  </LocaleResource>
-  <LocaleResource Name="ML.Treviolux.Carousel.Title0" AppendRootKey="false">
-    <Value>Fully Adjustable
-</Value>
-  </LocaleResource>
   <LocaleResource Name="ML.Treviolux.Carousel.Title1" AppendRootKey="false">
-    <Value>Ease of Use
-</Value>
+    <Value>Intuitive Touchscreen</Value>
   </LocaleResource>
   <LocaleResource Name="ML.Treviolux.Carousel.Title2" AppendRootKey="false">
     <Value>High-Performance LEDs</Value>

@@ -84,7 +84,6 @@ export default defineComponent({
       
       return {
         currentdir: "Themes/MEDlight-Theme/images/general",
-        selectedFile: null,
         selectedFile: {
           name: "Select an image",
           fullpath: "https://placehold.co/600x400?text=Image"
@@ -92,7 +91,6 @@ export default defineComponent({
         cmsid: "",
         lazyload: true,
         loadedtag:{
-          text: "",
           picatts: "",
           imgclass: "",
           imgatts: "",
@@ -219,10 +217,10 @@ export default defineComponent({
           });
           if (currentFile == null) break;
         };
-          if (currentFile != null) {
-            this.selectdirectory(null,currentFile);
-            this.selectfile(null,currentFile);
-          }
+        if (currentFile != null) {
+          this.selectdirectory(null,currentFile);
+          this.selectfile(null,currentFile);
+        }
       },
 
       async init(id = "") {
@@ -235,6 +233,21 @@ export default defineComponent({
           this.loadFileFromPath(src);
           this.deconstruct(resource);
         }
+        else {
+          this.loadedtag={
+            picatts: "",
+            imgclass: "",
+            imgatts: "",
+            src: "",
+            EN: "",
+            DE: "",
+            lazyload: true
+          };
+          this.selectedFile= {
+            name: "Select an image",
+            fullpath: "https://placehold.co/600x400?text=Image"
+          };
+        };
         $('#imageBrowserModal').modal('show');
         const backdrop = document.getElementsByClassName('modal-backdrop');
         if (backdrop[0]) backdrop[0].remove(); 
