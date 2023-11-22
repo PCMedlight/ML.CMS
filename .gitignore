@@ -7,3 +7,5 @@ obj/Debug/ML.CMS.assets.cache
 *.cache
 obj/Debug/project.razor.vscode.bin
 *.cache
+Smartstore.Web/*
+!Smartstore.Web/Modules/ML.CMS/
