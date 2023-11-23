@@ -87,6 +87,7 @@ namespace ML.CMS.Services
             productData["Id"] = product.Id;
             productData["Url"] = product.DetailUrl;
             productData["DisableBuyButton"] = product.Price.DisableBuyButton;
+            productData["CallForPrice"] = product.Price.CallForPrice;
             productData["ShortDescription"] = product.ShortDescription;
             var productCategories = await _categoryService.GetProductCategoriesByProductIdsAsync(new[] { product.Id });
             var categoryNames = productCategories.Select(pc => pc.Category.Name).ToList();
