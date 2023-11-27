@@ -22,12 +22,20 @@
 
 
 
+
+
+
 <div id="app-editor" class="row" style="height:85vh; overflow:clip;">
 
 	<div ref="iframeContainer" class="border col p-0 m-0" id="iframeContainer">
 	</div>
 
 	<div class="bg-white border-left flex-column d-flex p-2 h-100" style="width:300px">
+
+		<div class="w-100 mt-1 mb-3">
+			<button class="btn btn-primary btn-sm rounded-0 mr-2" @@click="exportEN">Download EN</button>
+			<button class="btn btn-primary btn-sm rounded-0" @@click="exportDE">Download DE</button>
+		</div>
 
 		<div class="d-flex flex-row flex-nowrap mb-3">
 
@@ -54,7 +62,6 @@
 				</div>
 				<input type="text" v-model="entryid" class="form-control" placeholder="Entry" aria-label="Entry" aria-describedby="basic-addon1">
 			</div>
-
 		</div>
 
 		<div class="d-flex flex-column">

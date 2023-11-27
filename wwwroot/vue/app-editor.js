@@ -1,5 +1,8 @@
 import { createApp, onMounted, ref, computed, reactive, watch, watchEffect } from 'vue'
 import imagebrowser from './imagebrowser.js'
+import * as xmlJs from '../lib/xml-js.esm.js';
+
+
 
 createApp({
     components: {
@@ -25,6 +28,76 @@ createApp({
     },
 
     methods: {
+
+
+        exportDE() {
+            // Fetch the XML content from the server
+            fetch('/admin/cms/ExportLanguageResource', {
+              method: 'GET',
+              headers: { 'Content-Type': 'application/json' },
+              })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then(responseData => {
+                // Extract the XML string from the nested structure
+                const xmlResponse = responseData.Message[1];
+
+                const blob = new Blob([xmlResponse], { type: 'application/xml' });
+
+                const downloadLink = document.createElement('a');
+                downloadLink.href = window.URL.createObjectURL(blob);
+                downloadLink.download = 'resources.de-de.xml';
+            
+                // Append the link to the document
+                document.body.appendChild(downloadLink);
+            
+                // Trigger a click on the link to start the download
+                downloadLink.click();
+            
+                // Remove the link from the document
+                document.body.removeChild(downloadLink);
+            })
+            .catch(error => console.error('Error:', error));
+          },        
+     
+        exportEN() {
+            // Fetch the XML content from the server
+            fetch('/admin/cms/ExportLanguageResource', {
+              method: 'GET',
+              headers: { 'Content-Type': 'application/json' },
+              })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then(responseData => {
+                // Extract the XML string from the nested structure
+                const xmlResponse = responseData.Message[0];
+
+                const blob = new Blob([xmlResponse], { type: 'application/xml' });
+
+                const downloadLink = document.createElement('a');
+                downloadLink.href = window.URL.createObjectURL(blob);
+                downloadLink.download = 'resources.en-us.xml';
+            
+                // Append the link to the document
+                document.body.appendChild(downloadLink);
+            
+                // Trigger a click on the link to start the download
+                downloadLink.click();
+            
+                // Remove the link from the document
+                document.body.removeChild(downloadLink);
+            })
+            .catch(error => console.error('Error:', error));
+          },
+          
 
         togglehighlightmissing(event){
             if (event.target.checked) {

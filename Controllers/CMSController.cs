@@ -260,8 +260,13 @@ namespace ML.CMS.Controllers
                 outputXML.Add(xMLDoc);
             }
 
+            List <string> messageOutput = new List<string>();
 
-            message = outputXML;
+            foreach (XMLDocHelper xMLDoc in outputXML)
+            {
+                messageOutput.Add(xMLDoc.Content.ToString());
+            }
+            message = messageOutput;
             success = true;
 
             return Json(new

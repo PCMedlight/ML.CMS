@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\admin.scss"
     },
     {
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\sax+esm.js",
+      "PackagePath": "staticwebassets\\lib\\sax+esm.js"
+    },
+    {
       "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
       "PackagePath": "staticwebassets\\lib\\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\vue.runtime.esm-browser.prod.min.js",
       "PackagePath": "staticwebassets\\lib\\vue.runtime.esm-browser.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\xml-js.esm.js",
+      "PackagePath": "staticwebassets\\lib\\xml-js.esm.js"
     },
     {
       "Id": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\public.scss",

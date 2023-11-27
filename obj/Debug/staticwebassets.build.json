@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ICf4fMhudCsabOAswASx8QeyjUjdJ6gPbHmv7Gjp3cM=",
+  "Hash": "38J3xCUwt77HMoB1aM/VRclXztUWNfuQTWwExV9GFiM=",
   "Source": "ML.CMS",
   "BasePath": "_content/ML.CMS",
   "Mode": "Default",
@@ -53,6 +53,23 @@
       "OriginalItemSpec": "wwwroot\\admin.scss"
     },
     {
+      "Identity": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\sax+esm.js",
+      "SourceId": "ML.CMS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\",
+      "BasePath": "_content/ML.CMS",
+      "RelativePath": "lib/sax+esm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sax+esm.js"
+    },
+    {
       "Identity": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\unpkg.com_vue@3.3.4_dist_vue.esm-browser.js",
       "SourceId": "ML.CMS",
       "SourceType": "Discovered",
@@ -102,6 +119,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\vue.runtime.esm-browser.prod.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\lib\\xml-js.esm.js",
+      "SourceId": "ML.CMS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\",
+      "BasePath": "_content/ML.CMS",
+      "RelativePath": "lib/xml-js.esm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\xml-js.esm.js"
     },
     {
       "Identity": "C:\\Users\\p.chaoui\\Creative Cloud Files\\Github\\smartstore-medlight\\src\\Smartstore.Modules\\ML.CMS\\wwwroot\\public.scss",

@@ -1,5 +1,8 @@
 import { createApp, onMounted, ref, computed, reactive, watch, watchEffect } from 'vue'
 import imagebrowser from './imagebrowser.js'
+import * as xmlJs from '../lib/xml-js.esm.js';
+
+
 
 createApp({
     components: {
@@ -25,6 +28,81 @@ createApp({
     },
 
     methods: {
+
+
+        cleanJson(json) {
+            if (typeof json !== 'object' || json === null) {
+                // If it's not an object, or if it's null, return as is
+                return json;
+            }
+        
+            // If it's an array, process each element
+            if (Array.isArray(json)) {
+                return json.map(item => this.cleanJson(item));
+            }
+        
+            // If it's an object, process each property
+            const cleanedObject = {};
+            for (const key in json) {
+                if (json.hasOwnProperty(key)) {
+                    const cleanedKey = key.replace('@', ''); // Remove @ from property name
+                    cleanedObject[cleanedKey] = this.cleanJson(json[key]);
+                }
+            }
+        
+            return cleanedObject;
+        },         
+
+        exportEN() {
+            // Fetch the XML content from the server
+            fetch('/admin/cms/ExportLanguageResource', {
+              method: 'GET',
+              headers: { 'Content-Type': 'application/json' },
+              })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then(responseData => {
+                // Extract the XML string from the nested structure
+                let xmlResponse = responseData.Message[0].Content.Language;
+                console.log(xmlResponse);
+                xmlResponse = this.cleanJson(xmlResponse);
+                console.log(xmlResponse);
+
+                const result = xmlJs.js2xml(xmlResponse, {compact:true, spaces:4});
+                console.log("result");
+                console.log(result);
+
+                //var InputJSON = xmlResponse;
+                //var output = this.OBJtoXML(InputJSON);
+                //console.log(output);
+                
+
+
+          
+              // Create a Blob from the XML string
+              //const blob = new Blob([xmlString], { type: 'application/xml' });
+          
+              // Create a download link
+              //const downloadLink = document.createElement('a');
+              //downloadLink.href = window.URL.createObjectURL(blob);
+              //downloadLink.download = 'output.xml';
+          
+              // Append the link to the document
+              //document.body.appendChild(downloadLink);
+          
+              // Trigger a click on the link to start the download
+              //downloadLink.click();
+          
+              // Remove the link from the document
+              //document.body.removeChild(downloadLink);
+            })
+            .catch(error => console.error('Error:', error));
+          },
+          
 
         togglehighlightmissing(event){
             if (event.target.checked) {
