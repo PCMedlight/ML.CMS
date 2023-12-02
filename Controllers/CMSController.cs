@@ -365,7 +365,7 @@ namespace ML.CMS.Controllers
 
             List<object> activityLog = new List<object>();
 
-
+            //_db.ReloadEntity(language);
             await _db.LoadCollectionAsync(language, x => x.LocaleStringResources);
             var resources = language.LocaleStringResources.ToDictionarySafe(x => x.ResourceName, StringComparer.OrdinalIgnoreCase);
 
@@ -407,6 +407,7 @@ namespace ML.CMS.Controllers
                     };
 
                     _db.LocaleStringResources.Add(newResource);
+                    _db.Entry(newResource).State = EntityState.Added;
                     resources[name] = newResource;
                     activityLog.Add(resources[name]);
                     isDirty = true;
