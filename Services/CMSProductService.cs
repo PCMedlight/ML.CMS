@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using NuGet.Configuration;
-using Smartstore.Core.Catalog.Categories;
+﻿using Smartstore.Core.Catalog.Categories;
 using Smartstore.Core.Catalog.Products;
 using Smartstore.Core.Data;
+using Smartstore.Core.Localization;
 using Smartstore.Core.Security;
 using Smartstore.Web.Controllers;
 using Smartstore.Web.Models.Catalog;
+using static Smartstore.Core.Security.Permissions.Catalog;
+using Category = Smartstore.Core.Catalog.Categories.Category;
+using Product = Smartstore.Core.Catalog.Products.Product;
 
 namespace ML.CMS.Services
 {
@@ -91,6 +88,10 @@ namespace ML.CMS.Services
             productData["ShortDescription"] = product.ShortDescription;
             var productCategories = await _categoryService.GetProductCategoriesByProductIdsAsync(new[] { product.Id });
             var categoryNames = productCategories.Select(pc => pc.Category.Name).ToList();
+
+            productData["LocalizedCategories"] = productCategories
+                .Select(pc => pc.Category.GetLocalized(x => x.Name))
+                .ToList();
 
             productData["MainCategory"] = categoryNames.FirstOrDefault();
             productData["AllCategories"] = string.Join(",", categoryNames);
